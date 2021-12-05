@@ -1,0 +1,13 @@
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/install/strip.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/install/local.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/install.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/list_install_components.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/install/strip.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/install/local.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/install.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/list_install_components.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/Jumpgame.dir

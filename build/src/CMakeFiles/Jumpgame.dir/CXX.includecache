@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Clock.h
+iostream
+-
+chrono
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/chrono
+
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/Game.h
+iostream
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/iostream
+SFML/Graphics.hpp
+-
+../../GameLogic/Clock.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Clock.h
+
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Source/Game.cpp
+../Include/Game.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/Game.h
+
