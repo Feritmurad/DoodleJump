@@ -33,6 +33,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: .
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: ../src/GameLogic/Include/Entities/Object.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: ../src/GameLogic/Include/Entities/Player.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: ../src/SFMLConversion/Include/AbstractEntityFactory.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: ../src/SFMLConversion/Include/Entities/SFMLPlayer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o: ../src/SFMLConversion/Source/AbstractEntityFactory.cpp
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/GameLogic/Include/Coordinate.h
@@ -40,6 +41,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/Ga
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/GameLogic/Include/Entities/Object.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/GameLogic/Include/Entities/Player.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/SFMLConversion/Include/AbstractEntityFactory.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/SFMLConversion/Include/Entities/SFMLPlayer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/SFMLConversion/Include/EntityFactory.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o: ../src/SFMLConversion/Source/EntityFactory.cpp
 

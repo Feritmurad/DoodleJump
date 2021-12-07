@@ -34,6 +34,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/AbstractEntityFactory.cpp.o
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Include/Entities/Object.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Include/Entities/Player.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/AbstractEntityFactory.h
+ /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/Entities/SFMLPlayer.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Source/AbstractEntityFactory.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Include/Coordinate.h
@@ -41,6 +42,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/EntityFactory.cpp.o
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Include/Entities/Object.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Include/Entities/Player.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/AbstractEntityFactory.h
+ /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/Entities/SFMLPlayer.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Include/EntityFactory.h
  /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Source/EntityFactory.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Source/Game.cpp.o
