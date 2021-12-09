@@ -22,8 +22,8 @@ std::chrono::system_clock::time_point jumpgame::Clock::currentTime() {
 bool jumpgame::Clock::tick() {
     if(std::chrono::duration_cast<std::chrono::milliseconds>(currentTime()-startTime).count() >= Tick){
         reset();
-        return false;
+        return true;
     }
-    return true;
+    return false;
 
 }

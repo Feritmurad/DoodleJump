@@ -8,8 +8,9 @@
 #include "Entity.h"
 
 namespace jumpgame {
+    enum State {LEFT,RIGHT,JUMP,STATIC};
     class Object : public Entity {
-enum State {LEFT,RIGHT,JUMP,STATIC};
+
     public:
 
         /**

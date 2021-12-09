@@ -12,10 +12,14 @@ using namespace std;
 
 class Random {
 private:
-    /* Stored instance*/
+    /*
+     * Stored instance
+     */
     static Random *instance;
 
-    /*Private constructor*/
+    /*
+     * Private constructor
+     */
     Random();
 
 public:
@@ -28,9 +32,13 @@ public:
     /*Delete copy assignment*/
     Random &operator=(const Random &) = delete;
 
-    /* Create random integer*/
+    /*
+     *Create random integer
+     */
     int makerandom(int first, int last);
-
+    /*
+     *Create random integer
+     */
     double makerandom(double first, double last);
 
 };

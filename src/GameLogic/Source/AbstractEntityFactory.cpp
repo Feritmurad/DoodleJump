@@ -5,6 +5,7 @@
 #include "../Include/AbstractEntityFactory.h"
 
 namespace jumpgame {
+
     AbstractEntityFactory::AbstractEntityFactory() = default;
 
     AbstractEntityFactory::~AbstractEntityFactory() = default;

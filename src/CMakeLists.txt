@@ -17,14 +17,18 @@ ADD_EXECUTABLE(
         GameLogic/Source/Entities/Object.cpp
         GameLogic/Clock.h
         GameLogic/Clock.cpp
+        GameLogic/Include/AbstractEntityFactory.h
+        GameLogic/Source/AbstractEntityFactory.cpp
+        GameLogic/Include/EntityFactory.h
+        GameLogic/Source/EntityFactory.cpp
         SFMLConversion/Include/Game.h
         SFMLConversion/Source/Game.cpp
         SFMLConversion/Include/Transformation.h
         SFMLConversion/Source/Transformation.cpp
-        SFMLConversion/Include/AbstractEntityFactory.h
-        SFMLConversion/Source/AbstractEntityFactory.cpp
-        SFMLConversion/Include/EntityFactory.h
-        SFMLConversion/Source/EntityFactory.cpp
+        SFMLConversion/Include/SFMLEntityFactory.h
+        SFMLConversion/Source/SFMLEntityFactory.cpp
+        SFMLCONVERSION/Include/Entities/SFMLPlayer.h
+        SFMLCONVERSION/Include/Entities/SFMLEntity.h
         )
 
 link_directories(/usr/include/SFML)

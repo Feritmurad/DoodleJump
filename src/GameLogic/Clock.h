@@ -13,11 +13,28 @@ namespace jumpgame {
         int Tick = 0;
         std::chrono::system_clock::time_point startTime;
 
-    public:
+        static Clock *instance;
+
         /*
-         * simple constructor
+         * private constructor
          */
         Clock(int tick);
+
+    public:
+        /*
+         * Static acces method
+         */
+        static Clock *getInstance();
+
+        /*
+         * Delete copy constructor
+         */
+        Clock(const Clock &obj) = delete;
+
+        /*
+         * Delete copy assignment
+         */
+        Clock &operator=(const Clock &) = delete;
 
         bool tick();
 

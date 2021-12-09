@@ -4,9 +4,9 @@
 
 #ifndef JUMPGAME_SFMLPLAYER_H
 #define JUMPGAME_SFMLPLAYER_H
+#include "../../../GameLogic/Include/Entities/Player.h"
 
-
-class SFMLPlayer {
+class SFMLPlayer : public jumpgame::Player {
 
 };
 

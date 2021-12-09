@@ -4,17 +4,17 @@
 
 #ifndef GAME_FACTORY_H
 #define GAME_FACTORY_H
-#include "AbstractEntityFactory.h"
+#include "../../GameLogic/Include/EntityFactory.h"
 
-namespace jumpgame {
-    class EntityFactory : public AbstractEntityFactory {
+namespace SFMLjumpgame {
+class SFMLEntityFactory : public jumpgame::EntityFactory {
     public:
         EntityFactory()= default;
 
     /**
      * overriden function to create player
      */
-    std::shared_ptr<Entity> createPlayer(double x, double y) override;
+    std::shared_ptr<jumpgame::Entity> createPlayer(double x, double y) override;
 
     };
 }
