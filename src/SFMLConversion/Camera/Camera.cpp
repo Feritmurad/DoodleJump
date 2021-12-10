@@ -6,15 +6,6 @@
 
 namespace SFMLjumpgame {
 
-    Camera *Camera::instance = nullptr;
-
-    Camera *Camera::getInstance() {
-        if (instance == nullptr) {
-            instance = new Camera();
-        }
-        return instance;
-    }
-
     jumpgame::Coordinate Camera::rescale(jumpgame::Coordinate coordinate){
         double xscale = res_x /8.0;
         double yscale = res_y /6.0;

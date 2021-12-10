@@ -12,34 +12,16 @@ namespace SFMLjumpgame {
     private:
         int res_x = 0;
         int res_y = 0;
-        /**
-         * Stored instance
-         */
-        static Camera *instance;
-
-        /**
-         * Private constructor
-         */
-        Camera() = default;
 
     public:
         /**
-         * Static access method
+         * Default constructor
          */
-        static Camera *getInstance();
+        Camera() = default;
 
         /**
-         * Delete copy constructor
-         */
-        Camera(const Camera &obj) = delete;
-
-        /**
-         * Delete copy assignment
-         */
-        Camera &operator=(const Camera &) = delete;
-
-        /**
-         *
+         * function that will make coordinates into pixel
+         * @param coordinate: coordinates of entity that will be rescaled
          */
         jumpgame::Coordinate rescale(jumpgame::Coordinate coordinate);
 
