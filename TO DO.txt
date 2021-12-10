@@ -1,4 +1,3 @@
-* Make observer class
 * FIX GAME.CPP/GAME.H
 * make game window
 * make player move function and put it in update

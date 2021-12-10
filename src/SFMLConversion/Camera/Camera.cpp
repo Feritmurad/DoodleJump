@@ -1,0 +1,28 @@
+//
+// Created by ferit on 15/12/2020.
+//
+
+#include "Camera.h"
+
+namespace SFMLjumpgame {
+
+    Camera *Camera::instance = nullptr;
+
+    Camera *Camera::getInstance() {
+        if (instance == nullptr) {
+            instance = new Camera();
+        }
+        return instance;
+    }
+
+    jumpgame::Coordinate Camera::rescale(jumpgame::Coordinate coordinate){
+        double xscale = res_x /8.0;
+        double yscale = res_y /6.0;
+
+        double x = coordinate.getX() * xscale;
+        double y = -coordinate.getY() * yscale;
+
+        return jumpgame::Coordinate(x,y);
+    }
+
+}

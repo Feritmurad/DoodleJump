@@ -1,6 +1,6 @@
 
 
-#include "SFMLConversion/Include/Game.h"
+#include "SFMLConversion/Game/Game.h"
 #
 int main()
 {

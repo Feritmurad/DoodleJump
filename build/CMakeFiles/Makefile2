@@ -92,12 +92,12 @@ src/clean: src/CMakeFiles/Jumpgame.dir/clean
 src/CMakeFiles/Jumpgame.dir/all:
 	$(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/depend
 	$(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Jumpgame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target Jumpgame"
 .PHONY : src/CMakeFiles/Jumpgame.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Jumpgame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Jumpgame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" 0
 .PHONY : src/CMakeFiles/Jumpgame.dir/rule

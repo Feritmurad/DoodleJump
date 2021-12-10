@@ -3,32 +3,38 @@ set(CMAKE_CXX_STANDARD 14)
 ADD_EXECUTABLE(
         Jumpgame
         main.cpp
-        GameLogic/Include/Entities/Entity.h
-        GameLogic/Source/Entities/Entity.cpp
-        GameLogic/Include/Entities/Player.h
-        GameLogic/Source/Entities/Player.cpp
-        GameLogic/Include/Entities/World.h
-        GameLogic/Source/Entities/World.cpp
-        GameLogic/Random.cpp
-        GameLogic/Random.h
-        GameLogic/Include/Coordinate.h
-        GameLogic/Source/Coordinate.cpp
-        GameLogic/Include/Entities/Object.h
-        GameLogic/Source/Entities/Object.cpp
-        GameLogic/Clock.h
-        GameLogic/Clock.cpp
-        GameLogic/Include/AbstractEntityFactory.h
-        GameLogic/Source/AbstractEntityFactory.cpp
-        GameLogic/Include/EntityFactory.h
-        GameLogic/Source/EntityFactory.cpp
-        SFMLConversion/Include/Game.h
-        SFMLConversion/Source/Game.cpp
-        SFMLConversion/Include/Transformation.h
-        SFMLConversion/Source/Transformation.cpp
-        SFMLConversion/Include/SFMLEntityFactory.h
-        SFMLConversion/Source/SFMLEntityFactory.cpp
-        SFMLCONVERSION/Include/Entities/SFMLPlayer.h
-        SFMLCONVERSION/Include/Entities/SFMLEntity.h
+        GameLogic/Entities/Entity.h
+        GameLogic/Entities/Entity.cpp
+        GameLogic/Entities/Player.h
+        GameLogic/Entities/Player.cpp
+        GameLogic/Entities/World.h
+        GameLogic/Entities/World.cpp
+        GameLogic/Uitlity/Random.cpp
+        GameLogic/Uitlity/Random.h
+        GameLogic/Coordinate/Coordinate.h
+        GameLogic/Coordinate/Coordinate.cpp
+        GameLogic/Entities/Object.h
+        GameLogic/Entities/Object.cpp
+        GameLogic/Uitlity/Clock.h
+        GameLogic/Uitlity/Clock.cpp
+        GameLogic/Factory/AbstractEntityFactory.h
+        GameLogic/Factory/AbstractEntityFactory.cpp
+        GameLogic/Factory/EntityFactory.h
+        GameLogic/Factory/EntityFactory.cpp
+        Gamelogic/Observer/Observer.h
+        GameLogic/Observer/Observer.cpp
+        GameLogic/Observer/Observable.h
+        GameLogic/Observer/Observable.cpp
+        GameLogic/Score/Score.h
+        GameLogic/Score/Score.cpp
+        SFMLConversion/Game/Game.h
+        SFMLConversion/Game/Game.cpp
+        SFMLConversion/Camera/Camera.h
+        SFMLConversion/Camera/Camera.cpp
+        SFMLConversion/SFMLFactory/SFMLEntityFactory.h
+        SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
+        SFMLConversion/Entities/SFMLPlayer.h
+        SFMLConversion/Entities/SFMLEntity.h
         )
 
 link_directories(/usr/include/SFML)
