@@ -441,59 +441,59 @@ GameLogic/Score/Score.cpp.s:
 	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.s
 .PHONY : GameLogic/Score/Score.cpp.s
 
-GameLogic/Uitlity/Clock.o: GameLogic/Uitlity/Clock.cpp.o
+GameLogic/Utility/Clock.o: GameLogic/Utility/Clock.cpp.o
 
-.PHONY : GameLogic/Uitlity/Clock.o
-
-# target to build an object file
-GameLogic/Uitlity/Clock.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o
-.PHONY : GameLogic/Uitlity/Clock.cpp.o
-
-GameLogic/Uitlity/Clock.i: GameLogic/Uitlity/Clock.cpp.i
-
-.PHONY : GameLogic/Uitlity/Clock.i
-
-# target to preprocess a source file
-GameLogic/Uitlity/Clock.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.i
-.PHONY : GameLogic/Uitlity/Clock.cpp.i
-
-GameLogic/Uitlity/Clock.s: GameLogic/Uitlity/Clock.cpp.s
-
-.PHONY : GameLogic/Uitlity/Clock.s
-
-# target to generate assembly for a file
-GameLogic/Uitlity/Clock.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.s
-.PHONY : GameLogic/Uitlity/Clock.cpp.s
-
-GameLogic/Uitlity/Random.o: GameLogic/Uitlity/Random.cpp.o
-
-.PHONY : GameLogic/Uitlity/Random.o
+.PHONY : GameLogic/Utility/Clock.o
 
 # target to build an object file
-GameLogic/Uitlity/Random.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o
-.PHONY : GameLogic/Uitlity/Random.cpp.o
+GameLogic/Utility/Clock.cpp.o:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o
+.PHONY : GameLogic/Utility/Clock.cpp.o
 
-GameLogic/Uitlity/Random.i: GameLogic/Uitlity/Random.cpp.i
+GameLogic/Utility/Clock.i: GameLogic/Utility/Clock.cpp.i
 
-.PHONY : GameLogic/Uitlity/Random.i
+.PHONY : GameLogic/Utility/Clock.i
 
 # target to preprocess a source file
-GameLogic/Uitlity/Random.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.i
-.PHONY : GameLogic/Uitlity/Random.cpp.i
+GameLogic/Utility/Clock.cpp.i:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i
+.PHONY : GameLogic/Utility/Clock.cpp.i
 
-GameLogic/Uitlity/Random.s: GameLogic/Uitlity/Random.cpp.s
+GameLogic/Utility/Clock.s: GameLogic/Utility/Clock.cpp.s
 
-.PHONY : GameLogic/Uitlity/Random.s
+.PHONY : GameLogic/Utility/Clock.s
 
 # target to generate assembly for a file
-GameLogic/Uitlity/Random.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.s
-.PHONY : GameLogic/Uitlity/Random.cpp.s
+GameLogic/Utility/Clock.cpp.s:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s
+.PHONY : GameLogic/Utility/Clock.cpp.s
+
+GameLogic/Utility/Random.o: GameLogic/Utility/Random.cpp.o
+
+.PHONY : GameLogic/Utility/Random.o
+
+# target to build an object file
+GameLogic/Utility/Random.cpp.o:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
+.PHONY : GameLogic/Utility/Random.cpp.o
+
+GameLogic/Utility/Random.i: GameLogic/Utility/Random.cpp.i
+
+.PHONY : GameLogic/Utility/Random.i
+
+# target to preprocess a source file
+GameLogic/Utility/Random.cpp.i:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i
+.PHONY : GameLogic/Utility/Random.cpp.i
+
+GameLogic/Utility/Random.s: GameLogic/Utility/Random.cpp.s
+
+.PHONY : GameLogic/Utility/Random.s
+
+# target to generate assembly for a file
+GameLogic/Utility/Random.cpp.s:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
+.PHONY : GameLogic/Utility/Random.cpp.s
 
 SFMLConversion/Camera/Camera.o: SFMLConversion/Camera/Camera.cpp.o
 
@@ -646,12 +646,12 @@ help:
 	@echo "... GameLogic/Score/Score.o"
 	@echo "... GameLogic/Score/Score.i"
 	@echo "... GameLogic/Score/Score.s"
-	@echo "... GameLogic/Uitlity/Clock.o"
-	@echo "... GameLogic/Uitlity/Clock.i"
-	@echo "... GameLogic/Uitlity/Clock.s"
-	@echo "... GameLogic/Uitlity/Random.o"
-	@echo "... GameLogic/Uitlity/Random.i"
-	@echo "... GameLogic/Uitlity/Random.s"
+	@echo "... GameLogic/Utility/Clock.o"
+	@echo "... GameLogic/Utility/Clock.i"
+	@echo "... GameLogic/Utility/Clock.s"
+	@echo "... GameLogic/Utility/Random.o"
+	@echo "... GameLogic/Utility/Random.i"
+	@echo "... GameLogic/Utility/Random.s"
 	@echo "... SFMLConversion/Camera/Camera.o"
 	@echo "... SFMLConversion/Camera/Camera.i"
 	@echo "... SFMLConversion/Camera/Camera.s"

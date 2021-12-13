@@ -42,17 +42,17 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o: ../src/GameLogic/Observ
 src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o: ../src/GameLogic/Score/Score.cpp
 src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o: ../src/GameLogic/Score/Score.h
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o: ../src/GameLogic/Uitlity/Clock.cpp
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o: ../src/GameLogic/Uitlity/Clock.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o: ../src/GameLogic/Utility/Clock.cpp
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o: ../src/GameLogic/Utility/Clock.h
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o: ../src/GameLogic/Uitlity/Random.cpp
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o: ../src/GameLogic/Uitlity/Random.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: ../src/GameLogic/Utility/Random.cpp
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: ../src/GameLogic/Utility/Random.h
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/SFMLConversion/Camera/Camera.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/SFMLConversion/Camera/Camera.h
 
-src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Uitlity/Clock.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/SFMLConversion/Game/Game.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/SFMLConversion/Game/Game.h
 
@@ -63,7 +63,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
 
-src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Uitlity/Clock.h
+src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/SFMLConversion/Game/Game.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/main.cpp
 

@@ -10,8 +10,8 @@ namespace SFMLjumpgame {
 
     class Camera {
     private:
-        int res_x = 0;
-        int res_y = 0;
+        int res_x = 1280;
+        int res_y = 720;
 
     public:
         /**

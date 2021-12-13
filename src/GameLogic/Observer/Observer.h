@@ -7,12 +7,16 @@
 
 namespace jumpgame {
 
+    enum class Event{
+        Score
+    };
+
     class Observer {
         /**
          * virtual function that handles an event
          * @param update_amount: amount that has to be added to score
          */
-        virtual void handleEvent(int update_amount) = 0;
+        virtual void handleEvent(Event event) = 0;
 
     };
 

@@ -6,13 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.h
+iostream
+-
+chrono
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/chrono
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.cpp
-Camera.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.cpp
+Game.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.h
-../../GameLogic/Coordinate/Coordinate.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.h
+iostream
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/iostream
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+../../GameLogic/Utility/Clock.h
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.h
+memory
+/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/memory
 

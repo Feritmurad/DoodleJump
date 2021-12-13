@@ -30,7 +30,7 @@ namespace jumpgame {
         /**
          * function that notifies all the observers
          */
-        void virtual notifyObservers(int update_amount) = 0;
+        void virtual notifyObservers(Event event) = 0;
 
 
 

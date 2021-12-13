@@ -20,7 +20,7 @@ namespace jumpgame {
         * overriden function to handle a event
         * @param update_amount: amount that has to be added to score
         */
-        void handleEvent(int update_amount) override;
+        void handleEvent(Event event) override;
 
     private:
         int player_score;

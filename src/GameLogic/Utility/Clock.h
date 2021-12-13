@@ -24,7 +24,7 @@ namespace jumpgame {
         /*
          * Static acces method
          */
-        static Clock *getInstance();
+        static Clock *getInstance(int tick);
 
         /*
          * Delete copy constructor

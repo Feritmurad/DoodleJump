@@ -7,7 +7,9 @@
 
 #include "iostream"
 #include <SFML/Graphics.hpp>
-#include "../../GameLogic/Uitlity/Clock.h"
+#include <SFML/Window.hpp>
+#include "../../GameLogic/Utility/Clock.h"
+#include "memory"
 
 class Game {
 public:

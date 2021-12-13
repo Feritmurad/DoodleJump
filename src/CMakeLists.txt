@@ -9,14 +9,14 @@ ADD_EXECUTABLE(
         GameLogic/Entities/Player.cpp
         GameLogic/Entities/World.h
         GameLogic/Entities/World.cpp
-        GameLogic/Uitlity/Random.cpp
-        GameLogic/Uitlity/Random.h
+        GameLogic/Utility/Random.cpp
+        GameLogic/Utility/Random.h
         GameLogic/Coordinate/Coordinate.h
         GameLogic/Coordinate/Coordinate.cpp
         GameLogic/Entities/Object.h
         GameLogic/Entities/Object.cpp
-        GameLogic/Uitlity/Clock.h
-        GameLogic/Uitlity/Clock.cpp
+        GameLogic/Utility/Clock.h
+        GameLogic/Utility/Clock.cpp
         GameLogic/Factory/AbstractEntityFactory.h
         GameLogic/Factory/AbstractEntityFactory.cpp
         GameLogic/Factory/EntityFactory.h

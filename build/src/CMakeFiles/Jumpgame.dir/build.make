@@ -109,18 +109,18 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s"
 	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/World.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o: ../src/GameLogic/Uitlity/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o -c "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Random.cpp"
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: ../src/GameLogic/Utility/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o -c "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.cpp"
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.i"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Random.cpp" > CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.i
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.cpp" > CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.s"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Random.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.s
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
 
 src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
 src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o: ../src/GameLogic/Coordinate/Coordinate.cpp
@@ -148,18 +148,18 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s"
 	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Object.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o: ../src/GameLogic/Uitlity/Clock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o -c "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Clock.cpp"
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o: ../src/GameLogic/Utility/Clock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o -c "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.cpp"
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.i"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Clock.cpp" > CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.i
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.cpp" > CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i
 
-src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.s"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Uitlity/Clock.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.s
+src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s"
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.cpp" -o CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s
 
 src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
 src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o: ../src/GameLogic/Factory/AbstractEntityFactory.cpp
@@ -271,10 +271,10 @@ Jumpgame_OBJECTS = \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o" \
-"CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o" \
+"CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o" \
-"CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o" \
+"CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.o" \
@@ -291,10 +291,10 @@ src/Jumpgame: src/CMakeFiles/Jumpgame.dir/main.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o
-src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Random.cpp.o
+src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o
-src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Uitlity/Clock.cpp.o
+src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.o

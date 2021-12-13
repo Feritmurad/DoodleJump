@@ -3,15 +3,8 @@
 //
 
 #include "Game.h"
-
 void Game::run(){
-//  jumpgame::Clock clock = jumpgame::Clock(1000);
-    //int x = 0;
-    //while(x == 0){
-        //if(clock.tick()){
-            //std::cout << "tick" << std::endl;
-        //}
-   // }
-
-
+    jumpgame::Clock *c = c->getInstance(100);
+    std::shared_ptr<sf::RenderWindow> sfmlWindow;
+    sfmlWindow = std::make_shared<sf::RenderWindow>(sf::VideoMode(1280, 720), "Jumpgame");
 }

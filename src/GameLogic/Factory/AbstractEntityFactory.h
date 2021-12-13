@@ -13,14 +13,14 @@ namespace jumpgame {
     class AbstractEntityFactory {
 
     public:
-        /*
+        /**
          * Default constructor
          */
         AbstractEntityFactory();
 
         ~AbstractEntityFactory();
 
-        /*
+        /**
          * virtual fucntion to create a player
          */
         virtual std::shared_ptr<Entity> createPlayer(double x, double y)=0;

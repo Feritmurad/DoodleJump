@@ -1,6 +1,11 @@
+* Rename entityfactory
 * FIX GAME.CPP/GAME.H
 * make game window
 * make player move function and put it in update
 * Test camera
 * resx and resy in camera need to be initialized
 * Need events in handlenotification instead of an int 
+
+
+
+**Maybe remove int tick from Constructor Clock and make a setTick() function

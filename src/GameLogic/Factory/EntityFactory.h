@@ -10,7 +10,7 @@
 namespace jumpgame {
 
     class EntityFactory : public AbstractEntityFactory {
-        /*
+        /**
          * Default constructor
          */
         EntityFactory();
