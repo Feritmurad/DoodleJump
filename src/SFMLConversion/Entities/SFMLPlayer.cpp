@@ -3,3 +3,20 @@
 //
 
 #include "SFMLPlayer.h"
+
+namespace SFMLjumpgame{
+
+    void SFMLPlayer::draw(){
+        jumpgame::Coordinate sfmlc;
+        Camera cam;
+
+        sf::RectangleShape rectangle(sf::Vector2f(120.f, 50.f));
+        getWindow()->draw(rectangle);
+
+    }
+
+    void SFMLPlayer::update() {
+
+    }
+
+}

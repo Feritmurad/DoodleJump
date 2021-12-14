@@ -10,6 +10,8 @@
 #include <SFML/Window.hpp>
 #include "../../GameLogic/Utility/Clock.h"
 #include "memory"
+#include "../Entities/SFMLPlayer.h"
+#include "../SFMLFactory/SFMLEntityFactory.h"
 
 class Game {
 public:

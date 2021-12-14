@@ -34,9 +34,11 @@ ADD_EXECUTABLE(
         SFMLConversion/SFMLFactory/SFMLEntityFactory.h
         SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
         SFMLConversion/Entities/SFMLPlayer.h
+        SFMLConversion/Entities/SFMLPlayer.cpp
         SFMLConversion/Entities/SFMLEntity.h
+        SFMLConversion/Entities/SFMLEntity.cpp
         )
 
-link_directories(/usr/include/SFML)
+TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
 INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)
 

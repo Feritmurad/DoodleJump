@@ -11,7 +11,12 @@
 namespace jumpgame {
 
     class Player : public Object {
-
+        public:
+            /**
+             * Constructior with coordinate
+             * @param c: coordinate of object
+             */
+            Player(const Coordinate &c) : Object(c) {}
 
     };
 }

@@ -5,6 +5,8 @@
 #ifndef GAME_ENTITY_H
 #define GAME_ENTITY_H
 
+#include "memory"
+
 namespace jumpgame {
 
     class Entity {

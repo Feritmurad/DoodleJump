@@ -522,6 +522,60 @@ SFMLConversion/Camera/Camera.cpp.s:
 	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.s
 .PHONY : SFMLConversion/Camera/Camera.cpp.s
 
+SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLEntity.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLEntity.cpp.o:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLEntity.cpp.o
+
+SFMLConversion/Entities/SFMLEntity.i: SFMLConversion/Entities/SFMLEntity.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLEntity.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLEntity.cpp.i:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLEntity.cpp.i
+
+SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLEntity.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLEntity.cpp.s:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
+
+SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLPlayer.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLPlayer.cpp.o:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.o
+
+SFMLConversion/Entities/SFMLPlayer.i: SFMLConversion/Entities/SFMLPlayer.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLPlayer.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLPlayer.cpp.i:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.i
+
+SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLPlayer.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLPlayer.cpp.s:
+	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.s
+
 SFMLConversion/Game/Game.o: SFMLConversion/Game/Game.cpp.o
 
 .PHONY : SFMLConversion/Game/Game.o
@@ -655,6 +709,12 @@ help:
 	@echo "... SFMLConversion/Camera/Camera.o"
 	@echo "... SFMLConversion/Camera/Camera.i"
 	@echo "... SFMLConversion/Camera/Camera.s"
+	@echo "... SFMLConversion/Entities/SFMLEntity.o"
+	@echo "... SFMLConversion/Entities/SFMLEntity.i"
+	@echo "... SFMLConversion/Entities/SFMLEntity.s"
+	@echo "... SFMLConversion/Entities/SFMLPlayer.o"
+	@echo "... SFMLConversion/Entities/SFMLPlayer.i"
+	@echo "... SFMLConversion/Entities/SFMLPlayer.s"
 	@echo "... SFMLConversion/Game/Game.o"
 	@echo "... SFMLConversion/Game/Game.i"
 	@echo "... SFMLConversion/Game/Game.s"

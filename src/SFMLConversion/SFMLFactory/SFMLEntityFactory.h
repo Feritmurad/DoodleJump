@@ -10,7 +10,7 @@
 namespace SFMLjumpgame {
 class SFMLEntityFactory : public jumpgame::EntityFactory {
     public:
-        SFMLEntityFactory()= default;
+        SFMLEntityFactory();
 
     /**
      * overriden function to create player

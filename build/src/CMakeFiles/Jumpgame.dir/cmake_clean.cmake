@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o"
   "CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o"
   "CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o"
+  "CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o"
+  "CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o"
   "CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o"
   "CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o"
   "CMakeFiles/Jumpgame.dir/main.cpp.o"

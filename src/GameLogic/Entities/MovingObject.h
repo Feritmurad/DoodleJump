@@ -6,7 +6,7 @@
 #define JUMPGAME_MOVINGOBJECT_H
 #include "Object.h"
 
-class MovingObject : public MovingObject {
+class MovingObject : public Object {
 
 };
 

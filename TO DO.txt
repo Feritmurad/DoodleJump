@@ -1,3 +1,5 @@
+!! Cmakelists into 2 cmakelists for gamelogic and gamerepresentation
+
 * Rename entityfactory
 * FIX GAME.CPP/GAME.H
 * make game window
@@ -9,3 +11,7 @@
 
 
 **Maybe remove int tick from Constructor Clock and make a setTick() function
+
+
+
+?? How to make observer with Entitiy and SMFL Entity

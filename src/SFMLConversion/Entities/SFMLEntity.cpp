@@ -3,3 +3,12 @@
 //
 
 #include "SFMLEntity.h"
+
+namespace SFMLjumpgame{
+
+
+    const std::shared_ptr<sf::RenderWindow> &SFMLEntity::getWindow() const {
+        return m_window;
+    }
+
+}

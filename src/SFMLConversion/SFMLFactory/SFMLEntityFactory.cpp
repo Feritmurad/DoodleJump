@@ -4,9 +4,11 @@
 
 #include "SFMLEntityFactory.h"
 
+namespace SFMLjumpgame {
 
-std::shared_ptr<SFMLPlayer> createPlayer(double x, double y){
-    return 0;
+    std::shared_ptr <SFMLPlayer> createPlayer(double x, double y) {
+        return 0;
+
+    }
 
 }
-

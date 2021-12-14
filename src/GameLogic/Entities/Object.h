@@ -8,7 +8,6 @@
 #include "Entity.h"
 
 namespace jumpgame {
-    enum State {LEFT,RIGHT,JUMP,STATIC};
     class Object : public Entity {
 
     public:
@@ -23,6 +22,12 @@ namespace jumpgame {
          */
         ~Object();
 
+        /**
+         * Constructior with coordinate
+         * @param c: coordinate of object
+         */
+         Object(const Coordinate &c) : m_c(c) {}
+
     public:
 
         /**
@@ -33,11 +38,10 @@ namespace jumpgame {
         /**
          * Setter for c
          */
-        void setC(Coordinate c);
+        void setC(Coordinate m_c);
 
     private:
-        Coordinate c;
-        State state;
+        Coordinate m_c;
 
 
     };

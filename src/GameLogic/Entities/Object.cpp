@@ -10,11 +10,11 @@ namespace jumpgame {
     Object::~Object() = default;
 
     Coordinate Object::getC() const {
-        return c;
+        return m_c;
     }
 
-    void Object::setC(Coordinate c) {
-        Object::c = c;
+    void Object::setC(Coordinate m_c) {
+        Object::m_c = m_c;
     }
 
 }
