@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game"
+CMAKE_SOURCE_DIR = /home/ferit/Desktop/Projects/Jump-game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build"
+CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/Jump-game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/CMakeFiles/progress.marks"
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/CMakeFiles" 0
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles /home/ferit/Desktop/Projects/Jump-game/build/src/CMakeFiles/progress.marks
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/Jumpgame.dir/rule:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Jumpgame.dir/rule
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Jumpgame.dir/rule
 .PHONY : src/CMakeFiles/Jumpgame.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ Jumpgame: src/CMakeFiles/Jumpgame.dir/rule
 
 # fast build rule for target.
 Jumpgame/fast:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
 .PHONY : Jumpgame/fast
 
 GameLogic/Coordinate/Coordinate.o: GameLogic/Coordinate/Coordinate.cpp.o
@@ -177,7 +177,7 @@ GameLogic/Coordinate/Coordinate.o: GameLogic/Coordinate/Coordinate.cpp.o
 
 # target to build an object file
 GameLogic/Coordinate/Coordinate.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.o
 
 GameLogic/Coordinate/Coordinate.i: GameLogic/Coordinate/Coordinate.cpp.i
@@ -186,7 +186,7 @@ GameLogic/Coordinate/Coordinate.i: GameLogic/Coordinate/Coordinate.cpp.i
 
 # target to preprocess a source file
 GameLogic/Coordinate/Coordinate.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.i
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.i
 
 GameLogic/Coordinate/Coordinate.s: GameLogic/Coordinate/Coordinate.cpp.s
@@ -195,7 +195,7 @@ GameLogic/Coordinate/Coordinate.s: GameLogic/Coordinate/Coordinate.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Coordinate/Coordinate.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.s
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.s
 
 GameLogic/Entities/Entity.o: GameLogic/Entities/Entity.cpp.o
@@ -204,7 +204,7 @@ GameLogic/Entities/Entity.o: GameLogic/Entities/Entity.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Entity.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o
 .PHONY : GameLogic/Entities/Entity.cpp.o
 
 GameLogic/Entities/Entity.i: GameLogic/Entities/Entity.cpp.i
@@ -213,7 +213,7 @@ GameLogic/Entities/Entity.i: GameLogic/Entities/Entity.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Entity.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.i
 .PHONY : GameLogic/Entities/Entity.cpp.i
 
 GameLogic/Entities/Entity.s: GameLogic/Entities/Entity.cpp.s
@@ -222,7 +222,7 @@ GameLogic/Entities/Entity.s: GameLogic/Entities/Entity.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Entity.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.s
 .PHONY : GameLogic/Entities/Entity.cpp.s
 
 GameLogic/Entities/Object.o: GameLogic/Entities/Object.cpp.o
@@ -231,7 +231,7 @@ GameLogic/Entities/Object.o: GameLogic/Entities/Object.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Object.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o
 .PHONY : GameLogic/Entities/Object.cpp.o
 
 GameLogic/Entities/Object.i: GameLogic/Entities/Object.cpp.i
@@ -240,7 +240,7 @@ GameLogic/Entities/Object.i: GameLogic/Entities/Object.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Object.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.i
 .PHONY : GameLogic/Entities/Object.cpp.i
 
 GameLogic/Entities/Object.s: GameLogic/Entities/Object.cpp.s
@@ -249,7 +249,7 @@ GameLogic/Entities/Object.s: GameLogic/Entities/Object.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Object.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s
 .PHONY : GameLogic/Entities/Object.cpp.s
 
 GameLogic/Entities/Player.o: GameLogic/Entities/Player.cpp.o
@@ -258,7 +258,7 @@ GameLogic/Entities/Player.o: GameLogic/Entities/Player.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Player.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o
 .PHONY : GameLogic/Entities/Player.cpp.o
 
 GameLogic/Entities/Player.i: GameLogic/Entities/Player.cpp.i
@@ -267,7 +267,7 @@ GameLogic/Entities/Player.i: GameLogic/Entities/Player.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Player.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.i
 .PHONY : GameLogic/Entities/Player.cpp.i
 
 GameLogic/Entities/Player.s: GameLogic/Entities/Player.cpp.s
@@ -276,7 +276,7 @@ GameLogic/Entities/Player.s: GameLogic/Entities/Player.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Player.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.s
 .PHONY : GameLogic/Entities/Player.cpp.s
 
 GameLogic/Entities/World.o: GameLogic/Entities/World.cpp.o
@@ -285,7 +285,7 @@ GameLogic/Entities/World.o: GameLogic/Entities/World.cpp.o
 
 # target to build an object file
 GameLogic/Entities/World.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o
 .PHONY : GameLogic/Entities/World.cpp.o
 
 GameLogic/Entities/World.i: GameLogic/Entities/World.cpp.i
@@ -294,7 +294,7 @@ GameLogic/Entities/World.i: GameLogic/Entities/World.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/World.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.i
 .PHONY : GameLogic/Entities/World.cpp.i
 
 GameLogic/Entities/World.s: GameLogic/Entities/World.cpp.s
@@ -303,7 +303,7 @@ GameLogic/Entities/World.s: GameLogic/Entities/World.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/World.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s
 .PHONY : GameLogic/Entities/World.cpp.s
 
 GameLogic/Factory/AbstractEntityFactory.o: GameLogic/Factory/AbstractEntityFactory.cpp.o
@@ -312,7 +312,7 @@ GameLogic/Factory/AbstractEntityFactory.o: GameLogic/Factory/AbstractEntityFacto
 
 # target to build an object file
 GameLogic/Factory/AbstractEntityFactory.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.o
 
 GameLogic/Factory/AbstractEntityFactory.i: GameLogic/Factory/AbstractEntityFactory.cpp.i
@@ -321,7 +321,7 @@ GameLogic/Factory/AbstractEntityFactory.i: GameLogic/Factory/AbstractEntityFacto
 
 # target to preprocess a source file
 GameLogic/Factory/AbstractEntityFactory.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.i
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.i
 
 GameLogic/Factory/AbstractEntityFactory.s: GameLogic/Factory/AbstractEntityFactory.cpp.s
@@ -330,7 +330,7 @@ GameLogic/Factory/AbstractEntityFactory.s: GameLogic/Factory/AbstractEntityFacto
 
 # target to generate assembly for a file
 GameLogic/Factory/AbstractEntityFactory.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.s
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.s
 
 GameLogic/Factory/EntityFactory.o: GameLogic/Factory/EntityFactory.cpp.o
@@ -339,7 +339,7 @@ GameLogic/Factory/EntityFactory.o: GameLogic/Factory/EntityFactory.cpp.o
 
 # target to build an object file
 GameLogic/Factory/EntityFactory.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o
 .PHONY : GameLogic/Factory/EntityFactory.cpp.o
 
 GameLogic/Factory/EntityFactory.i: GameLogic/Factory/EntityFactory.cpp.i
@@ -348,7 +348,7 @@ GameLogic/Factory/EntityFactory.i: GameLogic/Factory/EntityFactory.cpp.i
 
 # target to preprocess a source file
 GameLogic/Factory/EntityFactory.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.i
 .PHONY : GameLogic/Factory/EntityFactory.cpp.i
 
 GameLogic/Factory/EntityFactory.s: GameLogic/Factory/EntityFactory.cpp.s
@@ -357,7 +357,7 @@ GameLogic/Factory/EntityFactory.s: GameLogic/Factory/EntityFactory.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Factory/EntityFactory.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.s
 .PHONY : GameLogic/Factory/EntityFactory.cpp.s
 
 GameLogic/Observer/Observable.o: GameLogic/Observer/Observable.cpp.o
@@ -366,7 +366,7 @@ GameLogic/Observer/Observable.o: GameLogic/Observer/Observable.cpp.o
 
 # target to build an object file
 GameLogic/Observer/Observable.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.o
 .PHONY : GameLogic/Observer/Observable.cpp.o
 
 GameLogic/Observer/Observable.i: GameLogic/Observer/Observable.cpp.i
@@ -375,7 +375,7 @@ GameLogic/Observer/Observable.i: GameLogic/Observer/Observable.cpp.i
 
 # target to preprocess a source file
 GameLogic/Observer/Observable.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.i
 .PHONY : GameLogic/Observer/Observable.cpp.i
 
 GameLogic/Observer/Observable.s: GameLogic/Observer/Observable.cpp.s
@@ -384,7 +384,7 @@ GameLogic/Observer/Observable.s: GameLogic/Observer/Observable.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Observer/Observable.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.s
 .PHONY : GameLogic/Observer/Observable.cpp.s
 
 GameLogic/Observer/Observer.o: GameLogic/Observer/Observer.cpp.o
@@ -393,7 +393,7 @@ GameLogic/Observer/Observer.o: GameLogic/Observer/Observer.cpp.o
 
 # target to build an object file
 GameLogic/Observer/Observer.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.o
 .PHONY : GameLogic/Observer/Observer.cpp.o
 
 GameLogic/Observer/Observer.i: GameLogic/Observer/Observer.cpp.i
@@ -402,7 +402,7 @@ GameLogic/Observer/Observer.i: GameLogic/Observer/Observer.cpp.i
 
 # target to preprocess a source file
 GameLogic/Observer/Observer.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.i
 .PHONY : GameLogic/Observer/Observer.cpp.i
 
 GameLogic/Observer/Observer.s: GameLogic/Observer/Observer.cpp.s
@@ -411,7 +411,7 @@ GameLogic/Observer/Observer.s: GameLogic/Observer/Observer.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Observer/Observer.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.s
 .PHONY : GameLogic/Observer/Observer.cpp.s
 
 GameLogic/Score/Score.o: GameLogic/Score/Score.cpp.o
@@ -420,7 +420,7 @@ GameLogic/Score/Score.o: GameLogic/Score/Score.cpp.o
 
 # target to build an object file
 GameLogic/Score/Score.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o
 .PHONY : GameLogic/Score/Score.cpp.o
 
 GameLogic/Score/Score.i: GameLogic/Score/Score.cpp.i
@@ -429,7 +429,7 @@ GameLogic/Score/Score.i: GameLogic/Score/Score.cpp.i
 
 # target to preprocess a source file
 GameLogic/Score/Score.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.i
 .PHONY : GameLogic/Score/Score.cpp.i
 
 GameLogic/Score/Score.s: GameLogic/Score/Score.cpp.s
@@ -438,7 +438,7 @@ GameLogic/Score/Score.s: GameLogic/Score/Score.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Score/Score.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.s
 .PHONY : GameLogic/Score/Score.cpp.s
 
 GameLogic/Utility/Clock.o: GameLogic/Utility/Clock.cpp.o
@@ -447,7 +447,7 @@ GameLogic/Utility/Clock.o: GameLogic/Utility/Clock.cpp.o
 
 # target to build an object file
 GameLogic/Utility/Clock.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o
 .PHONY : GameLogic/Utility/Clock.cpp.o
 
 GameLogic/Utility/Clock.i: GameLogic/Utility/Clock.cpp.i
@@ -456,7 +456,7 @@ GameLogic/Utility/Clock.i: GameLogic/Utility/Clock.cpp.i
 
 # target to preprocess a source file
 GameLogic/Utility/Clock.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i
 .PHONY : GameLogic/Utility/Clock.cpp.i
 
 GameLogic/Utility/Clock.s: GameLogic/Utility/Clock.cpp.s
@@ -465,7 +465,7 @@ GameLogic/Utility/Clock.s: GameLogic/Utility/Clock.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Utility/Clock.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s
 .PHONY : GameLogic/Utility/Clock.cpp.s
 
 GameLogic/Utility/Random.o: GameLogic/Utility/Random.cpp.o
@@ -474,7 +474,7 @@ GameLogic/Utility/Random.o: GameLogic/Utility/Random.cpp.o
 
 # target to build an object file
 GameLogic/Utility/Random.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
 .PHONY : GameLogic/Utility/Random.cpp.o
 
 GameLogic/Utility/Random.i: GameLogic/Utility/Random.cpp.i
@@ -483,7 +483,7 @@ GameLogic/Utility/Random.i: GameLogic/Utility/Random.cpp.i
 
 # target to preprocess a source file
 GameLogic/Utility/Random.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i
 .PHONY : GameLogic/Utility/Random.cpp.i
 
 GameLogic/Utility/Random.s: GameLogic/Utility/Random.cpp.s
@@ -492,7 +492,7 @@ GameLogic/Utility/Random.s: GameLogic/Utility/Random.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Utility/Random.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
 .PHONY : GameLogic/Utility/Random.cpp.s
 
 SFMLConversion/Camera/Camera.o: SFMLConversion/Camera/Camera.cpp.o
@@ -501,7 +501,7 @@ SFMLConversion/Camera/Camera.o: SFMLConversion/Camera/Camera.cpp.o
 
 # target to build an object file
 SFMLConversion/Camera/Camera.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o
 .PHONY : SFMLConversion/Camera/Camera.cpp.o
 
 SFMLConversion/Camera/Camera.i: SFMLConversion/Camera/Camera.cpp.i
@@ -510,7 +510,7 @@ SFMLConversion/Camera/Camera.i: SFMLConversion/Camera/Camera.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Camera/Camera.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.i
 .PHONY : SFMLConversion/Camera/Camera.cpp.i
 
 SFMLConversion/Camera/Camera.s: SFMLConversion/Camera/Camera.cpp.s
@@ -519,7 +519,7 @@ SFMLConversion/Camera/Camera.s: SFMLConversion/Camera/Camera.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Camera/Camera.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.s
 .PHONY : SFMLConversion/Camera/Camera.cpp.s
 
 SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
@@ -528,7 +528,7 @@ SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLEntity.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.o
 
 SFMLConversion/Entities/SFMLEntity.i: SFMLConversion/Entities/SFMLEntity.cpp.i
@@ -537,7 +537,7 @@ SFMLConversion/Entities/SFMLEntity.i: SFMLConversion/Entities/SFMLEntity.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLEntity.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.i
 
 SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
@@ -546,8 +546,35 @@ SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLEntity.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
+
+SFMLConversion/Entities/SFMLObject.o: SFMLConversion/Entities/SFMLObject.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLObject.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLObject.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLObject.cpp.o
+
+SFMLConversion/Entities/SFMLObject.i: SFMLConversion/Entities/SFMLObject.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLObject.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLObject.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLObject.cpp.i
+
+SFMLConversion/Entities/SFMLObject.s: SFMLConversion/Entities/SFMLObject.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLObject.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLObject.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLObject.cpp.s
 
 SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
 
@@ -555,7 +582,7 @@ SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLPlayer.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.o
 
 SFMLConversion/Entities/SFMLPlayer.i: SFMLConversion/Entities/SFMLPlayer.cpp.i
@@ -564,7 +591,7 @@ SFMLConversion/Entities/SFMLPlayer.i: SFMLConversion/Entities/SFMLPlayer.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLPlayer.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.i
 
 SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
@@ -573,7 +600,7 @@ SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLPlayer.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.s
 
 SFMLConversion/Game/Game.o: SFMLConversion/Game/Game.cpp.o
@@ -582,7 +609,7 @@ SFMLConversion/Game/Game.o: SFMLConversion/Game/Game.cpp.o
 
 # target to build an object file
 SFMLConversion/Game/Game.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o
 .PHONY : SFMLConversion/Game/Game.cpp.o
 
 SFMLConversion/Game/Game.i: SFMLConversion/Game/Game.cpp.i
@@ -591,7 +618,7 @@ SFMLConversion/Game/Game.i: SFMLConversion/Game/Game.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Game/Game.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.i
 .PHONY : SFMLConversion/Game/Game.cpp.i
 
 SFMLConversion/Game/Game.s: SFMLConversion/Game/Game.cpp.s
@@ -600,7 +627,7 @@ SFMLConversion/Game/Game.s: SFMLConversion/Game/Game.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Game/Game.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.s
 .PHONY : SFMLConversion/Game/Game.cpp.s
 
 SFMLConversion/SFMLFactory/SFMLEntityFactory.o: SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o
@@ -609,7 +636,7 @@ SFMLConversion/SFMLFactory/SFMLEntityFactory.o: SFMLConversion/SFMLFactory/SFMLE
 
 # target to build an object file
 SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o
 .PHONY : SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o
 
 SFMLConversion/SFMLFactory/SFMLEntityFactory.i: SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.i
@@ -618,7 +645,7 @@ SFMLConversion/SFMLFactory/SFMLEntityFactory.i: SFMLConversion/SFMLFactory/SFMLE
 
 # target to preprocess a source file
 SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.i
 .PHONY : SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.i
 
 SFMLConversion/SFMLFactory/SFMLEntityFactory.s: SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.s
@@ -627,7 +654,7 @@ SFMLConversion/SFMLFactory/SFMLEntityFactory.s: SFMLConversion/SFMLFactory/SFMLE
 
 # target to generate assembly for a file
 SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.s
 .PHONY : SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.s
 
 main.o: main.cpp.o
@@ -636,7 +663,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.o
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -645,7 +672,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.i
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -654,7 +681,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.s
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -712,6 +739,9 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"
+	@echo "... SFMLConversion/Entities/SFMLObject.o"
+	@echo "... SFMLConversion/Entities/SFMLObject.i"
+	@echo "... SFMLConversion/Entities/SFMLObject.s"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.o"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.i"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.s"
@@ -735,6 +765,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

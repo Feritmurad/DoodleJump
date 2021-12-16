@@ -13,7 +13,7 @@ namespace SFMLjumpgame {
         double x = coordinate.getX() * xscale;
         double y = -coordinate.getY() * yscale;
 
-        return jumpgame::Coordinate(x,y);
+        return {x,y};
     }
 
 }

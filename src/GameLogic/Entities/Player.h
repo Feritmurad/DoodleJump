@@ -7,8 +7,10 @@
 
 #include <string>
 #include "Object.h"
+#include "iostream"
 
 namespace jumpgame {
+    enum PlayerState{Jumping,Onplatform};
 
     class Player : public Object {
         public:
@@ -16,7 +18,15 @@ namespace jumpgame {
              * Constructior with coordinate
              * @param c: coordinate of object
              */
-            Player(const Coordinate &c) : Object(c) {}
+            explicit Player(const Coordinate &c,const double &Yvelocity=0.0, const double &gravity=0.01,PlayerState state = Onplatform);
+
+            void update() override;
+
+
+        private:
+            double m_velocity_Y;
+            double m_gravity;
+            PlayerState m_state;
 
     };
 }

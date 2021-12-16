@@ -27,10 +27,10 @@ namespace jumpgame {
          */
         void removeObserver(std::shared_ptr<Observer> observer);
 
-        /**
+         /**
          * function that notifies all the observers
          */
-        void virtual notifyObservers(Event event) = 0;
+        virtual void notifyObservers();
 
 
 

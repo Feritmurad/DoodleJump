@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src
+# Install script for directory: /home/ferit/Desktop/Projects/Jump-game/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame")
+  if(EXISTS "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame"
+         FILE "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame")
+   "/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin" TYPE EXECUTABLE FILES "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/Jumpgame")
-  if(EXISTS "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame")
+file(INSTALL DESTINATION "/home/ferit/Desktop/Projects/Jump-game/bin" TYPE EXECUTABLE FILES "/home/ferit/Desktop/Projects/Jump-game/build/src/Jumpgame")
+  if(EXISTS "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/bin/Jumpgame")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/ferit/Desktop/Projects/Jump-game/bin/Jumpgame")
     endif()
   endif()
 endif()

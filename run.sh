@@ -1,2 +1,2 @@
-#! /bin/bash
-(cd bin; ./jumpgame)
+#!/bin/bash
+(cd bin; ./Jumpgame)

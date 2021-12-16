@@ -15,8 +15,9 @@ namespace SFMLjumpgame{
 
     }
 
-    void SFMLPlayer::update() {
-
+    void SFMLPlayer::handleEvent() {
+        std::cout << "Player" << std::endl;
     }
+
 
 }

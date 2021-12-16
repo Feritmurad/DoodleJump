@@ -12,6 +12,8 @@
 #include "memory"
 #include "../Entities/SFMLPlayer.h"
 #include "../SFMLFactory/SFMLEntityFactory.h"
+#include "../../GameLogic/Entities/Player.h"
+#include "../../GameLogic/Observer/Observable.h"
 
 class Game {
 public:

@@ -21,7 +21,7 @@ ADD_EXECUTABLE(
         GameLogic/Factory/AbstractEntityFactory.cpp
         GameLogic/Factory/EntityFactory.h
         GameLogic/Factory/EntityFactory.cpp
-        Gamelogic/Observer/Observer.h
+        GameLogic/Observer/Observer.h
         GameLogic/Observer/Observer.cpp
         GameLogic/Observer/Observable.h
         GameLogic/Observer/Observable.cpp
@@ -37,7 +37,8 @@ ADD_EXECUTABLE(
         SFMLConversion/Entities/SFMLPlayer.cpp
         SFMLConversion/Entities/SFMLEntity.h
         SFMLConversion/Entities/SFMLEntity.cpp
-        )
+        SFMLConversion/Entities/SFMLObject.cpp
+        SFMLConversion/Entities/SFMLObject.h)
 
 TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
 INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)

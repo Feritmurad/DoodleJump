@@ -11,4 +11,6 @@ namespace SFMLjumpgame{
         return m_window;
     }
 
+    SFMLEntity::~SFMLEntity() = default;
+
 }

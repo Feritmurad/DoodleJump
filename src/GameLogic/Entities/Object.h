@@ -6,19 +6,15 @@
 #define GAME_OBJECT_H
 #include "../Coordinate/Coordinate.h"
 #include "Entity.h"
+#include "../Observer/Observable.h"
 
 namespace jumpgame {
-    class Object : public Entity {
+    class Object : public Entity, public Observable {
 
     public:
 
         /**
-         * default constructor
-         */
-        Object();
-
-        /**
-         * default constructor
+         * default destructor
          */
         ~Object();
 
@@ -26,7 +22,7 @@ namespace jumpgame {
          * Constructior with coordinate
          * @param c: coordinate of object
          */
-         Object(const Coordinate &c) : m_c(c) {}
+         explicit Object(const Coordinate &c) : m_c(c) {}
 
     public:
 
@@ -38,7 +34,8 @@ namespace jumpgame {
         /**
          * Setter for c
          */
-        void setC(Coordinate m_c);
+        void setC(const Coordinate& m_c);
+
 
     private:
         Coordinate m_c;

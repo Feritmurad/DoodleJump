@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game
+# Install script for directory: /home/ferit/Desktop/Projects/Jump-game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/src/cmake_install.cmake")
+  include("/home/ferit/Desktop/Projects/Jump-game/build/src/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ferit/Desktop/Projects/Jump-game/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

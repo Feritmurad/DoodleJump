@@ -4,18 +4,17 @@
 
 #ifndef JUMPGAME_SFMLPLAYER_H
 #define JUMPGAME_SFMLPLAYER_H
-#include "SFMLEntity.h"
-#include "../../GameLogic/Entities/Player.h"
+#include "SFMLObject.h"
 
 namespace SFMLjumpgame {
 
-class SFMLPlayer : public SFMLEntity , public jumpgame::Player {
+class SFMLPlayer : public SFMLObject{
         public:
-            SFMLPlayer(const jumpgame::Coordinate &c,const std::shared_ptr<sf::RenderWindow> &window) : SFMLEntity(window), jumpgame::Player(c) {};
+            SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const jumpgame::Coordinate &c = {0,0}) : SFMLObject(window,c) {};
 
-            void draw() override;
+            void draw();
 
-            void update() override;
+            void handleEvent() override;
 
         private:
 

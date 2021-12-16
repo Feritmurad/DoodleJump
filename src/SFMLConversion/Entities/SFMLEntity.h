@@ -7,6 +7,8 @@
 #include <SFML/Graphics.hpp>
 #include "../Camera/Camera.h"
 #include "../../GameLogic/Entities/Entity.h"
+#include "../../GameLogic/Observer/Observer.h"
+#include "iostream"
 
 namespace SFMLjumpgame {
 
@@ -15,14 +17,17 @@ namespace SFMLjumpgame {
             /**
              * default constructor
              */
-            SFMLEntity(const std::shared_ptr<sf::RenderWindow> &window) : m_window(window) {}
+            SFMLEntity(const std::shared_ptr<sf::RenderWindow>& window) : m_window(window) {}
+
+            /**
+             * default destructor
+             */
+            ~SFMLEntity();
 
             /**
             * Getter for m_window
             */
             const std::shared_ptr<sf::RenderWindow>& getWindow() const;
-
-            virtual void draw() = 0;
 
         private:
         std::shared_ptr<sf::RenderWindow> m_window;

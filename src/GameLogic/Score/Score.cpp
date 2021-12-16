@@ -6,7 +6,7 @@
 
 namespace jumpgame{
 
-    void Score::handleEvent(Event event){
+    void Score::handleEvent(){
         return;
     }
 

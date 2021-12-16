@@ -6,177 +6,197 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp
 Coordinate.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.cpp
 Entity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
 memory
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/memory
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/memory
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Object.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.cpp
 Object.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Object.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Object.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
 ../Coordinate/Coordinate.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
 Entity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+../Observer/Observable.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Player.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.cpp
 Player.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Player.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Player.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
 string
 -
 Object.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Object.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+iostream
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/iostream
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/World.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.cpp
 World.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/World.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/World.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
 Entity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp
 AbstractEntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
 memory
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/memory
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/memory
 ../Entities/Entity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/EntityFactory.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.cpp
 EntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/EntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/EntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
 AbstractEntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observable.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.cpp
 Observable.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observable.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observable.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
 Observer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observer.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 vector
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/vector
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/vector
 memory
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/memory
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/memory
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observer.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.cpp
 Observer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observer.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observer.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Score/Score.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.cpp
 Score.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Score/Score.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Score/Score.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.h
 ../Observer/Observer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Observer/Observer.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Clock.cpp
 iostream
 -
 Clock.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Clock.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Clock.h
 iostream
 -
 chrono
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/chrono
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/chrono
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.cpp
 Random.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Random.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.h
 iostream
 -
 random
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/random
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/random
 math.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/math.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/math.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.cpp
 Camera.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 ../../GameLogic/Coordinate/Coordinate.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp
 SFMLEntity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
 SFML/Graphics.hpp
 -
 ../Camera/Camera.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Camera/Camera.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 ../../GameLogic/Entities/Entity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Entity.h
-
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.cpp
-SFMLPlayer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
-
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
-SFMLEntity.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
-../../GameLogic/Entities/Player.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Entities/Player.h
-
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.cpp
-Game.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.h
-
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+../../GameLogic/Observer/Observer.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 iostream
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/iostream
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/iostream
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.cpp
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+SFMLEntity.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
+../../GameLogic/Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.cpp
+SFMLPlayer.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.cpp
+Game.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.h
+iostream
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/iostream
 SFML/Graphics.hpp
 -
 SFML/Window.hpp
 -
 ../../GameLogic/Utility/Clock.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Utility/Clock.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Clock.h
 memory
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/memory
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/memory
 ../Entities/SFMLPlayer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
 ../SFMLFactory/SFMLEntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
+../../GameLogic/Entities/Player.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+../../GameLogic/Observer/Observable.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
 SFMLEntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h
 ../../GameLogic/Factory/EntityFactory.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/GameLogic/Factory/EntityFactory.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
 ../Entities/SFMLPlayer.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
 
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/main.cpp
+/home/ferit/Desktop/Projects/Jump-game/src/main.cpp
 SFMLConversion/Game/Game.h
-/mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/Jump-game/src/SFMLConversion/Game/Game.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.h
 
