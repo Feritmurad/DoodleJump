@@ -6,9 +6,8 @@
 
 namespace SFMLjumpgame{
 
-    void SFMLPlayer::draw(){
-        jumpgame::Coordinate sfmlc;
-        Camera cam;
+    void SFMLPlayer::draw(const std::shared_ptr<Camera> &camera){
+        jumpgame::Coordinate sfmlcoordinate;
 
         sf::RectangleShape rectangle(sf::Vector2f(120.f, 50.f));
         getWindow()->draw(rectangle);

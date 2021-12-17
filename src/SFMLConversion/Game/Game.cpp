@@ -5,7 +5,7 @@
 #include "Game.h"
 void Game::run()
 {
-    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(1280,720),"Jumpgame");
+    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(800,1000),"Jumpgame");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 

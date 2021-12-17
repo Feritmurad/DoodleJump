@@ -153,6 +153,8 @@ SFMLEntity.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h
 ../../GameLogic/Coordinate/Coordinate.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+../Camera/Camera.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.cpp
 SFMLPlayer.h

@@ -6,6 +6,7 @@
 #define JUMPGAME_SFMLOBJECT_H
 #include "SFMLEntity.h"
 #include "../../GameLogic/Coordinate/Coordinate.h"
+#include "../Camera/Camera.h"
 
 namespace SFMLjumpgame{
 

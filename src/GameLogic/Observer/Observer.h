@@ -11,7 +11,6 @@ namespace jumpgame {
     class Observer {
         /**
          * virtual function that handles an event
-         * @param update_amount: amount that has to be added to score
          */
     public:
         virtual void handleEvent() = 0;
