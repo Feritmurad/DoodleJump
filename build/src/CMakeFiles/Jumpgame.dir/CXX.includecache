@@ -32,6 +32,14 @@ Entity.h
 ../Observer/Observable.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
 
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.cpp
+Platform.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+Object.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.cpp
 Player.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
@@ -87,6 +95,16 @@ Observer.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
+ObserverEvent.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.cpp
+ObserverEvent.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
+../Coordinate/Coordinate.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.cpp
 Score.h
@@ -156,6 +174,14 @@ SFMLEntity.h
 ../Camera/Camera.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.cpp
+SFMLPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.cpp
 SFMLPlayer.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
@@ -187,6 +213,10 @@ memory
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
 ../../GameLogic/Observer/Observable.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
+../../GameLogic/Entities/Platform.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+../../SFMLConversion/Entities/SFMLPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
 SFMLEntityFactory.h

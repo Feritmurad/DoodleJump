@@ -14,7 +14,7 @@ namespace SFMLjumpgame {
         SFMLObject::m_c = m_c;
     }
 
-    void SFMLObject::handleEvent() {
+    void SFMLObject::handleEvent(const jumpgame::ObserverEvent &event) {
 
     }
 

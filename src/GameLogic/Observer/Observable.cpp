@@ -20,9 +20,9 @@ namespace jumpgame {
         }
     }
 
-    void Observable::notifyObservers() {
+    void Observable::notifyObservers(const ObserverEvent &event) {
         for (const auto &i:observers){
-            i->handleEvent();
+            i->handleEvent(event);
         }
     }
 

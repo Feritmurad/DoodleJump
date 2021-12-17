@@ -19,7 +19,7 @@ namespace jumpgame {
         /**
         * overriden function to handle a event
         */
-        void handleEvent() override;
+        void handleEvent(const ObserverEvent &event) override;
 
     private:
         int player_score;

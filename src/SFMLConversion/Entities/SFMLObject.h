@@ -37,7 +37,7 @@ class SFMLObject : public SFMLEntity , public jumpgame::Observer {
          */
         void setC(const jumpgame::Coordinate& m_c);
 
-        void handleEvent() override;
+        void handleEvent(const jumpgame::ObserverEvent &event) override;
 
     private:
         jumpgame::Coordinate m_c;

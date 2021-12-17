@@ -30,7 +30,7 @@ namespace jumpgame {
          /**
          * function that notifies all the observers
          */
-        virtual void notifyObservers();
+        virtual void notifyObservers(const jumpgame::ObserverEvent &event);
 
 
 

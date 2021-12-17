@@ -14,6 +14,8 @@
 #include "../SFMLFactory/SFMLEntityFactory.h"
 #include "../../GameLogic/Entities/Player.h"
 #include "../../GameLogic/Observer/Observable.h"
+#include "../../GameLogic/Entities/Platform.h"
+#include "../../SFMLConversion/Entities/SFMLPlatform.h"
 
 class Game {
 public:

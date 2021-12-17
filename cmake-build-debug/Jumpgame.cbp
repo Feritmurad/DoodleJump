@@ -140,6 +140,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -176,6 +182,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -210,6 +222,12 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.cpp">

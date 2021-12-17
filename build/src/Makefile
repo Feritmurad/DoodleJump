@@ -252,6 +252,33 @@ GameLogic/Entities/Object.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s
 .PHONY : GameLogic/Entities/Object.cpp.s
 
+GameLogic/Entities/Platform.o: GameLogic/Entities/Platform.cpp.o
+
+.PHONY : GameLogic/Entities/Platform.o
+
+# target to build an object file
+GameLogic/Entities/Platform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.o
+.PHONY : GameLogic/Entities/Platform.cpp.o
+
+GameLogic/Entities/Platform.i: GameLogic/Entities/Platform.cpp.i
+
+.PHONY : GameLogic/Entities/Platform.i
+
+# target to preprocess a source file
+GameLogic/Entities/Platform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.i
+.PHONY : GameLogic/Entities/Platform.cpp.i
+
+GameLogic/Entities/Platform.s: GameLogic/Entities/Platform.cpp.s
+
+.PHONY : GameLogic/Entities/Platform.s
+
+# target to generate assembly for a file
+GameLogic/Entities/Platform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.s
+.PHONY : GameLogic/Entities/Platform.cpp.s
+
 GameLogic/Entities/Player.o: GameLogic/Entities/Player.cpp.o
 
 .PHONY : GameLogic/Entities/Player.o
@@ -413,6 +440,33 @@ GameLogic/Observer/Observer.s: GameLogic/Observer/Observer.cpp.s
 GameLogic/Observer/Observer.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.s
 .PHONY : GameLogic/Observer/Observer.cpp.s
+
+GameLogic/Observer/ObserverEvent.o: GameLogic/Observer/ObserverEvent.cpp.o
+
+.PHONY : GameLogic/Observer/ObserverEvent.o
+
+# target to build an object file
+GameLogic/Observer/ObserverEvent.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.o
+.PHONY : GameLogic/Observer/ObserverEvent.cpp.o
+
+GameLogic/Observer/ObserverEvent.i: GameLogic/Observer/ObserverEvent.cpp.i
+
+.PHONY : GameLogic/Observer/ObserverEvent.i
+
+# target to preprocess a source file
+GameLogic/Observer/ObserverEvent.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.i
+.PHONY : GameLogic/Observer/ObserverEvent.cpp.i
+
+GameLogic/Observer/ObserverEvent.s: GameLogic/Observer/ObserverEvent.cpp.s
+
+.PHONY : GameLogic/Observer/ObserverEvent.s
+
+# target to generate assembly for a file
+GameLogic/Observer/ObserverEvent.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.s
+.PHONY : GameLogic/Observer/ObserverEvent.cpp.s
 
 GameLogic/Score/Score.o: GameLogic/Score/Score.cpp.o
 
@@ -576,6 +630,33 @@ SFMLConversion/Entities/SFMLObject.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLObject.cpp.s
 
+SFMLConversion/Entities/SFMLPlatform.o: SFMLConversion/Entities/SFMLPlatform.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLPlatform.i: SFMLConversion/Entities/SFMLPlatform.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLPlatform.s: SFMLConversion/Entities/SFMLPlatform.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.s
+
 SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
 
 .PHONY : SFMLConversion/Entities/SFMLPlayer.o
@@ -706,6 +787,9 @@ help:
 	@echo "... GameLogic/Entities/Object.o"
 	@echo "... GameLogic/Entities/Object.i"
 	@echo "... GameLogic/Entities/Object.s"
+	@echo "... GameLogic/Entities/Platform.o"
+	@echo "... GameLogic/Entities/Platform.i"
+	@echo "... GameLogic/Entities/Platform.s"
 	@echo "... GameLogic/Entities/Player.o"
 	@echo "... GameLogic/Entities/Player.i"
 	@echo "... GameLogic/Entities/Player.s"
@@ -724,6 +808,9 @@ help:
 	@echo "... GameLogic/Observer/Observer.o"
 	@echo "... GameLogic/Observer/Observer.i"
 	@echo "... GameLogic/Observer/Observer.s"
+	@echo "... GameLogic/Observer/ObserverEvent.o"
+	@echo "... GameLogic/Observer/ObserverEvent.i"
+	@echo "... GameLogic/Observer/ObserverEvent.s"
 	@echo "... GameLogic/Score/Score.o"
 	@echo "... GameLogic/Score/Score.i"
 	@echo "... GameLogic/Score/Score.s"
@@ -742,6 +829,9 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLObject.o"
 	@echo "... SFMLConversion/Entities/SFMLObject.i"
 	@echo "... SFMLConversion/Entities/SFMLObject.s"
+	@echo "... SFMLConversion/Entities/SFMLPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLPlatform.s"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.o"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.i"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.s"

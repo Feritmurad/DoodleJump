@@ -18,7 +18,9 @@ namespace jumpgame {
              * Constructior with coordinate
              * @param c: coordinate of object
              */
-            explicit Player(const Coordinate &c,const double &Yvelocity=0.0, const double &gravity=0.01,PlayerState state = Onplatform);
+            explicit Player(const Coordinate &c,const double &Yvelocity=0.0, const double &gravity=0.005,PlayerState state = Onplatform);
+
+            void jump();
 
             void update() override;
 

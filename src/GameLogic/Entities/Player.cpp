@@ -11,18 +11,21 @@ namespace jumpgame{
     }
 
     void Player::update() {
-        std::cout<< this->getC().getY() << std::endl;
-        if(this->getC().getY() <= -4){ //harcoded now have to check if there is platfrom under player
+        jump();
+
+    }
+
+    void Player::jump() {
+        if(this->getC().getY() <= -3){ //harcoded now have to check if there is platfrom under player
             m_state = Onplatform;
-            m_velocity_Y = 0.4;
+            m_velocity_Y = 0.25;
         }
         else{
             m_state = Jumping;
-            m_velocity_Y -= 0.025;
+            m_velocity_Y -= 0.015;
         }
         m_velocity_Y += m_gravity;
-        Coordinate c(this->getC().getX(),this->getC().getY()+m_velocity_Y);
-        this->setC(c);
+        Coordinate c(getC().getX(),getC().getY()+m_velocity_Y);
+        setC(c);
     }
-
 }

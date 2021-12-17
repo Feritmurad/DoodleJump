@@ -4,6 +4,7 @@
 
 #ifndef JUMPGAME_OBSERVER_H
 #define JUMPGAME_OBSERVER_H
+#include "ObserverEvent.h"
 
 namespace jumpgame {
 
@@ -13,7 +14,7 @@ namespace jumpgame {
          * virtual function that handles an event
          */
     public:
-        virtual void handleEvent() = 0;
+        virtual void handleEvent(const ObserverEvent &event) = 0;
 
     };
 
