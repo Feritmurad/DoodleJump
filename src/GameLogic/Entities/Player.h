@@ -10,7 +10,8 @@
 #include "iostream"
 
 namespace jumpgame {
-    enum PlayerState{Jumping,Onplatform};
+    enum VerticalState{Jumping,Falling,Collision,None};
+    enum Horizontalstate{Static,Left,Right};
 
     class Player : public Object {
         public:
@@ -18,17 +19,34 @@ namespace jumpgame {
              * Constructior with coordinate
              * @param c: coordinate of object
              */
-            explicit Player(const Coordinate &c,const double &Yvelocity=0.0, const double &gravity=0.005,PlayerState state = Onplatform);
+             // gravity 0,005
+            explicit Player(const Coordinate &c,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.0005,VerticalState state = None,const double &height=1,const double &width=1);
+
 
             void jump();
 
+            void move();
+
             void update() override;
 
+            VerticalState getMVstate() const;
 
-        private:
+            void setMVstate(VerticalState mVstate);
+
+            Horizontalstate getMHstate() const;
+
+            void setMHstate(Horizontalstate mHstate);
+
+
+    private:
             double m_velocity_Y;
+            double m_velocity_X;
             double m_gravity;
-            PlayerState m_state;
+            VerticalState m_vstate;
+            Horizontalstate m_hstate;
+
+
+
 
     };
 }

@@ -57,8 +57,12 @@ World.h
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
-Entity.h
-/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+Player.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+Platform.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+set
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/set
 
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp
 AbstractEntityFactory.h
@@ -217,6 +221,8 @@ memory
 /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
 ../../SFMLConversion/Entities/SFMLPlatform.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h
+../../GameLogic/Entities/World.h
+/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
 SFMLEntityFactory.h

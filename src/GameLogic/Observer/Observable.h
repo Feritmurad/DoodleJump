@@ -34,6 +34,7 @@ namespace jumpgame {
 
 
 
+
     private:
         /*
          * vector that contains all the Observers

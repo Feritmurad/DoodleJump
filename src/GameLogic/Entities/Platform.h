@@ -10,11 +10,12 @@ namespace jumpgame {
 
     class Platform : public Object{
     public:
-        explicit Platform(const Coordinate &c) : Object(c) {}
+        explicit Platform(const Coordinate &c,const double &height=0.4,const double &width=1.2) : Object(c,height,width) {}
 
         ~Platform() = default;
 
         void update() override;
+
 
 
     };

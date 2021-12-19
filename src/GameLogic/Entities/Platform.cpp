@@ -8,6 +8,7 @@ namespace jumpgame {
 
 
     void Platform::update() {
-
+        jumpgame::ObserverEvent observerevent(0,getC());
+        notifyObservers(observerevent);
     }
 }

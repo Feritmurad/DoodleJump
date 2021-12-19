@@ -15,6 +15,11 @@ namespace jumpgame {
     }
 
 
-    Object::~Object() = default;
+    const double Object::getMWidth() const {
+        return m_width;
+    }
 
+    const double Object::getMHeigth() const {
+        return m_heigth;
+    }
 }

@@ -9,22 +9,34 @@ void Game::run()
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
+    /**make Player
     jumpgame::Coordinate coordinate(0,-2);
     auto player = std::make_shared<jumpgame::Player>(coordinate);
+    */
 
-    //make Platform
-    jumpgame::Coordinate coordinate1(-3,0);
+    /**make Platform
+    jumpgame::Coordinate coordinate1(-0.5,-1);
     auto platform = std::make_shared<jumpgame::Platform>(coordinate1);
+    */
+
+    //make World
+    m_world = std::make_shared<jumpgame::World>();
+    m_world->makeWorld();
+
 
     //make SFMLPlayer
     auto SFMLplayer = std::make_shared<SFMLjumpgame::SFMLPlayer>(window);
     //add sfmlplayer to the observer
-    player->addObserver(SFMLplayer);
+    //player->addObserver(SFMLplayer);
+
+    m_world->getMPlayer()->addObserver(SFMLplayer);
 
     //make SFMLPlatform
     auto SFMLPlatform = std::make_shared<SFMLjumpgame::SFMLPlatform>(window);
-    std::cout << SFMLPlatform->getC().getX() << "," << SFMLPlatform->getC().getY() << std::endl;
     //add smflplatform to observer
+    //platform->addObserver(SFMLPlatform);
+
+    auto platform = *m_world->getMPlatforms().begin();
     platform->addObserver(SFMLPlatform);
 
 
@@ -43,21 +55,15 @@ void Game::run()
 
             window->clear();
 
-            player->update();
+            //player->update();
+            movement(event);
+            m_world->update();
 
-            jumpgame::ObserverEvent observerevent(0,player->getC());
-            player->notifyObservers(observerevent);
+
+
             SFMLplayer->draw(camera);
-
-            jumpgame::ObserverEvent observerEventplatform(0,platform->getC());
-            //std::cout << observerEventplatform.getMCoordinate().getX() << "," << observerEventplatform.getMCoordinate().getY() << std::endl;
-            platform->notifyObservers(observerEventplatform);
             SFMLPlatform->draw(camera);
 
-            //jumpgame::Coordinate pixelcoordinate = camera->rescale(player->getC());
-            //std::cout << pixelcoordinate.getX() << ", " << pixelcoordinate.getY() << std::endl;
-            //shape.setPosition(pixelcoordinate.getX(),pixelcoordinate.getY());
-            //window->draw(shape);
 
 
             window->display();
@@ -65,23 +71,21 @@ void Game::run()
 
     }
 }
-    /*
-    {
-    //jumpgame::Clock *clock = clock->getInstance(100);
-    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(1280,700),"Jumpgame");
-    //jumpgame::Coordinate coordinate(1,2);
-    //SFMLjumpgame::SFMLPlayer player(coordinate,window);
-    sf::CircleShape shape(50.f);
-    shape.setFillColor(sf::Color(100, 250, 50));
-    window->draw(shape);
-    while (window->isOpen()){
-        sf::Event event;
-        while (window->pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window->close();
-        }
+
+void Game::movement(sf::Event &event) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+        m_world->playermove(jumpgame::Left);
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+        m_world->playermove(jumpgame::Right);
+    }
+    else if (event.type == sf::Event::KeyReleased &&
+        (event.key.code == sf::Keyboard::Left ||
+        event.key.code == sf::Keyboard::A ||
+        event.key.code == sf::Keyboard::Right ||
+        event.key.code == sf::Keyboard::R)) {
+        m_world->playermove(jumpgame::Static);
 
     }
-     }
-    */
+
+}

@@ -33,9 +33,16 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o: ../src/GameLogic/Ob
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/Player.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/World.cpp
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/Observable.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/Observer.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 
 src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o: ../src/GameLogic/Entities/Entity.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o: ../src/GameLogic/Factory/AbstractEntityFactory.cpp
@@ -119,6 +126,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Ent
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Entities/Object.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Entities/Platform.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Entities/World.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Factory/AbstractEntityFactory.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Factory/EntityFactory.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/GameLogic/Observer/Observable.h
@@ -152,6 +160,7 @@ src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Entities/Entity.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Entities/Object.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Entities/Platform.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Entities/World.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Factory/AbstractEntityFactory.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Factory/EntityFactory.h
 src/CMakeFiles/Jumpgame.dir/main.cpp.o: ../src/GameLogic/Observer/Observable.h

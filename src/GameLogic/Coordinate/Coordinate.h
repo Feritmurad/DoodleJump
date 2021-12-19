@@ -48,6 +48,10 @@ namespace jumpgame{
          */
         void setY(double y);
 
+        bool validCoordinate() const;
+
+        bool validHorizontally() const;
+
     };
 }
 

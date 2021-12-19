@@ -8,11 +8,16 @@ namespace SFMLjumpgame{
 
     void SFMLPlayer::draw(const std::shared_ptr<Camera> &camera){
         // transform to pixel
-        setC(camera->rescale(getC()));
+        //transform only if its in geocoordinates
+
+        if(getC().validCoordinate()) {
+            setC(camera->rescale(getC()));
+        }
         // make shape
-        sf::RectangleShape rectangle(sf::Vector2f(40.f, 40.f));
+        sf::RectangleShape rectangle(sf::Vector2f(100.f, 100.f));
         rectangle.setPosition(getC().getX(),getC().getY());
         // draw on window
+
         getWindow()->draw(rectangle);
 
     }

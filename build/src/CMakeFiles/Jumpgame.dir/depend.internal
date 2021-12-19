@@ -34,9 +34,16 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.cpp
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp
@@ -120,6 +127,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
@@ -153,6 +161,7 @@ src/CMakeFiles/Jumpgame.dir/main.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h

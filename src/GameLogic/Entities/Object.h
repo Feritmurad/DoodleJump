@@ -16,13 +16,15 @@ namespace jumpgame {
         /**
          * default destructor
          */
-        ~Object();
+        ~Object() = default;
 
         /**
          * Constructior with coordinate
          * @param c: coordinate of object
          */
-         explicit Object(const Coordinate &c) : m_c(c) {}
+         explicit Object(const Coordinate &c,const double &height,const double &width) : m_c(c),m_heigth(height),m_width(width) {}
+
+
 
     public:
 
@@ -36,9 +38,19 @@ namespace jumpgame {
          */
         void setC(const Coordinate& m_c);
 
+        const double getMHeigth() const;
+
+        const double getMWidth() const;
+
 
     private:
+
         Coordinate m_c;
+
+        const double m_heigth;
+
+        const double m_width;
+
 
 
     };
