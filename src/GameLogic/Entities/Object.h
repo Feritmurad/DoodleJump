@@ -42,6 +42,8 @@ namespace jumpgame {
 
         const double getMWidth() const;
 
+        Coordinate getRelativeYCoord(const Coordinate& m_c) const;
+
 
     private:
 

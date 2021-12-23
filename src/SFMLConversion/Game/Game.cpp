@@ -31,16 +31,18 @@ void Game::run()
 
     m_world->getMPlayer()->addObserver(SFMLplayer);
 
-    //make SFMLPlatform
-    auto SFMLPlatform = std::make_shared<SFMLjumpgame::SFMLPlatform>(window);
-    //add smflplatform to observer
-    //platform->addObserver(SFMLPlatform);
 
-    auto platform = *m_world->getMPlatforms().begin();
-    platform->addObserver(SFMLPlatform);
+    std::set<std::shared_ptr<SFMLjumpgame::SFMLPlatform>> Platformobservers;
+    for (const auto &platform: m_world->getMPlatforms()) {
+        auto SFMLPlatform = std::make_shared<SFMLjumpgame::SFMLPlatform>(window);
+        platform->addObserver(SFMLPlatform);
+        Platformobservers.insert(SFMLPlatform);
+    }
 
 
-    auto camera = std::make_shared<SFMLjumpgame::Camera>();
+
+
+    auto camera = std::make_shared<SFMLjumpgame::Camera>(m_world);
 
     while (window->isOpen())
     {
@@ -50,21 +52,22 @@ void Game::run()
             if (event.type == sf::Event::Closed)
                 window->close();
         }
-        jumpgame::Clock *clock = jumpgame::Clock::getInstance(20);
+        jumpgame::Clock *clock = jumpgame::Clock::getInstance(30);
         if(clock->tick()){
 
             window->clear();
 
             //player->update();
             movement(event);
+            camera->moveForward();
             m_world->update();
 
 
-
             SFMLplayer->draw(camera);
-            SFMLPlatform->draw(camera);
-
-
+            for (const auto &platformobserver: Platformobservers) {
+                std::cout << platformobserver.use_count() << std::endl;
+                platformobserver->draw(camera);
+            }
 
             window->display();
         }

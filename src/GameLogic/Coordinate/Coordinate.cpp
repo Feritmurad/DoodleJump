@@ -34,4 +34,8 @@ namespace jumpgame{
         }
         return false;
     }
+
+    bool Coordinate::operator>=(const Coordinate &c) const {
+        return (x >= c.getX() && y >= c.getY());
+    }
 }

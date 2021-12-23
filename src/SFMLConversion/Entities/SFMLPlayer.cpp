@@ -15,6 +15,7 @@ namespace SFMLjumpgame{
         }
         // make shape
         sf::RectangleShape rectangle(sf::Vector2f(100.f, 100.f));
+        rectangle.setFillColor(sf::Color::Red);
         rectangle.setPosition(getC().getX(),getC().getY());
         // draw on window
 

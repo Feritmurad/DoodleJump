@@ -32,7 +32,7 @@ namespace jumpgame {
          */
         virtual void notifyObservers(const jumpgame::ObserverEvent &event);
 
-
+        const std::vector<std::shared_ptr<Observer>> &getObservers() const;
 
 
     private:
@@ -40,6 +40,8 @@ namespace jumpgame {
          * vector that contains all the Observers
          */
         std::vector <std::shared_ptr<Observer>> observers;
+
+
 
     };
 

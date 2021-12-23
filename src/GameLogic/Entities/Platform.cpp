@@ -11,4 +11,8 @@ namespace jumpgame {
         jumpgame::ObserverEvent observerevent(0,getC());
         notifyObservers(observerevent);
     }
+
+    bool Platform::checkValid() {
+        return getC().validCoordinate();
+    }
 }

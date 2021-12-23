@@ -26,4 +26,8 @@ namespace jumpgame {
         }
     }
 
+    const std::vector<std::shared_ptr<Observer>> &Observable::getObservers() const {
+        return observers;
+    }
+
 }

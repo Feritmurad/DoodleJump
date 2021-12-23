@@ -81,11 +81,24 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: ../src/GameLogic/Uti
 src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o: ../src/GameLogic/Utility/Random.h
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Observer/Observable.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Observer/Observer.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/SFMLConversion/Camera/Camera.cpp
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o: ../src/SFMLConversion/Camera/Camera.h
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/SFMLConversion/Camera/Camera.h
@@ -94,6 +107,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/SFM
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/SFMLConversion/Camera/Camera.h
@@ -103,6 +121,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/SFM
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/SFMLConversion/Camera/Camera.h
@@ -113,6 +136,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/S
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Entities/World.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/SFMLConversion/Camera/Camera.h
@@ -144,8 +172,13 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o: ../src/SFMLConversio
 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Coordinate/Coordinate.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Entities/Entity.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Entities/Object.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Entities/Platform.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Entities/Player.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Entities/World.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Factory/AbstractEntityFactory.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Factory/EntityFactory.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o: ../src/SFMLConversion/Camera/Camera.h

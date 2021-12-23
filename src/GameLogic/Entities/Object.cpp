@@ -22,4 +22,8 @@ namespace jumpgame {
     const double Object::getMHeigth() const {
         return m_heigth;
     }
+
+    Coordinate Object::getRelativeYCoord(const Coordinate &c) const {
+        return {getC().getX(),getC().getY()-c.getY()};
+    }
 }

@@ -22,12 +22,10 @@ namespace jumpgame{
     void Player::jump() {
 
         if(this->getC().getY() <= -3 or m_vstate == Collision){ //harcoded now have to check if there is platfrom under player
-            //m_velocity_Y = 0.25;
-            m_velocity_Y = 0.060;
+            m_velocity_Y = 0.25;
         }
         else{
-            //m_velocity_Y -= 0.015;
-            m_velocity_Y -= 0.0015;
+            m_velocity_Y -= 0.015;
         }
 
         if(m_velocity_Y > 0){
@@ -57,9 +55,10 @@ namespace jumpgame{
             m_velocity_X = 0;
         }
         Coordinate c(getC().getX()+m_velocity_X,getC().getY());
-        if(c.validCoordinate()){
-            setC(c);
+        if(!c.validCoordinate()){
+            c.setX(-(c.getX()-m_velocity_X));
         }
+        setC(c);
     }
 
     void Player::setMVstate(VerticalState mVstate) {
@@ -76,6 +75,10 @@ namespace jumpgame{
 
     Horizontalstate Player::getMHstate() const {
         return m_hstate;
+    }
+
+    double Player::getMVelocityY() const {
+        return m_velocity_Y;
     }
 
 

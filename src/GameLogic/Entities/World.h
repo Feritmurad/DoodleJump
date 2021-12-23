@@ -27,6 +27,9 @@ namespace jumpgame{
 
         void playermove(Horizontalstate state);
 
+        void checkPlatformsValid();
+
+
 
     private:
         std::shared_ptr<Player> m_player;

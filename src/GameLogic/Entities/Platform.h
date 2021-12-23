@@ -16,6 +16,8 @@ namespace jumpgame {
 
         void update() override;
 
+        bool checkValid();
+
 
 
     };

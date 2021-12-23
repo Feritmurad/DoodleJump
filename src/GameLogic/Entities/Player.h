@@ -19,8 +19,8 @@ namespace jumpgame {
              * Constructior with coordinate
              * @param c: coordinate of object
              */
-             // gravity 0,005
-            explicit Player(const Coordinate &c,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.0005,VerticalState state = None,const double &height=1,const double &width=1);
+
+            explicit Player(const Coordinate &c,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=1,const double &width=1);
 
 
             void jump();
@@ -37,13 +37,14 @@ namespace jumpgame {
 
             void setMHstate(Horizontalstate mHstate);
 
+            double getMVelocityY() const;
 
     private:
-            double m_velocity_Y;
-            double m_velocity_X;
-            double m_gravity;
-            VerticalState m_vstate;
-            Horizontalstate m_hstate;
+        double m_velocity_Y;
+        double m_velocity_X;
+        double m_gravity;
+        VerticalState m_vstate;
+        Horizontalstate m_hstate;
 
 
 

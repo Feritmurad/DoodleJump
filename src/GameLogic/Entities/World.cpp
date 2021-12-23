@@ -12,6 +12,7 @@ namespace jumpgame {
         for (const auto &platform: m_platforms) {
             platform->update();
         }
+        checkPlatformsValid();
 
     }
 
@@ -25,8 +26,12 @@ namespace jumpgame {
 
         //make Platform
         jumpgame::Coordinate coordinate1(-0.5, -1);
-        auto platform = std::make_shared<jumpgame::Platform>(coordinate1);
-        m_platforms.insert(platform);
+        auto platform1 = std::make_shared<jumpgame::Platform>(coordinate1);
+        m_platforms.insert(platform1);
+
+        jumpgame::Coordinate coordinate2(-1.5, 2);
+        auto platform2 = std::make_shared<jumpgame::Platform>(coordinate2);
+        m_platforms.insert(platform2);
 
     }
 
@@ -39,15 +44,13 @@ namespace jumpgame {
     }
 
     void World::checkPlayerPlatformCollision() {
-
         if(m_player->getMVstate() == Falling) {
             for (const auto &platform: m_platforms) {
-                std::cout << m_player->getC().getX() << "," << m_player->getC().getY() << std::endl;
-                std::cout << platform->getC().getX() << "," << platform->getC().getY() << std::endl;
-                if (m_player->getC().getY() < platform->getC().getY() + platform->getMHeigth()
-                &&m_player->getC().getY() + m_player->getMHeigth() > platform->getC().getY()
-                &&m_player->getC().getX() < platform->getC().getX() + platform->getMWidth()
-                  &&m_player->getC().getX() + m_player->getMWidth() > platform->getC().getX()) {
+                if (m_player->getC().getY() - m_player->getMHeigth() < platform->getC().getY() &&
+                m_player->getC().getY() - m_player->getMHeigth() > platform->getC().getY() - platform->getMHeigth() &&
+                ((m_player->getC().getX() > platform->getC().getX() && m_player->getC().getX() < platform->getC().getX() + platform->getMWidth())
+                || (m_player->getC().getX() + m_player->getMWidth() > platform->getC().getX() && m_player->getC().getX() + m_player->getMWidth() < platform->getC().getX() + platform->getMWidth()))
+                ) {
                     m_player->setMVstate(Collision);
                 }
             }
@@ -56,6 +59,16 @@ namespace jumpgame {
 
     void World::playermove(Horizontalstate state) {
         m_player->setMHstate(state);
+    }
+
+    void World::checkPlatformsValid() {
+        for (const auto &platform: m_platforms){
+            if(!platform->checkValid()){
+                m_platforms.erase(platform);
+                std::cout << "Deleted" << std::endl;
+            }
+        }
+
     }
 
 }

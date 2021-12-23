@@ -82,11 +82,24 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.cpp
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
@@ -95,6 +108,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
@@ -104,6 +122,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
@@ -114,6 +137,11 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
@@ -145,8 +173,13 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp.o
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h
+ /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observer.h
  /home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/ObserverEvent.h
  /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h
