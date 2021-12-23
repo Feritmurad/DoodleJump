@@ -1,17 +1,8 @@
-!! Cmakelists into 2 cmakelists for gamelogic and gamerepresentation
+* Wait for answer and make 1 observer per entity type if needed.
+* Rename entityfactory.
+* resx and resy in camera need to be initialized.
 
-* Rename entityfactory
-* FIX GAME.CPP/GAME.H
-* make game window
-* make player move function and put it in update
-* Test camera
-* resx and resy in camera need to be initialized
-* Need events in handlenotification instead of an int 
-
-
-
+**Documentation
+**Fix compiler thingy for github
 **Maybe remove int tick from Constructor Clock and make a setTick() function
 
-
-
-?? How to make observer with Entitiy and SMFL Entity
