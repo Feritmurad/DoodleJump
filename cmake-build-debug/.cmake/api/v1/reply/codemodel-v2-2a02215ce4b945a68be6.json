@@ -22,7 +22,7 @@
 				{
 					"build" : "src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-src-Debug-1fe080e24a4ed5fb1bdf.json",
+					"jsonFile" : "directory-src-Debug-1ed6990ce4f4ca99479a.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -57,7 +57,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Jumpgame::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Jumpgame-Debug-7218de2b8efd92b15a48.json",
+					"jsonFile" : "target-Jumpgame-Debug-3981eca5d1f41cd5cc00.json",
 					"name" : "Jumpgame",
 					"projectIndex" : 0
 				}

@@ -10,9 +10,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/HorizontalPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Platform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/TempPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/VerticalPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o.d"

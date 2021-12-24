@@ -15,4 +15,13 @@ namespace jumpgame {
     bool Platform::checkValid() {
         return getC().validCoordinate();
     }
+
+    void Platform::setMJumpedOn(bool mJumpedOn) {
+        m_jumpedOn = mJumpedOn;
+    }
+
+    bool Platform::isMJumpedOn() const {
+        return m_jumpedOn;
+    }
+
 }

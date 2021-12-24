@@ -6,6 +6,8 @@
 #define GAME_WORLD_H
 #include "Player.h"
 #include "Platform.h"
+#include "HorizontalPlatform.h"
+#include "VerticalPlatform.h"
 #include "set"
 
 namespace jumpgame{
@@ -29,12 +31,21 @@ namespace jumpgame{
 
         void checkPlatformsValid();
 
+        const std::set<std::shared_ptr<HorizontalPlatform>> &getMHorizontalplatforms() const;
+
+        const std::set<std::shared_ptr<VerticalPlatform>> &getMVerticalplatforms() const;
+
 
 
     private:
         std::shared_ptr<Player> m_player;
 
         std::set<std::shared_ptr<Platform>> m_platforms;
+
+        std::set<std::shared_ptr<HorizontalPlatform>> m_horizontalplatforms;
+
+        std::set<std::shared_ptr<VerticalPlatform>> m_verticalplatforms;
+
 
 
     };

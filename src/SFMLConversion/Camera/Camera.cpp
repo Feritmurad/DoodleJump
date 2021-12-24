@@ -20,7 +20,7 @@ namespace SFMLjumpgame {
 
     void Camera::moveForward() {
         jumpgame::Coordinate playercoordinates = m_world->getMPlayer()->getC();
-        jumpgame::Coordinate zerocoordinates(-3,0);
+        jumpgame::Coordinate zerocoordinates(-3,1);
         if(playercoordinates >= zerocoordinates && m_world->getMPlayer()->getMVstate() == jumpgame::Jumping) {
             for (const auto &platform: m_world->getMPlatforms()) {
                 jumpgame::Coordinate newcoord(platform->getC().getX(),platform->getC().getY()-m_world->getMPlayer()->getMVelocityY());

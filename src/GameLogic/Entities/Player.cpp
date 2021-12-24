@@ -45,10 +45,10 @@ namespace jumpgame{
 
     void Player::move() {
         if(m_hstate == Left){
-            m_velocity_X = -0.02;
+            m_velocity_X = -0.05;
         }
         else if(m_hstate == Right){
-            m_velocity_X = 0.02;
+            m_velocity_X = 0.05;
 
         }
         else if(m_hstate == Static){

@@ -30,7 +30,7 @@ namespace jumpgame {
         m_platforms.insert(platform1);
 
         jumpgame::Coordinate coordinate2(-1.5, 2);
-        auto platform2 = std::make_shared<jumpgame::Platform>(coordinate2);
+        auto platform2 = std::make_shared<jumpgame::VerticalPlatform>(coordinate2);
         m_platforms.insert(platform2);
 
     }
@@ -46,10 +46,18 @@ namespace jumpgame {
     void World::checkPlayerPlatformCollision() {
         if(m_player->getMVstate() == Falling) {
             for (const auto &platform: m_platforms) {
-                if (m_player->getC().getY() - m_player->getMHeigth() < platform->getC().getY() &&
-                m_player->getC().getY() - m_player->getMHeigth() > platform->getC().getY() - platform->getMHeigth() &&
-                ((m_player->getC().getX() > platform->getC().getX() && m_player->getC().getX() < platform->getC().getX() + platform->getMWidth())
-                || (m_player->getC().getX() + m_player->getMWidth() > platform->getC().getX() && m_player->getC().getX() + m_player->getMWidth() < platform->getC().getX() + platform->getMWidth()))
+                if (m_player->getC().getY() - m_player->getMHeigth() < platform->getC().getY() && // lowest y coord of player is under highest y coord of platform
+                m_player->getC().getY() - m_player->getMHeigth() > platform->getC().getY() - platform->getMHeigth() && // lowest y coord of player is over lowest y coord of plat
+                (
+                        (
+                                m_player->getC().getX() > platform->getC().getX()
+                        && m_player->getC().getX() < platform->getC().getX() + platform->getMWidth())
+                ||
+                        (
+                        m_player->getC().getX() + m_player->getMWidth() > platform->getC().getX()
+                && m_player->getC().getX() + m_player->getMWidth() < platform->getC().getX() + platform->getMWidth()
+                        )
+                )
                 ) {
                     m_player->setMVstate(Collision);
                 }
@@ -69,6 +77,14 @@ namespace jumpgame {
             }
         }
 
+    }
+
+    const std::set<std::shared_ptr<HorizontalPlatform>> &World::getMHorizontalplatforms() const {
+        return m_horizontalplatforms;
+    }
+
+    const std::set<std::shared_ptr<VerticalPlatform>> &World::getMVerticalplatforms() const {
+        return m_verticalplatforms;
     }
 
 }

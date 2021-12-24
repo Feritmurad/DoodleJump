@@ -65,7 +65,7 @@ void Game::run()
 
             SFMLplayer->draw(camera);
             for (const auto &platformobserver: Platformobservers) {
-                std::cout << platformobserver.use_count() << std::endl;
+                //std::cout << platformobserver.use_count() << std::endl;
                 platformobserver->draw(camera);
             }
 

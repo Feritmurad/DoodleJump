@@ -223,6 +223,30 @@ GameLogic/Entities/Entity.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.s
 .PHONY : GameLogic/Entities/Entity.cpp.s
 
+GameLogic/Entities/HorizontalPlatform.o: GameLogic/Entities/HorizontalPlatform.cpp.o
+.PHONY : GameLogic/Entities/HorizontalPlatform.o
+
+# target to build an object file
+GameLogic/Entities/HorizontalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o
+.PHONY : GameLogic/Entities/HorizontalPlatform.cpp.o
+
+GameLogic/Entities/HorizontalPlatform.i: GameLogic/Entities/HorizontalPlatform.cpp.i
+.PHONY : GameLogic/Entities/HorizontalPlatform.i
+
+# target to preprocess a source file
+GameLogic/Entities/HorizontalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.i
+.PHONY : GameLogic/Entities/HorizontalPlatform.cpp.i
+
+GameLogic/Entities/HorizontalPlatform.s: GameLogic/Entities/HorizontalPlatform.cpp.s
+.PHONY : GameLogic/Entities/HorizontalPlatform.s
+
+# target to generate assembly for a file
+GameLogic/Entities/HorizontalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.s
+.PHONY : GameLogic/Entities/HorizontalPlatform.cpp.s
+
 GameLogic/Entities/Object.o: GameLogic/Entities/Object.cpp.o
 .PHONY : GameLogic/Entities/Object.o
 
@@ -294,6 +318,54 @@ GameLogic/Entities/Player.s: GameLogic/Entities/Player.cpp.s
 GameLogic/Entities/Player.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.s
 .PHONY : GameLogic/Entities/Player.cpp.s
+
+GameLogic/Entities/TempPlatform.o: GameLogic/Entities/TempPlatform.cpp.o
+.PHONY : GameLogic/Entities/TempPlatform.o
+
+# target to build an object file
+GameLogic/Entities/TempPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.o
+.PHONY : GameLogic/Entities/TempPlatform.cpp.o
+
+GameLogic/Entities/TempPlatform.i: GameLogic/Entities/TempPlatform.cpp.i
+.PHONY : GameLogic/Entities/TempPlatform.i
+
+# target to preprocess a source file
+GameLogic/Entities/TempPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.i
+.PHONY : GameLogic/Entities/TempPlatform.cpp.i
+
+GameLogic/Entities/TempPlatform.s: GameLogic/Entities/TempPlatform.cpp.s
+.PHONY : GameLogic/Entities/TempPlatform.s
+
+# target to generate assembly for a file
+GameLogic/Entities/TempPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.s
+.PHONY : GameLogic/Entities/TempPlatform.cpp.s
+
+GameLogic/Entities/VerticalPlatform.o: GameLogic/Entities/VerticalPlatform.cpp.o
+.PHONY : GameLogic/Entities/VerticalPlatform.o
+
+# target to build an object file
+GameLogic/Entities/VerticalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.o
+.PHONY : GameLogic/Entities/VerticalPlatform.cpp.o
+
+GameLogic/Entities/VerticalPlatform.i: GameLogic/Entities/VerticalPlatform.cpp.i
+.PHONY : GameLogic/Entities/VerticalPlatform.i
+
+# target to preprocess a source file
+GameLogic/Entities/VerticalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.i
+.PHONY : GameLogic/Entities/VerticalPlatform.cpp.i
+
+GameLogic/Entities/VerticalPlatform.s: GameLogic/Entities/VerticalPlatform.cpp.s
+.PHONY : GameLogic/Entities/VerticalPlatform.s
+
+# target to generate assembly for a file
+GameLogic/Entities/VerticalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.s
+.PHONY : GameLogic/Entities/VerticalPlatform.cpp.s
 
 GameLogic/Entities/World.o: GameLogic/Entities/World.cpp.o
 .PHONY : GameLogic/Entities/World.o
@@ -722,6 +794,9 @@ help:
 	@echo "... GameLogic/Entities/Entity.o"
 	@echo "... GameLogic/Entities/Entity.i"
 	@echo "... GameLogic/Entities/Entity.s"
+	@echo "... GameLogic/Entities/HorizontalPlatform.o"
+	@echo "... GameLogic/Entities/HorizontalPlatform.i"
+	@echo "... GameLogic/Entities/HorizontalPlatform.s"
 	@echo "... GameLogic/Entities/Object.o"
 	@echo "... GameLogic/Entities/Object.i"
 	@echo "... GameLogic/Entities/Object.s"
@@ -731,6 +806,12 @@ help:
 	@echo "... GameLogic/Entities/Player.o"
 	@echo "... GameLogic/Entities/Player.i"
 	@echo "... GameLogic/Entities/Player.s"
+	@echo "... GameLogic/Entities/TempPlatform.o"
+	@echo "... GameLogic/Entities/TempPlatform.i"
+	@echo "... GameLogic/Entities/TempPlatform.s"
+	@echo "... GameLogic/Entities/VerticalPlatform.o"
+	@echo "... GameLogic/Entities/VerticalPlatform.i"
+	@echo "... GameLogic/Entities/VerticalPlatform.s"
 	@echo "... GameLogic/Entities/World.o"
 	@echo "... GameLogic/Entities/World.i"
 	@echo "... GameLogic/Entities/World.s"

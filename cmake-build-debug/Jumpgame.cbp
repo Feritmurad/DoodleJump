@@ -134,6 +134,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/HorizontalPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/HorizontalPlatform.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -150,6 +156,18 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/TempPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/TempPlatform.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/VerticalPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/VerticalPlatform.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.cpp">

@@ -44,7 +44,11 @@ ADD_EXECUTABLE(
         SFMLConversion/Entities/SFMLObject.cpp
         SFMLConversion/Entities/SFMLObject.h
         SFMLConversion/Entities/SFMLPlatform.cpp
-        SFMLConversion/Entities/SFMLPlatform.h)
+        SFMLConversion/Entities/SFMLPlatform.h
+        GameLogic/Entities/TempPlatform.cpp
+        GameLogic/Entities/TempPlatform.h
+        GameLogic/Entities/HorizontalPlatform.cpp
+        GameLogic/Entities/HorizontalPlatform.h GameLogic/Entities/VerticalPlatform.cpp GameLogic/Entities/VerticalPlatform.h)
 
 TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
 INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)

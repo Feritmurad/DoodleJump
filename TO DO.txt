@@ -1,4 +1,5 @@
 * Wait for answer and make 1 observer per entity type if needed.
+* Fix vertical platform
 * Rename entityfactory.
 * resx and resy in camera need to be initialized.
 
