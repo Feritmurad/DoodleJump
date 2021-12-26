@@ -182,12 +182,6 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.h">
 			<Option target="Jumpgame"/>
 		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.cpp">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/EntityFactory.h">
-			<Option target="Jumpgame"/>
-		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Observer/Observable.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -228,6 +222,12 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/ConcreteFactory.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/ConcreteFactory.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp">

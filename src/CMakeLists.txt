@@ -19,8 +19,6 @@ ADD_EXECUTABLE(
         GameLogic/Utility/Clock.cpp
         GameLogic/Factory/AbstractEntityFactory.h
         GameLogic/Factory/AbstractEntityFactory.cpp
-        GameLogic/Factory/EntityFactory.h
-        GameLogic/Factory/EntityFactory.cpp
         GameLogic/Observer/Observer.h
         GameLogic/Observer/Observer.cpp
         GameLogic/Observer/Observable.h
@@ -35,8 +33,6 @@ ADD_EXECUTABLE(
         SFMLConversion/Game/Game.cpp
         SFMLConversion/Camera/Camera.h
         SFMLConversion/Camera/Camera.cpp
-        SFMLConversion/SFMLFactory/SFMLEntityFactory.h
-        SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp
         SFMLConversion/Entities/SFMLPlayer.h
         SFMLConversion/Entities/SFMLPlayer.cpp
         SFMLConversion/Entities/SFMLEntity.h
@@ -48,7 +44,11 @@ ADD_EXECUTABLE(
         GameLogic/Entities/TempPlatform.cpp
         GameLogic/Entities/TempPlatform.h
         GameLogic/Entities/HorizontalPlatform.cpp
-        GameLogic/Entities/HorizontalPlatform.h GameLogic/Entities/VerticalPlatform.cpp GameLogic/Entities/VerticalPlatform.h)
+        GameLogic/Entities/HorizontalPlatform.h
+        GameLogic/Entities/VerticalPlatform.cpp
+        GameLogic/Entities/VerticalPlatform.h
+        SFMLConversion/Factory/ConcreteFactory.cpp
+        SFMLConversion/Factory/ConcreteFactory.h)
 
 TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
 INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)

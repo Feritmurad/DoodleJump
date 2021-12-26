@@ -54,6 +54,11 @@ namespace jumpgame{
 
         bool operator>= (const Coordinate& c) const;
 
+        bool operator>(const Coordinate& c) const;
+
+        bool operator<(const Coordinate& c) const;
+
+
     };
 }
 

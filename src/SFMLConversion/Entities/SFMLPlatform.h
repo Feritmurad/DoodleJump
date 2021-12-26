@@ -24,7 +24,10 @@ namespace SFMLjumpgame {
 
         void handleEvent(const jumpgame::ObserverEvent &event) override;
 
-        void draw(const std::shared_ptr<Camera> &camera);
+        void draw();
+
+
+    private:
 
     };
 

@@ -10,7 +10,7 @@ namespace jumpgame {
 
     class Platform : public Object{
     public:
-        explicit Platform(const Coordinate &c,const double &height=0.4,const double &width=1.2, const bool &jumped = false) : Object(c,height,width) , m_jumpedOn(jumped){}
+        explicit Platform(const Coordinate &c,const double &height=0.2,const double &width=1, const bool &jumped = false) : Object(c,height,width) , m_jumpedOn(jumped){}
 
         ~Platform() = default;
 

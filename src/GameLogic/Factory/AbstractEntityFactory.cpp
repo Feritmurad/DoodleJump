@@ -3,10 +3,3 @@
 //
 
 #include "AbstractEntityFactory.h"
-
-namespace jumpgame {
-
-    AbstractEntityFactory::AbstractEntityFactory() = default;
-
-    AbstractEntityFactory::~AbstractEntityFactory() = default;
-}

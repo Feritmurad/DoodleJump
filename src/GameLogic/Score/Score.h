@@ -21,8 +21,12 @@ namespace jumpgame {
         */
         void handleEvent(const ObserverEvent &event) override;
 
+        int getPlayerScore() const;
+
+
     private:
         int player_score;
+
 
     };
 }

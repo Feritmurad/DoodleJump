@@ -5,8 +5,12 @@
 #ifndef GAME_ABSTRACTENTITYFACTORY_H
 #define GAME_ABSTRACTENTITYFACTORY_H
 #include "memory"
-#include "../Entities/Entity.h"
+#include "../Observer/Observer.h"
 
+
+namespace SFMLjumpgame{
+    class SFMLPlayer;
+}
 
 
 namespace jumpgame {
@@ -16,14 +20,19 @@ namespace jumpgame {
         /**
          * Default constructor
          */
-        AbstractEntityFactory();
+        AbstractEntityFactory() = default;
 
-        ~AbstractEntityFactory();
+        ~AbstractEntityFactory() = default;
 
         /**
-         * virtual fucntion to create a player
+         * virtual fucntion to create a SFMLplayer
          */
-        virtual std::shared_ptr<Entity> createPlayer(double x, double y)=0;
+        virtual std::shared_ptr<Observer> createPlayerView()=0;
+
+        virtual std::shared_ptr<Observer> createPlatformView()=0;
+
+
+
     };
 
 }

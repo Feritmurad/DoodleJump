@@ -9,13 +9,14 @@
 #include "HorizontalPlatform.h"
 #include "VerticalPlatform.h"
 #include "set"
+#include "../Factory/AbstractEntityFactory.h"
 
 namespace jumpgame{
 
     class World : public Entity{
     public:
 
-        World() = default;
+        explicit World(std::shared_ptr<AbstractEntityFactory> factory);
 
         void update() override;
 
@@ -35,7 +36,7 @@ namespace jumpgame{
 
         const std::set<std::shared_ptr<VerticalPlatform>> &getMVerticalplatforms() const;
 
-
+        void genereteRandomStart();
 
     private:
         std::shared_ptr<Player> m_player;
@@ -45,6 +46,8 @@ namespace jumpgame{
         std::set<std::shared_ptr<HorizontalPlatform>> m_horizontalplatforms;
 
         std::set<std::shared_ptr<VerticalPlatform>> m_verticalplatforms;
+
+        std::shared_ptr<AbstractEntityFactory> m_factory;
 
 
 

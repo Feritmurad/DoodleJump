@@ -23,25 +23,27 @@ class SFMLObject : public SFMLEntity , public jumpgame::Observer {
          * @param c: coordinate of object
          */
         SFMLObject(const std::shared_ptr<sf::RenderWindow> &window, const jumpgame::Coordinate &c={0,0}) : SFMLEntity(window),
-                                                                                                     m_c(c) {}
+                                                                                                           m_c(c) {}
 
-    public:
+public:
 
-        /**
-        * Getter for c
-        */
-        jumpgame::Coordinate getC() const;
+    /**
+    * Getter for c
+    */
+    jumpgame::Coordinate getC() const;
 
-        /**
-         * Setter for c
-         */
-        void setC(const jumpgame::Coordinate& m_c);
+    /**
+     * Setter for c
+     */
+    void setC(const jumpgame::Coordinate& c);
 
-        void handleEvent(const jumpgame::ObserverEvent &event) override;
+    void handleEvent(const jumpgame::ObserverEvent &event) override;
 
-    private:
-        jumpgame::Coordinate m_c;
-    };
+private:
+    jumpgame::Coordinate m_c;
+
+
+};
 
 }
 

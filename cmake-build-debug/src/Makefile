@@ -415,30 +415,6 @@ GameLogic/Factory/AbstractEntityFactory.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.s
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.s
 
-GameLogic/Factory/EntityFactory.o: GameLogic/Factory/EntityFactory.cpp.o
-.PHONY : GameLogic/Factory/EntityFactory.o
-
-# target to build an object file
-GameLogic/Factory/EntityFactory.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.o
-.PHONY : GameLogic/Factory/EntityFactory.cpp.o
-
-GameLogic/Factory/EntityFactory.i: GameLogic/Factory/EntityFactory.cpp.i
-.PHONY : GameLogic/Factory/EntityFactory.i
-
-# target to preprocess a source file
-GameLogic/Factory/EntityFactory.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.i
-.PHONY : GameLogic/Factory/EntityFactory.cpp.i
-
-GameLogic/Factory/EntityFactory.s: GameLogic/Factory/EntityFactory.cpp.s
-.PHONY : GameLogic/Factory/EntityFactory.s
-
-# target to generate assembly for a file
-GameLogic/Factory/EntityFactory.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/EntityFactory.cpp.s
-.PHONY : GameLogic/Factory/EntityFactory.cpp.s
-
 GameLogic/Observer/Observable.o: GameLogic/Observer/Observable.cpp.o
 .PHONY : GameLogic/Observer/Observable.o
 
@@ -606,6 +582,30 @@ SFMLConversion/Camera/Camera.s: SFMLConversion/Camera/Camera.cpp.s
 SFMLConversion/Camera/Camera.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.s
 .PHONY : SFMLConversion/Camera/Camera.cpp.s
+
+SFMLConversion/ConcreteFactory.o: SFMLConversion/ConcreteFactory.cpp.o
+.PHONY : SFMLConversion/ConcreteFactory.o
+
+# target to build an object file
+SFMLConversion/ConcreteFactory.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/ConcreteFactory.cpp.o
+.PHONY : SFMLConversion/ConcreteFactory.cpp.o
+
+SFMLConversion/ConcreteFactory.i: SFMLConversion/ConcreteFactory.cpp.i
+.PHONY : SFMLConversion/ConcreteFactory.i
+
+# target to preprocess a source file
+SFMLConversion/ConcreteFactory.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/ConcreteFactory.cpp.i
+.PHONY : SFMLConversion/ConcreteFactory.cpp.i
+
+SFMLConversion/ConcreteFactory.s: SFMLConversion/ConcreteFactory.cpp.s
+.PHONY : SFMLConversion/ConcreteFactory.s
+
+# target to generate assembly for a file
+SFMLConversion/ConcreteFactory.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/ConcreteFactory.cpp.s
+.PHONY : SFMLConversion/ConcreteFactory.cpp.s
 
 SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLEntity.o
@@ -818,9 +818,6 @@ help:
 	@echo "... GameLogic/Factory/AbstractEntityFactory.o"
 	@echo "... GameLogic/Factory/AbstractEntityFactory.i"
 	@echo "... GameLogic/Factory/AbstractEntityFactory.s"
-	@echo "... GameLogic/Factory/EntityFactory.o"
-	@echo "... GameLogic/Factory/EntityFactory.i"
-	@echo "... GameLogic/Factory/EntityFactory.s"
 	@echo "... GameLogic/Observer/Observable.o"
 	@echo "... GameLogic/Observer/Observable.i"
 	@echo "... GameLogic/Observer/Observable.s"
@@ -842,6 +839,9 @@ help:
 	@echo "... SFMLConversion/Camera/Camera.o"
 	@echo "... SFMLConversion/Camera/Camera.i"
 	@echo "... SFMLConversion/Camera/Camera.s"
+	@echo "... SFMLConversion/ConcreteFactory.o"
+	@echo "... SFMLConversion/ConcreteFactory.i"
+	@echo "... SFMLConversion/ConcreteFactory.s"
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"

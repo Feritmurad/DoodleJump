@@ -10,8 +10,8 @@ namespace SFMLjumpgame {
         return m_c;
     }
 
-    void SFMLObject::setC(const jumpgame::Coordinate& m_c) {
-        SFMLObject::m_c = m_c;
+    void SFMLObject::setC(const jumpgame::Coordinate& c) {
+        SFMLObject::m_c = c;
     }
 
     void SFMLObject::handleEvent(const jumpgame::ObserverEvent &event) {

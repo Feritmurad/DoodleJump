@@ -9,38 +9,11 @@ void Game::run()
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
-    /**make Player
-    jumpgame::Coordinate coordinate(0,-2);
-    auto player = std::make_shared<jumpgame::Player>(coordinate);
-    */
-
-    /**make Platform
-    jumpgame::Coordinate coordinate1(-0.5,-1);
-    auto platform = std::make_shared<jumpgame::Platform>(coordinate1);
-    */
-
     //make World
-    m_world = std::make_shared<jumpgame::World>();
+    m_world = std::make_shared<jumpgame::World>(std::make_shared<SFMLjumpgame::ConcreteFactory>(window));
     m_world->makeWorld();
-
-
-    //make SFMLPlayer
-    auto SFMLplayer = std::make_shared<SFMLjumpgame::SFMLPlayer>(window);
-    //add sfmlplayer to the observer
-    //player->addObserver(SFMLplayer);
-
-    m_world->getMPlayer()->addObserver(SFMLplayer);
-
-
-    std::set<std::shared_ptr<SFMLjumpgame::SFMLPlatform>> Platformobservers;
-    for (const auto &platform: m_world->getMPlatforms()) {
-        auto SFMLPlatform = std::make_shared<SFMLjumpgame::SFMLPlatform>(window);
-        platform->addObserver(SFMLPlatform);
-        Platformobservers.insert(SFMLPlatform);
-    }
-
-
-
+    //make score
+    m_score = std::make_shared<jumpgame::Score>();
 
     auto camera = std::make_shared<SFMLjumpgame::Camera>(m_world);
 
@@ -57,17 +30,10 @@ void Game::run()
 
             window->clear();
 
-            //player->update();
             movement(event);
             camera->moveForward();
             m_world->update();
-
-
-            SFMLplayer->draw(camera);
-            for (const auto &platformobserver: Platformobservers) {
-                //std::cout << platformobserver.use_count() << std::endl;
-                platformobserver->draw(camera);
-            }
+            std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
 
             window->display();
         }

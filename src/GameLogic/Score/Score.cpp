@@ -7,7 +7,13 @@
 namespace jumpgame{
 
     void Score::handleEvent(const ObserverEvent &event){
-        return;
+        if(event.getMUpdateAmount() != 0){
+            player_score+= event.getMUpdateAmount();
+        }
+    }
+
+    int Score::getPlayerScore() const {
+        return player_score;
     }
 
 }

@@ -38,4 +38,12 @@ namespace jumpgame{
     bool Coordinate::operator>=(const Coordinate &c) const {
         return (x >= c.getX() && y >= c.getY());
     }
+
+    bool Coordinate::operator>(const Coordinate &c) const {
+        return (x > c.getX() || y > c.getY());
+    }
+
+    bool Coordinate::operator<(const Coordinate &c) const {
+        return (x < c.getX() || y < c.getY());
+    }
 }

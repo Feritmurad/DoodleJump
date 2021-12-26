@@ -4,6 +4,8 @@
 
 #include "World.h"
 
+#include <utility>
+
 namespace jumpgame {
 
     void World::update() {
@@ -18,20 +20,27 @@ namespace jumpgame {
 
     void World::makeWorld() {
 
+
+
         //make Player
         jumpgame::Coordinate coordinate(0, -2);
         auto player = std::make_shared<jumpgame::Player>(coordinate);
         m_player = player;
+        m_player->addObserver(m_factory->createPlayerView());
 
-
+        auto Platformview = m_factory->createPlatformView();
         //make Platform
-        jumpgame::Coordinate coordinate1(-0.5, -1);
+        jumpgame::Coordinate coordinate1(-1.5, -1);
         auto platform1 = std::make_shared<jumpgame::Platform>(coordinate1);
         m_platforms.insert(platform1);
+        platform1->addObserver(Platformview);
+
+
 
         jumpgame::Coordinate coordinate2(-1.5, 2);
-        auto platform2 = std::make_shared<jumpgame::VerticalPlatform>(coordinate2);
+        auto platform2 = std::make_shared<jumpgame::HorizontalPlatform>(coordinate2);
         m_platforms.insert(platform2);
+        platform2->addObserver(Platformview);
 
     }
 
@@ -85,6 +94,14 @@ namespace jumpgame {
 
     const std::set<std::shared_ptr<VerticalPlatform>> &World::getMVerticalplatforms() const {
         return m_verticalplatforms;
+    }
+
+    void World::genereteRandomStart() {
+
+    }
+
+    World::World(std::shared_ptr<AbstractEntityFactory> factory) : m_factory(factory) {
+
     }
 
 }

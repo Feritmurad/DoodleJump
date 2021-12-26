@@ -12,7 +12,7 @@ class SFMLPlayer : public SFMLObject{
         public:
             explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const jumpgame::Coordinate &c = {0,0}) : SFMLObject(window,c) {};
 
-            void draw(const std::shared_ptr<Camera> &camera);
+            void draw();
 
             void handleEvent(const jumpgame::ObserverEvent &event) override;
 

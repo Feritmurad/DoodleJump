@@ -20,7 +20,7 @@ namespace jumpgame {
              * @param c: coordinate of object
              */
 
-            explicit Player(const Coordinate &c,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=1,const double &width=1);
+            explicit Player(const Coordinate &c,const double &reachedheight=0.0,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=0.5,const double &width=0.5);
 
 
             void jump();
@@ -39,10 +39,15 @@ namespace jumpgame {
 
             double getMVelocityY() const;
 
+            double getMReachedheight() const;
+
+            void setMReachedheight(double mReachedheight);
+
     private:
         double m_velocity_Y;
         double m_velocity_X;
         double m_gravity;
+        double m_reachedheight;
         VerticalState m_vstate;
         Horizontalstate m_hstate;
 
