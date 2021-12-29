@@ -36,7 +36,7 @@ namespace jumpgame{
         /**
          * Setter for x
          */
-        void setX(double x);
+        void setX(double xx);
 
         /**
          * Getter for y
@@ -46,7 +46,7 @@ namespace jumpgame{
         /**
          * Setter for y
          */
-        void setY(double y);
+        void setY(double yy);
 
         bool validCoordinate() const;
 
@@ -57,6 +57,8 @@ namespace jumpgame{
         bool operator>(const Coordinate& c) const;
 
         bool operator<(const Coordinate& c) const;
+
+        bool operator==(const Coordinate& c) const;
 
 
     };

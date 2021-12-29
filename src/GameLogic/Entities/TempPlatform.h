@@ -9,8 +9,9 @@
 namespace jumpgame {
 
     class TempPlatform : public Platform {
+    public:
 
-        explicit TempPlatform(const Coordinate &c,const double &height=0.4,const double &width=1.2, const bool &jumped = false) : Platform(c,height,width,jumped) {}
+        explicit TempPlatform(const Coordinate &c,const double &height=0.4,const double &width=1, const bool &jumped = false) : Platform(c,height,width,jumped) {}
 
         void update() override;
 

@@ -15,15 +15,12 @@ namespace jumpgame {
     }
 
 
-    const double Object::getMWidth() const {
+    double Object::getMWidth() const {
         return m_width;
     }
 
-    const double Object::getMHeigth() const {
+    double Object::getMHeigth() const {
         return m_heigth;
     }
 
-    Coordinate Object::getRelativeYCoord(const Coordinate &c) const {
-        return {getC().getX(),getC().getY()-c.getY()};
-    }
 }

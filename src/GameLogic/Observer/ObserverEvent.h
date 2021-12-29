@@ -7,14 +7,25 @@
 #include "../Coordinate/Coordinate.h"
 
 namespace jumpgame {
-
+    enum event{Jetpackbonus,Springsbonus,NoBonus};
     class ObserverEvent {
+
+
     private:
         int m_update_amount;
 
         Coordinate m_coordinate;
 
+        event m_bonusevent;
+
     public:
+        /**
+         * Getter for m_bonusevent
+         * @return m_bonusevent
+         */
+        event getMBonusevent() const;
+
+
         /**
          * Getter for m_coordinate
          * @return m_coordinate
@@ -27,7 +38,7 @@ namespace jumpgame {
          */
         int getMUpdateAmount() const;
 
-        explicit ObserverEvent(int update_amount=0, const Coordinate &coordinate={0,0}) : m_update_amount(update_amount), m_coordinate(coordinate) {}
+        explicit ObserverEvent(int update_amount=0, const Coordinate &coordinate={0,0},event bonusevent = NoBonus) : m_update_amount(update_amount), m_coordinate(coordinate), m_bonusevent(bonusevent) {}
 
 
     };

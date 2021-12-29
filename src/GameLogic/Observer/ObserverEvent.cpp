@@ -12,3 +12,7 @@ int jumpgame::ObserverEvent::getMUpdateAmount() const {
     return m_update_amount;
 }
 
+jumpgame::event jumpgame::ObserverEvent::getMBonusevent() const {
+    return m_bonusevent;
+}
+

@@ -4,6 +4,12 @@
 
 #include "VerticalPlatform.h"
 
+jumpgame::VerticalPlatform::VerticalPlatform (const Coordinate &c,const double &Yvelocity, const double &height, const double &width,const bool &jumped) :
+Platform(c, height, width, jumped) , m_velocity_Y(Yvelocity){
+    m_minH = c.getY()-3;
+    m_maxH = c.getY();
+}
+
 void jumpgame::VerticalPlatform::update() {
     move();
     Platform::update();
@@ -19,4 +25,20 @@ void jumpgame::VerticalPlatform::move() {
        c=tempc;
    }
     setC(c);
+}
+
+double jumpgame::VerticalPlatform::getMMinH() const {
+    return m_minH;
+}
+
+void jumpgame::VerticalPlatform::updateMMinH(double mMinH) {
+    m_minH += mMinH;
+}
+
+double jumpgame::VerticalPlatform::getMMaxH() const {
+    return m_maxH;
+}
+
+void jumpgame::VerticalPlatform::updateMMaxH(double mMaxH) {
+    m_maxH += mMaxH;
 }

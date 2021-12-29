@@ -1,9 +1,12 @@
-* Wait for answer and make 1 observer per entity type if needed.
-* Fix vertical platform
-* Rename entityfactory.
-* resx and resy in camera need to be initialized.
+! CheckValidPlatforms check for horizontal and vertical and temp platform 
+! generateNewEntities genereer for horizontal and vertical and temp platform
+! Fix platform that you jumped goes away should stay at the bottom
 
-**Documentation
-**Fix compiler thingy for github
+
+* Fix vertical platform
+* resx and resy in camera need to be initialized.
+* fix give height and width in abstract factory to the observers
+
+**Documentation 
 **Maybe remove int tick from Constructor Clock and make a setTick() function
 

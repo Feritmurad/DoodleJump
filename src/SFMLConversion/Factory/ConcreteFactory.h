@@ -23,6 +23,9 @@ public:
 private:
     std::shared_ptr<sf::RenderWindow> m_window;
 
+
+
+
 };
 
 }

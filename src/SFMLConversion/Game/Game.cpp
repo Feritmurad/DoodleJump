@@ -31,9 +31,10 @@ void Game::run()
             window->clear();
 
             movement(event);
-            camera->moveForward();
+
             m_world->update();
-            std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
+            camera->moveForward();
+            //std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
 
             window->display();
         }

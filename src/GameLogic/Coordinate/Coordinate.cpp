@@ -9,16 +9,16 @@ namespace jumpgame{
         return x;
     }
 
-    void Coordinate::setX(double x) {
-        Coordinate::x = x;
+    void Coordinate::setX(double xx) {
+        Coordinate::x = xx;
     }
 
     double Coordinate::getY() const {
         return y;
     }
 
-    void Coordinate::setY(double y) {
-        Coordinate::y = y;
+    void Coordinate::setY(double yy) {
+        Coordinate::y = yy;
     }
 
     bool Coordinate::validCoordinate() const {
@@ -45,5 +45,9 @@ namespace jumpgame{
 
     bool Coordinate::operator<(const Coordinate &c) const {
         return (x < c.getX() || y < c.getY());
+    }
+
+    bool Coordinate::operator==(const Coordinate &c) const {
+        return (x == c.getX() && y == c.getY());
     }
 }

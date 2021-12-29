@@ -5,8 +5,7 @@
 #ifndef JUMPGAME_SFMLENTITY_H
 #define JUMPGAME_SFMLENTITY_H
 #include <SFML/Graphics.hpp>
-#include "../Camera/Camera.h"
-#include "../../GameLogic/Entities/Entity.h"
+#include "../../GameLogic/Camera/Camera.h"
 #include "../../GameLogic/Observer/Observer.h"
 #include "iostream"
 

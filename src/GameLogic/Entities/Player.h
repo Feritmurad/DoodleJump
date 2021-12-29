@@ -41,10 +41,14 @@ namespace jumpgame {
 
             double getMReachedheight() const;
 
-            void setMReachedheight(double mReachedheight);
+            void updateMReachedheight(double mReachedheight);
+
+        void setMVelocityY(double mVelocityY);
 
     private:
         double m_velocity_Y;
+
+    private:
         double m_velocity_X;
         double m_gravity;
         double m_reachedheight;

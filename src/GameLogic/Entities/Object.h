@@ -38,20 +38,19 @@ namespace jumpgame {
          */
         void setC(const Coordinate& m_c);
 
-        const double getMHeigth() const;
+        double getMHeigth() const;
 
-        const double getMWidth() const;
+        double getMWidth() const;
 
-        Coordinate getRelativeYCoord(const Coordinate& m_c) const;
 
 
     private:
 
         Coordinate m_c;
 
-        const double m_heigth;
+        double m_heigth;
 
-        const double m_width;
+        double m_width;
 
 
 

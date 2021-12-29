@@ -171,6 +171,33 @@ Jumpgame/fast:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
 .PHONY : Jumpgame/fast
 
+GameLogic/Camera/Camera.o: GameLogic/Camera/Camera.cpp.o
+
+.PHONY : GameLogic/Camera/Camera.o
+
+# target to build an object file
+GameLogic/Camera/Camera.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o
+.PHONY : GameLogic/Camera/Camera.cpp.o
+
+GameLogic/Camera/Camera.i: GameLogic/Camera/Camera.cpp.i
+
+.PHONY : GameLogic/Camera/Camera.i
+
+# target to preprocess a source file
+GameLogic/Camera/Camera.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.i
+.PHONY : GameLogic/Camera/Camera.cpp.i
+
+GameLogic/Camera/Camera.s: GameLogic/Camera/Camera.cpp.s
+
+.PHONY : GameLogic/Camera/Camera.s
+
+# target to generate assembly for a file
+GameLogic/Camera/Camera.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.s
+.PHONY : GameLogic/Camera/Camera.cpp.s
+
 GameLogic/Coordinate/Coordinate.o: GameLogic/Coordinate/Coordinate.cpp.o
 
 .PHONY : GameLogic/Coordinate/Coordinate.o
@@ -333,6 +360,33 @@ GameLogic/Entities/Player.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.s
 .PHONY : GameLogic/Entities/Player.cpp.s
 
+GameLogic/Entities/Springs.o: GameLogic/Entities/Springs.cpp.o
+
+.PHONY : GameLogic/Entities/Springs.o
+
+# target to build an object file
+GameLogic/Entities/Springs.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.o
+.PHONY : GameLogic/Entities/Springs.cpp.o
+
+GameLogic/Entities/Springs.i: GameLogic/Entities/Springs.cpp.i
+
+.PHONY : GameLogic/Entities/Springs.i
+
+# target to preprocess a source file
+GameLogic/Entities/Springs.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.i
+.PHONY : GameLogic/Entities/Springs.cpp.i
+
+GameLogic/Entities/Springs.s: GameLogic/Entities/Springs.cpp.s
+
+.PHONY : GameLogic/Entities/Springs.s
+
+# target to generate assembly for a file
+GameLogic/Entities/Springs.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.s
+.PHONY : GameLogic/Entities/Springs.cpp.s
+
 GameLogic/Entities/TempPlatform.o: GameLogic/Entities/TempPlatform.cpp.o
 
 .PHONY : GameLogic/Entities/TempPlatform.o
@@ -413,6 +467,33 @@ GameLogic/Entities/World.s: GameLogic/Entities/World.cpp.s
 GameLogic/Entities/World.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s
 .PHONY : GameLogic/Entities/World.cpp.s
+
+GameLogic/Entities/jetpack.o: GameLogic/Entities/jetpack.cpp.o
+
+.PHONY : GameLogic/Entities/jetpack.o
+
+# target to build an object file
+GameLogic/Entities/jetpack.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.o
+.PHONY : GameLogic/Entities/jetpack.cpp.o
+
+GameLogic/Entities/jetpack.i: GameLogic/Entities/jetpack.cpp.i
+
+.PHONY : GameLogic/Entities/jetpack.i
+
+# target to preprocess a source file
+GameLogic/Entities/jetpack.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.i
+.PHONY : GameLogic/Entities/jetpack.cpp.i
+
+GameLogic/Entities/jetpack.s: GameLogic/Entities/jetpack.cpp.s
+
+.PHONY : GameLogic/Entities/jetpack.s
+
+# target to generate assembly for a file
+GameLogic/Entities/jetpack.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.s
+.PHONY : GameLogic/Entities/jetpack.cpp.s
 
 GameLogic/Factory/AbstractEntityFactory.o: GameLogic/Factory/AbstractEntityFactory.cpp.o
 
@@ -603,33 +684,6 @@ GameLogic/Utility/Random.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
 .PHONY : GameLogic/Utility/Random.cpp.s
 
-SFMLConversion/Camera/Camera.o: SFMLConversion/Camera/Camera.cpp.o
-
-.PHONY : SFMLConversion/Camera/Camera.o
-
-# target to build an object file
-SFMLConversion/Camera/Camera.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.o
-.PHONY : SFMLConversion/Camera/Camera.cpp.o
-
-SFMLConversion/Camera/Camera.i: SFMLConversion/Camera/Camera.cpp.i
-
-.PHONY : SFMLConversion/Camera/Camera.i
-
-# target to preprocess a source file
-SFMLConversion/Camera/Camera.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.i
-.PHONY : SFMLConversion/Camera/Camera.cpp.i
-
-SFMLConversion/Camera/Camera.s: SFMLConversion/Camera/Camera.cpp.s
-
-.PHONY : SFMLConversion/Camera/Camera.s
-
-# target to generate assembly for a file
-SFMLConversion/Camera/Camera.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Camera/Camera.cpp.s
-.PHONY : SFMLConversion/Camera/Camera.cpp.s
-
 SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
 
 .PHONY : SFMLConversion/Entities/SFMLEntity.o
@@ -656,6 +710,33 @@ SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
 SFMLConversion/Entities/SFMLEntity.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
+
+SFMLConversion/Entities/SFMLJetpack.o: SFMLConversion/Entities/SFMLJetpack.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLJetpack.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLJetpack.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.o
+
+SFMLConversion/Entities/SFMLJetpack.i: SFMLConversion/Entities/SFMLJetpack.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLJetpack.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLJetpack.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.i
+
+SFMLConversion/Entities/SFMLJetpack.s: SFMLConversion/Entities/SFMLJetpack.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLJetpack.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLJetpack.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.s
 
 SFMLConversion/Entities/SFMLObject.o: SFMLConversion/Entities/SFMLObject.cpp.o
 
@@ -737,6 +818,33 @@ SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
 SFMLConversion/Entities/SFMLPlayer.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.s
+
+SFMLConversion/Entities/SFMLSprings.o: SFMLConversion/Entities/SFMLSprings.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLSprings.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLSprings.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLSprings.cpp.o
+
+SFMLConversion/Entities/SFMLSprings.i: SFMLConversion/Entities/SFMLSprings.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLSprings.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLSprings.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLSprings.cpp.i
+
+SFMLConversion/Entities/SFMLSprings.s: SFMLConversion/Entities/SFMLSprings.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLSprings.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLSprings.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLSprings.cpp.s
 
 SFMLConversion/Factory/ConcreteFactory.o: SFMLConversion/Factory/ConcreteFactory.cpp.o
 
@@ -832,6 +940,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Jumpgame"
+	@echo "... GameLogic/Camera/Camera.o"
+	@echo "... GameLogic/Camera/Camera.i"
+	@echo "... GameLogic/Camera/Camera.s"
 	@echo "... GameLogic/Coordinate/Coordinate.o"
 	@echo "... GameLogic/Coordinate/Coordinate.i"
 	@echo "... GameLogic/Coordinate/Coordinate.s"
@@ -850,6 +961,9 @@ help:
 	@echo "... GameLogic/Entities/Player.o"
 	@echo "... GameLogic/Entities/Player.i"
 	@echo "... GameLogic/Entities/Player.s"
+	@echo "... GameLogic/Entities/Springs.o"
+	@echo "... GameLogic/Entities/Springs.i"
+	@echo "... GameLogic/Entities/Springs.s"
 	@echo "... GameLogic/Entities/TempPlatform.o"
 	@echo "... GameLogic/Entities/TempPlatform.i"
 	@echo "... GameLogic/Entities/TempPlatform.s"
@@ -859,6 +973,9 @@ help:
 	@echo "... GameLogic/Entities/World.o"
 	@echo "... GameLogic/Entities/World.i"
 	@echo "... GameLogic/Entities/World.s"
+	@echo "... GameLogic/Entities/jetpack.o"
+	@echo "... GameLogic/Entities/jetpack.i"
+	@echo "... GameLogic/Entities/jetpack.s"
 	@echo "... GameLogic/Factory/AbstractEntityFactory.o"
 	@echo "... GameLogic/Factory/AbstractEntityFactory.i"
 	@echo "... GameLogic/Factory/AbstractEntityFactory.s"
@@ -880,12 +997,12 @@ help:
 	@echo "... GameLogic/Utility/Random.o"
 	@echo "... GameLogic/Utility/Random.i"
 	@echo "... GameLogic/Utility/Random.s"
-	@echo "... SFMLConversion/Camera/Camera.o"
-	@echo "... SFMLConversion/Camera/Camera.i"
-	@echo "... SFMLConversion/Camera/Camera.s"
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"
+	@echo "... SFMLConversion/Entities/SFMLJetpack.o"
+	@echo "... SFMLConversion/Entities/SFMLJetpack.i"
+	@echo "... SFMLConversion/Entities/SFMLJetpack.s"
 	@echo "... SFMLConversion/Entities/SFMLObject.o"
 	@echo "... SFMLConversion/Entities/SFMLObject.i"
 	@echo "... SFMLConversion/Entities/SFMLObject.s"
@@ -895,6 +1012,9 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLPlayer.o"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.i"
 	@echo "... SFMLConversion/Entities/SFMLPlayer.s"
+	@echo "... SFMLConversion/Entities/SFMLSprings.o"
+	@echo "... SFMLConversion/Entities/SFMLSprings.i"
+	@echo "... SFMLConversion/Entities/SFMLSprings.s"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.o"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.i"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.s"

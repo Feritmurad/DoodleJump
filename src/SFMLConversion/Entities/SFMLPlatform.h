@@ -26,9 +26,6 @@ namespace SFMLjumpgame {
 
         void draw();
 
-
-    private:
-
     };
 
 }

@@ -122,6 +122,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Camera/Camera.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Camera/Camera.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -158,6 +164,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Player.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Springs.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Springs.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/TempPlatform.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -174,6 +186,12 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/World.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/jetpack.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/jetpack.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Factory/AbstractEntityFactory.cpp">
@@ -218,22 +236,16 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.h">
 			<Option target="Jumpgame"/>
 		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.cpp">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Camera/Camera.h">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/ConcreteFactory.cpp">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/ConcreteFactory.h">
-			<Option target="Jumpgame"/>
-		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.cpp">
@@ -254,16 +266,22 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLSprings.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLSprings.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Factory/ConcreteFactory.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Factory/ConcreteFactory.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.h">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp">
-			<Option target="Jumpgame"/>
-		</Unit>
-		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/main.cpp">

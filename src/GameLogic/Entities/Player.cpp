@@ -44,10 +44,10 @@ namespace jumpgame{
 
     void Player::move() {
         if(m_hstate == Left){
-            m_velocity_X = -0.05;
+            m_velocity_X = -0.075;
         }
         else if(m_hstate == Right){
-            m_velocity_X = 0.05;
+            m_velocity_X = 0.075;
 
         }
         else if(m_hstate == Static){
@@ -84,8 +84,12 @@ namespace jumpgame{
         return m_reachedheight;
     }
 
-    void Player::setMReachedheight(double mReachedheight) {
-        m_reachedheight = mReachedheight;
+    void Player::updateMReachedheight(double mReachedheight) {
+        m_reachedheight += mReachedheight;
+    }
+
+    void Player::setMVelocityY(double mVelocityY) {
+        m_velocity_Y = mVelocityY;
     }
 
 

@@ -4,8 +4,8 @@
 
 #ifndef GAME_TRANSFORMATION_H
 #define GAME_TRANSFORMATION_H
-#include "../../GameLogic/Coordinate/Coordinate.h"
-#include "../../GameLogic/Entities/World.h"
+#include "../Coordinate/Coordinate.h"
+#include "../Entities/World.h"
 
 namespace SFMLjumpgame {
 
@@ -14,6 +14,7 @@ namespace SFMLjumpgame {
         int res_x = 700;
         int res_y = 900;
         std::shared_ptr<jumpgame::World> m_world;
+        bool cameramove;
 
     public:
         /**

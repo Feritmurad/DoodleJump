@@ -10,14 +10,13 @@ namespace SFMLjumpgame {
 
 class SFMLPlayer : public SFMLObject{
         public:
-            explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const jumpgame::Coordinate &c = {0,0}) : SFMLObject(window,c) {};
+            explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const jumpgame::Coordinate &c = {0,0});
 
             void draw();
 
             void handleEvent(const jumpgame::ObserverEvent &event) override;
 
         private:
-
 
     };
 

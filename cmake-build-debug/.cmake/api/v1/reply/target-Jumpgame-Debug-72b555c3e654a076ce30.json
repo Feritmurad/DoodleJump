@@ -32,13 +32,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 52,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 51,
+				"line" : 53,
 				"parent" : 0
 			}
 		]
@@ -84,13 +84,16 @@
 				30,
 				32,
 				34,
-				36,
+				35,
 				37,
 				39,
 				41,
 				43,
 				45,
-				47
+				47,
+				49,
+				51,
+				53
 			]
 		}
 	],
@@ -175,13 +178,16 @@
 				30,
 				32,
 				34,
-				36,
+				35,
 				37,
 				39,
 				41,
 				43,
 				45,
-				47
+				47,
+				49,
+				51,
+				53
 			]
 		},
 		{
@@ -205,13 +211,16 @@
 				29,
 				31,
 				33,
-				35,
+				36,
 				38,
 				40,
 				42,
 				44,
 				46,
-				48
+				48,
+				50,
+				52,
+				54
 			]
 		}
 	],
@@ -379,24 +388,13 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/SFMLConversion/Camera/Camera.h",
+			"path" : "src/GameLogic/Camera/Camera.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/SFMLConversion/Camera/Camera.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/SFMLConversion/SFMLFactory/SFMLEntityFactory.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/SFMLConversion/SFMLFactory/SFMLEntityFactory.cpp",
+			"path" : "src/GameLogic/Camera/Camera.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -479,12 +477,56 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/SFMLConversion/ConcreteFactory.cpp",
+			"path" : "src/SFMLConversion/Factory/ConcreteFactory.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/SFMLConversion/ConcreteFactory.h",
+			"path" : "src/SFMLConversion/Factory/ConcreteFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/GameLogic/Entities/jetpack.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/GameLogic/Entities/jetpack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/GameLogic/Entities/Springs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/GameLogic/Entities/Springs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/SFMLConversion/Entities/SFMLJetpack.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/SFMLConversion/Entities/SFMLJetpack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/SFMLConversion/Entities/SFMLSprings.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/SFMLConversion/Entities/SFMLSprings.h",
 			"sourceGroupIndex" : 1
 		}
 	],
