@@ -34,7 +34,9 @@ void Game::run()
 
             m_world->update();
             camera->moveForward();
-            std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
+            //std::cout << Random::getInstance()->makerandom(-3.0,3.0) << std::endl;
+            //std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
+            //std::cout << m_world->getMPlayer()->isReachingnewheight() << std::endl;
 
             window->display();
         }

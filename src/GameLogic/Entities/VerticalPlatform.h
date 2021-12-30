@@ -14,7 +14,7 @@ namespace jumpgame {
 
     public:
 
-        explicit VerticalPlatform(const Coordinate &c,const double &Yvelocity = -0.1, const double &height = 0.4, const double &width = 1,
+        explicit VerticalPlatform(const Coordinate &c,const double &Yvelocity = -0.075, const double &height = 0.4, const double &width = 1,
                                     const bool &jumped = false);
 
         void update() override;

@@ -9,7 +9,6 @@
 namespace jumpgame {
 
     void World::update() {
-        //std::cout << m_platforms.size() << std::endl;
         generateNewEntities();
         checkPlayerPlatformCollision();
         for (const auto &platform: allPlatforms()) {
@@ -35,25 +34,6 @@ namespace jumpgame {
         auto player = std::make_shared<jumpgame::Player>(coordinate);
         m_player = player;
         m_player->addObserver(m_Playerview);
-
-
-            auto Platformview = m_factory->createPlatformView();
-            //make Platform
-            jumpgame::Coordinate coordinate1(-1.5, 4);
-            auto platform1 = std::make_shared<jumpgame::VerticalPlatform>(coordinate1);
-            m_verticalplatforms.insert(platform1);
-            platform1->addObserver(m_Platformview);
-        /*
-
-            jumpgame::Coordinate coordinate2(-1.9, -1.1);
-
-            auto platform2 = std::make_shared<jumpgame::Platform>(coordinate2);
-            if(checkValidPlatform(platform2)){
-                m_platforms.insert(platform2);
-                platform2->addObserver(Platformview);
-            }
-            */
-
         generateRandomStart();
 
     }
@@ -103,7 +83,6 @@ namespace jumpgame {
                 it++;
             }
         }
-
         auto it2 = m_tempplatforms.begin();
         while(it2 != m_tempplatforms.end()){
             if(!(*it2)->checkValid() || (*it2)->isMJumpedOn()){
@@ -111,6 +90,24 @@ namespace jumpgame {
             }
             else{
                 it2++;
+            }
+        }
+        auto it3 = m_verticalplatforms.begin();
+        while(it3 != m_verticalplatforms.end()){
+            if(!(*it3)->checkValid()){
+                it3=m_verticalplatforms.erase(it3);
+            }
+            else{
+                it3++;
+            }
+        }
+        auto it4 = m_horizontalplatforms.begin();
+        while(it4 != m_horizontalplatforms.end()){
+            if(!(*it4)->checkValid()){
+                it4= m_horizontalplatforms.erase(it4);
+            }
+            else{
+                it4++;
             }
         }
     }
@@ -153,15 +150,33 @@ namespace jumpgame {
 
     }
 
-    bool World::checkValidPlatform(const std::shared_ptr<Platform>& nPlatform) {
+    bool World::checkValidPlatform(const shared_ptr<VerticalPlatform> &nPlatform) {
         std::set<std::shared_ptr<Platform>> Platforms;
-        Platforms.insert(m_platforms.begin(),m_platforms.end());
-        Platforms.insert(m_tempplatforms.begin(),m_tempplatforms.end());
-        for (const auto &platform: Platforms){ /**Check collision for platforms and tempplatforms **/
-            if(checkCollision(platform,nPlatform)){
+        Platforms.insert(m_platforms.begin(), m_platforms.end());
+        Platforms.insert(m_tempplatforms.begin(), m_tempplatforms.end());
+        for (const auto &platform: Platforms) { /**Check collision for platforms and tempplatforms **/
+            if (checkCollision(platform, nPlatform) || checkXCollision(nPlatform,platform)) {
                 return false;
             }
         }
+        checkHVValidPlatform(nPlatform);
+        return true;
+    }
+
+    bool World::checkValidPlatform(const shared_ptr<HorizontalPlatform> &nPlatform) {
+        std::set<std::shared_ptr<Platform>> Platforms;
+        Platforms.insert(m_platforms.begin(), m_platforms.end());
+        Platforms.insert(m_tempplatforms.begin(), m_tempplatforms.end());
+        for (const auto &platform: Platforms) { /**Check collision for platforms and tempplatforms **/
+            if (checkCollision(platform, nPlatform)  || checkYCollision(platform,nPlatform)) {
+                return false;
+            }
+        }
+        checkHVValidPlatform(nPlatform);
+        return true;
+    }
+
+    bool World::checkHVValidPlatform(const shared_ptr<Platform> &nPlatform) {
         for (const auto &platform: m_verticalplatforms){ /**Check collision for vertical **/
             if(checkCollision(platform,nPlatform) || checkXCollision(platform,nPlatform)){ /** Check if there is another platform on the same x coord */
                 return false;
@@ -175,88 +190,139 @@ namespace jumpgame {
         return true;
     }
 
-    bool World::checkCollision(const shared_ptr<Object> &obj1, const shared_ptr<Object> &obj2) { /**Check collision between 2 objects **/
-        if(obj1->getC().getX() < obj2->getC().getX() + obj2->getMWidth() &&
+    bool World::checkValidPlatform(const std::shared_ptr<Platform>& nPlatform) {
+        std::set<std::shared_ptr<Platform>> Platforms;
+        Platforms.insert(m_platforms.begin(), m_platforms.end());
+        Platforms.insert(m_tempplatforms.begin(), m_tempplatforms.end());
+        for (const auto &platform: Platforms) { /**Check collision for platforms and tempplatforms **/
+            if (checkCollision(platform, nPlatform)) {
+                return false;
+            }
+        }
+        checkHVValidPlatform(nPlatform);
+        return true;
+    }
+
+        bool World::checkCollision(const shared_ptr<Object> &obj1,
+                                   const shared_ptr<Object> &obj2) { /**Check collision between 2 objects **/
+            if (obj1->getC().getX() < obj2->getC().getX() + obj2->getMWidth() &&
                 obj1->getC().getX() + obj1->getMWidth() > obj2->getC().getX() &&
                 obj1->getC().getY() - obj1->getMHeigth() < obj2->getC().getY() &&
-                obj1->getC().getY() > obj2->getC().getY() - obj2->getMHeigth()){
-            return true;
+                obj1->getC().getY() > obj2->getC().getY() - obj2->getMHeigth()) {
+                return true;
+            }
+            return false;
         }
-        return false;
-    }
 
-    bool World::checkXCollision(const shared_ptr<Object> &obj1, const shared_ptr<Object> &obj2) { /**Check collision for a vertical platform with another object **/
-        if(obj1->getC().getX() < obj2->getC().getX() + obj2->getMWidth() &&
-           obj1->getC().getX() + obj1->getMWidth() > obj2->getC().getX()){
-            return true;
-        }
-        return false;
-    }
-
-    bool World::checkYCollision(const shared_ptr<Object> &obj1, const shared_ptr<Object> &obj2) { /**Check collision for a horizontal platform with another object **/
-        if(obj1->getC().getY() - obj1->getMHeigth() < obj2->getC().getY() &&
-           obj1->getC().getY() > obj2->getC().getY() - obj2->getMHeigth()){
-            return true;
-        }
-        return false;
-    }
-
-    World::World(std::shared_ptr<AbstractEntityFactory> factory) : m_factory(factory) {
-
-    }
-
-    void World::generateNewEntities() {
-        bool newrandomplatform = false;
-        bool newrandomplatformchance = false;
-        double randomplatforms = 15 - pow( (500.0 / 450.0),3.0);
-        if(randomplatforms > allPlatforms().size()){ /** If there are less platforms than randomplatforms */
-            for (const auto &platform: allPlatforms()) {
-                newrandomplatform = true;
-                if (platform->getC().getY() > 3) /** If there is a platform above logical coord 3 */
-                    newrandomplatformchance = true;
+        bool World::checkXCollision(const shared_ptr<VerticalPlatform> &obj1,
+                                    const shared_ptr<Object> &obj2) { /**Check collision for a vertical platform with another object **/
+            if (obj1->getC().getX() < obj2->getC().getX() + obj2->getMWidth() &&
+                obj1->getC().getX() + obj1->getMWidth() > obj2->getC().getX()) {
+                if (obj1->getMMaxH() > obj2->getC().getY() - obj2->getMHeigth() ||
+                    obj1->getMMinH() > obj2->getC().getY()) {
+                    return true;
                 }
             }
-        if(newrandomplatform){
-            Coordinate newcoord(Random::getInstance()->makerandom(-3.0,3.0),4);
-            auto newplatform = std::make_shared<Platform>(newcoord);
-            if(checkValidPlatform(newplatform)) {
-                if(newrandomplatformchance){
-                    if(Random::getInstance()->makerandom(1,10) == 1){ /** 1/10 chance to make platform if there is a platform above 3 */
+            return false;
+        }
+
+        bool World::checkYCollision(const shared_ptr<Object> &obj1,
+                                    const shared_ptr<Object> &obj2) { /**Check collision for a horizontal platform with another object **/
+            if (obj1->getC().getY() - obj1->getMHeigth() < obj2->getC().getY() &&
+                obj1->getC().getY() > obj2->getC().getY() - obj2->getMHeigth()) {
+                return true;
+            }
+            return false;
+        }
+
+        World::World(std::shared_ptr<AbstractEntityFactory>
+        factory) : m_factory(factory)
+        {
+
+        }
+
+        void World::generateNewEntities() {
+            if (m_player->isReachingnewheight()) {
+                bool newrandomplatform = false;
+                bool newrandomplatformchance = false;
+                double randomplatforms = 15 - pow((m_player->getMReachedheight() / 63), 1.2);
+                if (randomplatforms > allPlatforms().size()) { /** If there are less platforms than randomplatforms */
+                    for (const auto &platform: allPlatforms()) {
+                        newrandomplatform = true;
+                        if (platform->getC().getY() > 3) /** If there is a platform above logical coord 3 */
+                            newrandomplatformchance = true;
+                    }
+                }
+                if (newrandomplatform) {
+                    if (newrandomplatformchance) {
+                        if (Random::getInstance()->makerandom(1, 10) ==
+                            1) { /** 1/10 chance to make platform if there is a platform above 3 */
+                            makeRandomPlatform();
+                        }
+                    } else {
+                        makeRandomPlatform();
+                    }
+                }
+                bool mustplatform = true;
+                for (const auto &platform: allPlatforms()) {
+                    if (platform->getC().getY() > 1) {
+                        mustplatform = false;
+                    }
+                }
+                if (mustplatform) {
+                    makeRandomPlatform();
+                }
+            }
+        }
+
+        std::set<std::shared_ptr<Platform>> World::allPlatforms() {
+            std::set<std::shared_ptr<Platform>> Platforms;
+            Platforms.insert(m_platforms.begin(), m_platforms.end());
+            Platforms.insert(m_verticalplatforms.begin(), m_verticalplatforms.end());
+            Platforms.insert(m_horizontalplatforms.begin(), m_horizontalplatforms.end());
+            Platforms.insert(m_tempplatforms.begin(), m_tempplatforms.end());
+            return Platforms;
+        }
+
+        void World::makeRandomPlatform() {
+            double randomplatform = 100.0 - pow(m_player->getMReachedheight() / 13, 1.2);
+            if (randomplatform < 0) {
+                randomplatform = 0;
+            }
+            int hardplatformchance = 100.0 - randomplatform;
+            std::cout << hardplatformchance << std::endl;
+            int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
+            Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
+                if (Random::getInstance()->makerandom(1, 100) > hardplatformchance) {
+                    auto newplatform = std::make_shared<Platform>(newcoord);
+                    if (checkValidPlatform(newplatform)) {
                         m_platforms.insert(newplatform);
                         newplatform->addObserver(m_Platformview);
                     }
+
+                } else {
+                    if (platformchance <= hardplatformchance / 3) {
+                        auto newtempplatform = std::make_shared<TempPlatform>(newcoord);
+                        if (checkValidPlatform(newtempplatform)) {
+                            m_tempplatforms.insert(newtempplatform);
+                            newtempplatform->addObserver(m_TempPlatformview);
+                        }
+                    } else if (platformchance <= (hardplatformchance / 3) * 2) {
+                        auto newverticalplatform = std::make_shared<VerticalPlatform>(newcoord);
+                        if (checkValidPlatform(newverticalplatform)) {
+                            m_verticalplatforms.insert(newverticalplatform);
+                            newverticalplatform->addObserver(m_VerticalPlatformview);
+                        }
+                    } else {
+                        auto newhorizontalplatform = std::make_shared<HorizontalPlatform>(newcoord);
+                        if (checkValidPlatform(newhorizontalplatform)) {
+                            m_horizontalplatforms.insert(newhorizontalplatform);
+                            newhorizontalplatform->addObserver(m_HorizontalPlatformview);
+                        }
+                    }
                 }
-                else{
-                    m_platforms.insert(newplatform);
-                    newplatform->addObserver(m_Platformview);
-                }
-            }
+
         }
-
-
-        bool mustplatform = true;
-        for (const auto &platform: allPlatforms()) {
-            if(platform->getC().getY() > 1){
-                mustplatform = false;
-            }
-        }
-        if(mustplatform){
-            Coordinate mustcoord(Random::getInstance()->makerandom(-3.0,3.0),4);
-            auto platform = std::make_shared<Platform>(mustcoord);
-            m_platforms.insert(platform);
-            platform->addObserver(m_Platformview);
-        }
-    }
-
-    std::set<std::shared_ptr<Platform>> World::allPlatforms() {
-        std::set<std::shared_ptr<Platform>> Platforms;
-        Platforms.insert(m_platforms.begin(),m_platforms.end());
-        Platforms.insert(m_verticalplatforms.begin(),m_verticalplatforms.end());
-        Platforms.insert(m_horizontalplatforms.begin(),m_horizontalplatforms.end());
-        Platforms.insert(m_tempplatforms.begin(),m_tempplatforms.end());
-        return Platforms;
-    }
-
 
 
 }

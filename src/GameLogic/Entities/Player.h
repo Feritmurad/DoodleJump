@@ -43,20 +43,18 @@ namespace jumpgame {
 
             void updateMReachedheight(double mReachedheight);
 
-        void setMVelocityY(double mVelocityY);
+            void setMVelocityY(double mVelocityY);
 
-    private:
-        double m_velocity_Y;
+            bool isReachingnewheight() const;
 
     private:
         double m_velocity_X;
+        double m_velocity_Y;
         double m_gravity;
         double m_reachedheight;
         VerticalState m_vstate;
         Horizontalstate m_hstate;
-
-
-
+        bool reachingnewheight;
 
     };
 }

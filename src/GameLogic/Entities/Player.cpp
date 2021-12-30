@@ -28,12 +28,15 @@ namespace jumpgame{
         }
         m_velocity_Y += m_gravity;
         if(m_velocity_Y > 0){
-            if(getC().getY() >= 1){
+            reachingnewheight = false;
+            if(getC().getY() >= 0){
                 m_reachedheight += m_velocity_Y;
+                reachingnewheight = true;
             }
             m_vstate = Jumping;
         }
         else{
+            reachingnewheight = false;
             m_vstate = Falling;
         }
         Coordinate c(getC().getX(),getC().getY()+m_velocity_Y);
@@ -90,6 +93,10 @@ namespace jumpgame{
 
     void Player::setMVelocityY(double mVelocityY) {
         m_velocity_Y = mVelocityY;
+    }
+
+    bool Player::isReachingnewheight() const {
+        return reachingnewheight;
     }
 
 

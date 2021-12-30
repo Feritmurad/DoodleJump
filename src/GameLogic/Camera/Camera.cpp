@@ -37,7 +37,7 @@ namespace SFMLjumpgame {
                 }
                 jumpgame::Coordinate playercoord(m_world->getMPlayer()->getC().getX(),0);
                 m_world->getMPlayer()->setC(playercoord);
-                m_world->getMPlayer()->updateMReachedheight(m_world->getMPlayer()->getMVelocityY());
+                //m_world->getMPlayer()->updateMReachedheight(m_world->getMPlayer()->getMVelocityY());
             }
 
         }

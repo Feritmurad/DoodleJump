@@ -12,6 +12,8 @@
 #include "../Factory/AbstractEntityFactory.h"
 #include "../Utility/Random.h"
 #include "TempPlatform.h"
+#include "jetpack.h"
+#include "Springs.h"
 
 namespace jumpgame{
 
@@ -42,14 +44,21 @@ namespace jumpgame{
 
         bool checkValidPlatform(const std::shared_ptr<Platform>& nPlatform);
 
+        bool checkValidPlatform(const std::shared_ptr<VerticalPlatform>& nPlatform);
+
+        bool checkValidPlatform(const std::shared_ptr<HorizontalPlatform>& nPlatform);
+
+        bool checkHVValidPlatform(const std::shared_ptr<Platform>& nPlatform);
+
         bool checkCollision(const std::shared_ptr<Object>& obj1,const std::shared_ptr<Object>& obj2);
 
-        bool checkXCollision(const std::shared_ptr<Object>& obj1,const std::shared_ptr<Object>& obj2);
+        bool checkXCollision(const std::shared_ptr<VerticalPlatform>& obj1,const std::shared_ptr<Object>& obj2);
 
         bool checkYCollision(const std::shared_ptr<Object>& obj1,const std::shared_ptr<Object>& obj2);
 
-
         void generateNewEntities();
+
+        void makeRandomPlatform();
 
         std::set<std::shared_ptr<Platform>> allPlatforms();
 
@@ -63,6 +72,10 @@ namespace jumpgame{
         std::set<std::shared_ptr<VerticalPlatform>> m_verticalplatforms;
 
         std::set<std::shared_ptr<TempPlatform>> m_tempplatforms;
+
+        std::set<std::shared_ptr<Jetpack>> m_jetpacks;
+
+        std::set<std::shared_ptr<Springs>> m_springs;
 
         std::shared_ptr<AbstractEntityFactory> m_factory;
 
