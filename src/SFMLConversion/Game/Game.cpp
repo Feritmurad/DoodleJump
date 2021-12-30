@@ -34,7 +34,7 @@ void Game::run()
 
             m_world->update();
             camera->moveForward();
-            //std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
+            std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
 
             window->display();
         }

@@ -22,10 +22,19 @@ namespace jumpgame {
 
     void World::makeWorld() {
 
+        m_Playerview = m_factory->createPlayerView();
+        m_Platformview = m_factory->createPlatformView();
+        m_TempPlatformview = m_factory->createTempPlatformView();
+        m_VerticalPlatformview = m_factory->createVerticalPlatformView();
+        m_HorizontalPlatformview = m_factory->createHorizontalPlatformView();
+        m_Jetpackview = m_factory->createJetpackView();
+        m_Springsview = m_factory->createSpringsView();
+
+
         jumpgame::Coordinate coordinate(0, -2);
         auto player = std::make_shared<jumpgame::Player>(coordinate);
         m_player = player;
-        m_player->addObserver(m_factory->createPlayerView());
+        m_player->addObserver(m_Playerview);
 
 
             auto Platformview = m_factory->createPlatformView();
@@ -33,9 +42,9 @@ namespace jumpgame {
             jumpgame::Coordinate coordinate1(-1.5, 4);
             auto platform1 = std::make_shared<jumpgame::VerticalPlatform>(coordinate1);
             m_verticalplatforms.insert(platform1);
-            platform1->addObserver(m_factory->getMPlatformview());
-
+            platform1->addObserver(m_Platformview);
         /*
+
             jumpgame::Coordinate coordinate2(-1.9, -1.1);
 
             auto platform2 = std::make_shared<jumpgame::Platform>(coordinate2);
@@ -115,13 +124,12 @@ namespace jumpgame {
     }
 
     void World::generateRandomStart() {
-        auto Platformobserver = m_factory->createPlatformView();
         for (int i = -3; i <= 3; i+=3) {
             Coordinate tempcoord(Random::getInstance()->makerandom(-3.0,3.0),i);
             auto platform = std::make_shared<Platform>(tempcoord);
             if(checkValidPlatform(platform)) {
                 m_platforms.insert(platform);
-                platform->addObserver(Platformobserver);
+                platform->addObserver(m_Platformview);
             }
             else{
                 i-=3;
@@ -134,7 +142,7 @@ namespace jumpgame {
 
             if(checkValidPlatform(newplatform)) {
                 m_platforms.insert(newplatform);
-                newplatform->addObserver(Platformobserver);
+                newplatform->addObserver(m_Platformview);
             }
 
             else{
@@ -198,7 +206,35 @@ namespace jumpgame {
     }
 
     void World::generateNewEntities() {
-    bool mustplatform = true;
+        bool newrandomplatform = false;
+        bool newrandomplatformchance = false;
+        double randomplatforms = 15 - pow( (500.0 / 450.0),3.0);
+        if(randomplatforms > allPlatforms().size()){ /** If there are less platforms than randomplatforms */
+            for (const auto &platform: allPlatforms()) {
+                newrandomplatform = true;
+                if (platform->getC().getY() > 3) /** If there is a platform above logical coord 3 */
+                    newrandomplatformchance = true;
+                }
+            }
+        if(newrandomplatform){
+            Coordinate newcoord(Random::getInstance()->makerandom(-3.0,3.0),4);
+            auto newplatform = std::make_shared<Platform>(newcoord);
+            if(checkValidPlatform(newplatform)) {
+                if(newrandomplatformchance){
+                    if(Random::getInstance()->makerandom(1,10) == 1){ /** 1/10 chance to make platform if there is a platform above 3 */
+                        m_platforms.insert(newplatform);
+                        newplatform->addObserver(m_Platformview);
+                    }
+                }
+                else{
+                    m_platforms.insert(newplatform);
+                    newplatform->addObserver(m_Platformview);
+                }
+            }
+        }
+
+
+        bool mustplatform = true;
         for (const auto &platform: allPlatforms()) {
             if(platform->getC().getY() > 1){
                 mustplatform = false;
@@ -208,7 +244,7 @@ namespace jumpgame {
             Coordinate mustcoord(Random::getInstance()->makerandom(-3.0,3.0),4);
             auto platform = std::make_shared<Platform>(mustcoord);
             m_platforms.insert(platform);
-            platform->addObserver(m_factory->getMPlatformview());
+            platform->addObserver(m_Platformview);
         }
     }
 

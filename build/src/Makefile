@@ -711,6 +711,33 @@ SFMLConversion/Entities/SFMLEntity.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
 
+SFMLConversion/Entities/SFMLHorizontalPlatform.o: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLHorizontalPlatform.i: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLHorizontalPlatform.s: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+
 SFMLConversion/Entities/SFMLJetpack.o: SFMLConversion/Entities/SFMLJetpack.cpp.o
 
 .PHONY : SFMLConversion/Entities/SFMLJetpack.o
@@ -845,6 +872,60 @@ SFMLConversion/Entities/SFMLSprings.s: SFMLConversion/Entities/SFMLSprings.cpp.s
 SFMLConversion/Entities/SFMLSprings.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLSprings.cpp.s
+
+SFMLConversion/Entities/SFMLTempPlatform.o: SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLTempPlatform.i: SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLTempPlatform.s: SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+
+SFMLConversion/Entities/SFMLVerticalPlatform.o: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLVerticalPlatform.i: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLVerticalPlatform.s: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/build && $(MAKE) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
 
 SFMLConversion/Factory/ConcreteFactory.o: SFMLConversion/Factory/ConcreteFactory.cpp.o
 
@@ -1000,6 +1081,9 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.s"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.o"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.i"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.s"
@@ -1015,6 +1099,12 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLSprings.o"
 	@echo "... SFMLConversion/Entities/SFMLSprings.i"
 	@echo "... SFMLConversion/Entities/SFMLSprings.s"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.s"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.s"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.o"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.i"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.s"

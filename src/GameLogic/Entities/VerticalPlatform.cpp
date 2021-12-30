@@ -7,6 +7,7 @@
 jumpgame::VerticalPlatform::VerticalPlatform (const Coordinate &c,const double &Yvelocity, const double &height, const double &width,const bool &jumped) :
 Platform(c, height, width, jumped) , m_velocity_Y(Yvelocity){
     m_minH = c.getY()-3;
+
     m_maxH = c.getY();
 }
 

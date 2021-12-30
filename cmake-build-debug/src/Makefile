@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/177/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/178/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/177/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/178/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,31 +68,31 @@ CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -102,7 +102,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -112,13 +112,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/177/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/178/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -655,6 +655,30 @@ SFMLConversion/Entities/SFMLEntity.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
 
+SFMLConversion/Entities/SFMLHorizontalPlatform.o: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLHorizontalPlatform.i: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLHorizontalPlatform.s: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+
 SFMLConversion/Entities/SFMLJetpack.o: SFMLConversion/Entities/SFMLJetpack.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLJetpack.o
 
@@ -774,6 +798,54 @@ SFMLConversion/Entities/SFMLSprings.s: SFMLConversion/Entities/SFMLSprings.cpp.s
 SFMLConversion/Entities/SFMLSprings.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLSprings.cpp.s
+
+SFMLConversion/Entities/SFMLTempPlatform.o: SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLTempPlatform.i: SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLTempPlatform.s: SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLTempPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+
+SFMLConversion/Entities/SFMLVerticalPlatform.o: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+
+SFMLConversion/Entities/SFMLVerticalPlatform.i: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+
+SFMLConversion/Entities/SFMLVerticalPlatform.s: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
 
 SFMLConversion/Factory/ConcreteFactory.o: SFMLConversion/Factory/ConcreteFactory.cpp.o
 .PHONY : SFMLConversion/Factory/ConcreteFactory.o
@@ -920,6 +992,9 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLHorizontalPlatform.s"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.o"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.i"
 	@echo "... SFMLConversion/Entities/SFMLJetpack.s"
@@ -935,6 +1010,12 @@ help:
 	@echo "... SFMLConversion/Entities/SFMLSprings.o"
 	@echo "... SFMLConversion/Entities/SFMLSprings.i"
 	@echo "... SFMLConversion/Entities/SFMLSprings.s"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLTempPlatform.s"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.o"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.i"
+	@echo "... SFMLConversion/Entities/SFMLVerticalPlatform.s"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.o"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.i"
 	@echo "... SFMLConversion/Factory/ConcreteFactory.s"

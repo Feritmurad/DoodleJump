@@ -7,12 +7,32 @@
 namespace SFMLjumpgame {
 
     std::shared_ptr<jumpgame::Observer> ConcreteFactory::createPlayerView() {
-        setMPlayerview(std::make_shared<SFMLPlayer>(m_window));
-        return getMPlayerview();
+        return std::make_shared<SFMLPlayer>(m_window);
     }
 
     std::shared_ptr<jumpgame::Observer> ConcreteFactory::createPlatformView() {
-        setMPlatformview(std::make_shared<SFMLPlatform>(m_window));
-        return getMPlatformview();
+        return std::make_shared<SFMLPlatform>(m_window);
     }
+
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createTempPlatformView() {
+        return std::make_shared<SFMLTempPlatform>(m_window);
+    }
+
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createVerticalPlatformView() {
+        return std::make_shared<SFMLVerticalPlatform>(m_window);
+    }
+
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createHorizontalPlatformView() {
+        return std::make_shared<SFMLHorizontalPlatform>(m_window);
+    }
+
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createJetpackView() {
+        return std::make_shared<SFMLJetpack>(m_window);
+    }
+
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createSpringsView() {
+        return std::make_shared<SFMLSprings>(m_window);
+    }
+
+
 }

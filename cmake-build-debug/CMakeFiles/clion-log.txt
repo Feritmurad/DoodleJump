@@ -1,4 +1,4 @@
-/snap/clion/177/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ferit/Desktop/Projects/Jump-game
+/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ferit/Desktop/Projects/Jump-game
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug

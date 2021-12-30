@@ -48,7 +48,7 @@ ADD_EXECUTABLE(
         GameLogic/Entities/VerticalPlatform.cpp
         GameLogic/Entities/VerticalPlatform.h
         SFMLConversion/Factory/ConcreteFactory.cpp
-        SFMLConversion/Factory/ConcreteFactory.h GameLogic/Entities/jetpack.cpp GameLogic/Entities/jetpack.h GameLogic/Entities/Springs.cpp GameLogic/Entities/Springs.h SFMLConversion/Entities/SFMLJetpack.cpp SFMLConversion/Entities/SFMLJetpack.h SFMLConversion/Entities/SFMLSprings.cpp SFMLConversion/Entities/SFMLSprings.h)
+        SFMLConversion/Factory/ConcreteFactory.h GameLogic/Entities/jetpack.cpp GameLogic/Entities/jetpack.h GameLogic/Entities/Springs.cpp GameLogic/Entities/Springs.h SFMLConversion/Entities/SFMLJetpack.cpp SFMLConversion/Entities/SFMLJetpack.h SFMLConversion/Entities/SFMLSprings.cpp SFMLConversion/Entities/SFMLSprings.h SFMLConversion/Entities/SFMLTempPlatform.cpp SFMLConversion/Entities/SFMLTempPlatform.h SFMLConversion/Entities/SFMLVerticalPlatform.cpp SFMLConversion/Entities/SFMLVerticalPlatform.h SFMLConversion/Entities/SFMLHorizontalPlatform.cpp SFMLConversion/Entities/SFMLHorizontalPlatform.h)
 
 TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
 INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)

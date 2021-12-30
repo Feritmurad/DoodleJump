@@ -242,6 +242,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -270,6 +276,18 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLSprings.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Factory/ConcreteFactory.cpp">

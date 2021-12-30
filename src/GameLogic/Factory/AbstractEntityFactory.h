@@ -31,20 +31,19 @@ namespace jumpgame {
 
         virtual std::shared_ptr<Observer> createPlatformView()=0;
 
+        virtual std::shared_ptr<Observer> createTempPlatformView()=0;
 
-        // Getters and Setters
-        void setMPlayerview(const std::shared_ptr<Observer> &mPlayerview);
+        virtual std::shared_ptr<Observer> createVerticalPlatformView()=0;
 
-        void setMPlatformview(const std::shared_ptr<Observer> &mPlatformview);
+        virtual std::shared_ptr<Observer> createHorizontalPlatformView()=0;
 
-        const std::shared_ptr<Observer> &getMPlayerview() const;
+        virtual std::shared_ptr<Observer> createJetpackView()=0;
 
-        const std::shared_ptr<Observer> &getMPlatformview() const;
+        virtual std::shared_ptr<Observer> createSpringsView()=0;
 
-    private:
-        std::shared_ptr<Observer> m_Playerview;
 
-        std::shared_ptr<Observer> m_Platformview;
+
+
 
 
 

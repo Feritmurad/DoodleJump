@@ -66,6 +66,20 @@ namespace jumpgame{
 
         std::shared_ptr<AbstractEntityFactory> m_factory;
 
+        std::shared_ptr<Observer> m_Playerview;
+
+        std::shared_ptr<Observer> m_Platformview;
+
+        std::shared_ptr<Observer> m_VerticalPlatformview;
+
+        std::shared_ptr<Observer> m_HorizontalPlatformview;
+
+        std::shared_ptr<Observer> m_TempPlatformview;
+
+        std::shared_ptr<Observer> m_Jetpackview;
+
+        std::shared_ptr<Observer> m_Springsview;
+
 
 
     };

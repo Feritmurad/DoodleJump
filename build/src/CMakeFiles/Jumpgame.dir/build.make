@@ -421,6 +421,45 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s"
 	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLSprings.cpp -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
 
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLTempPlatform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o -c /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.cpp
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.cpp > CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.cpp -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o -c /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp > CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: src/CMakeFiles/Jumpgame.dir/flags.make
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o -c /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp > CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s"
+	cd /home/ferit/Desktop/Projects/Jump-game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp -o CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+
 # Object files for target Jumpgame
 Jumpgame_OBJECTS = \
 "CMakeFiles/Jumpgame.dir/main.cpp.o" \
@@ -450,7 +489,10 @@ Jumpgame_OBJECTS = \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.o" \
 "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.o" \
 "CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o" \
-"CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o"
+"CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o" \
+"CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o" \
+"CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o" \
+"CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o"
 
 # External object files for target Jumpgame
 Jumpgame_EXTERNAL_OBJECTS =
@@ -483,9 +525,12 @@ src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o
+src/Jumpgame: src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+src/Jumpgame: src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+src/Jumpgame: src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/build.make
 src/Jumpgame: src/CMakeFiles/Jumpgame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Jumpgame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferit/Desktop/Projects/Jump-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable Jumpgame"
 	cd /home/ferit/Desktop/Projects/Jump-game/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Jumpgame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -212,6 +212,14 @@ SFML/Graphics.hpp
 iostream
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/iostream
 
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp
+SFMLHorizontalPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.h
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.cpp
 SFMLJetpack.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.h
@@ -254,6 +262,22 @@ SFMLSprings.h
 SFMLObject.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
 
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.cpp
+SFMLTempPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.h
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.cpp
+SFMLVerticalPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.h
+
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.h
+SFMLObject.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLObject.h
+
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Factory/ConcreteFactory.cpp
 ConcreteFactory.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Factory/ConcreteFactory.h
@@ -265,6 +289,16 @@ ConcreteFactory.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlayer.h
 ../Entities/SFMLPlatform.h
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLPlatform.h
+../Entities/SFMLTempPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLTempPlatform.h
+../Entities/SFMLVerticalPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLVerticalPlatform.h
+../Entities/SFMLHorizontalPlatform.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.h
+../Entities/SFMLJetpack.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.h
+../Entities/SFMLSprings.h
+/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLSprings.h
 
 /home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Game/Game.cpp
 Game.h

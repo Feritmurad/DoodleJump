@@ -22,7 +22,7 @@ namespace SFMLjumpgame{
         if(getC().validCoordinate()){
             jumpgame::Coordinate tempc = camera->rescale(getC());
             sf::RectangleShape rectangle(sf::Vector2f(20.f, 20.f));
-            rectangle.setFillColor(sf::Color::Yellow);
+            rectangle.setFillColor(sf::Color::Red);
             rectangle.setPosition(tempc.getX(),tempc.getY());
             getWindow()->draw(rectangle);
         }

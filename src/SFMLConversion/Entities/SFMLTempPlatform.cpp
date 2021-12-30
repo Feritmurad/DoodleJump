@@ -1,13 +1,12 @@
 //
-// Created by ferit on 12/17/21.
+// Created by ferit on 12/29/21.
 //
 
-#include "SFMLPlatform.h"
-
+#include "SFMLTempPlatform.h"
 namespace SFMLjumpgame{
 
 
-    void SFMLPlatform::handleEvent(const jumpgame::ObserverEvent &event) {
+    void SFMLTempPlatform::handleEvent(const jumpgame::ObserverEvent &event) {
         if(event.getMUpdateAmount() == 0 && event.getMBonusevent() == jumpgame::NoBonus){
             //std::cout << "Event1" << event.getMCoordinate().getX() << "," << event.getMCoordinate().getY() << std::endl;
             setC(event.getMCoordinate());
@@ -16,14 +15,14 @@ namespace SFMLjumpgame{
 
     }
 
-    void SFMLPlatform::draw() {
+    void SFMLTempPlatform::draw() {
         std::shared_ptr<Camera> camera = std::make_shared<Camera>();
         // transform to pixel
         // transform only if it is in geocoordintes
         if(getC().validCoordinate()){
             jumpgame::Coordinate tempc = camera->rescale(getC());
             sf::RectangleShape rectangle(sf::Vector2f(100.f, 40.f));
-            rectangle.setFillColor(sf::Color::Green);
+            rectangle.setFillColor(sf::Color::White);
             rectangle.setPosition(tempc.getX(),tempc.getY());
             getWindow()->draw(rectangle);
         }
