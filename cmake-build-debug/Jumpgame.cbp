@@ -134,6 +134,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Bonus.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Bonus.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>

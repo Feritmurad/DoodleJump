@@ -50,6 +50,8 @@ namespace jumpgame{
 
         bool validCoordinate() const;
 
+        bool validCoordinate2() const;
+
         bool validHorizontally() const;
 
         bool operator>= (const Coordinate& c) const;

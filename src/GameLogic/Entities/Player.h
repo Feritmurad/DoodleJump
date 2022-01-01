@@ -8,6 +8,7 @@
 #include <string>
 #include "Object.h"
 #include "iostream"
+#include "../Utility/Clock.h"
 
 namespace jumpgame {
     enum VerticalState{Jumping,Falling,Collision,None};
@@ -47,6 +48,10 @@ namespace jumpgame {
 
             bool isReachingnewheight() const;
 
+        event getMBonusstate() const;
+
+        void setMBonusstate(event mBonusstate);
+
     private:
         double m_velocity_X;
         double m_velocity_Y;
@@ -55,6 +60,9 @@ namespace jumpgame {
         VerticalState m_vstate;
         Horizontalstate m_hstate;
         bool reachingnewheight;
+        event m_bonusstate;
+        double m_jetpackreachheight;
+
 
     };
 }

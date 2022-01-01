@@ -6,8 +6,7 @@
 namespace SFMLjumpgame{
 
     void SFMLJetpack::handleEvent(const jumpgame::ObserverEvent &event) {
-        if(event.getMBonusevent() == jumpgame::Jetpackbonus){
-            //std::cout << "Event1" << event.getMCoordinate().getX() << "," << event.getMCoordinate().getY() << std::endl;
+        if(event.getMUpdateAmount() == 0 && event.getMBonusevent() == jumpgame::NoBonus){
             setC(event.getMCoordinate());
             draw();
         }

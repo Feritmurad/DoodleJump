@@ -223,6 +223,30 @@ GameLogic/Coordinate/Coordinate.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.s
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.s
 
+GameLogic/Entities/Bonus.o: GameLogic/Entities/Bonus.cpp.o
+.PHONY : GameLogic/Entities/Bonus.o
+
+# target to build an object file
+GameLogic/Entities/Bonus.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o
+.PHONY : GameLogic/Entities/Bonus.cpp.o
+
+GameLogic/Entities/Bonus.i: GameLogic/Entities/Bonus.cpp.i
+.PHONY : GameLogic/Entities/Bonus.i
+
+# target to preprocess a source file
+GameLogic/Entities/Bonus.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.i
+.PHONY : GameLogic/Entities/Bonus.cpp.i
+
+GameLogic/Entities/Bonus.s: GameLogic/Entities/Bonus.cpp.s
+.PHONY : GameLogic/Entities/Bonus.s
+
+# target to generate assembly for a file
+GameLogic/Entities/Bonus.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.s
+.PHONY : GameLogic/Entities/Bonus.cpp.s
+
 GameLogic/Entities/Entity.o: GameLogic/Entities/Entity.cpp.o
 .PHONY : GameLogic/Entities/Entity.o
 
@@ -938,6 +962,9 @@ help:
 	@echo "... GameLogic/Coordinate/Coordinate.o"
 	@echo "... GameLogic/Coordinate/Coordinate.i"
 	@echo "... GameLogic/Coordinate/Coordinate.s"
+	@echo "... GameLogic/Entities/Bonus.o"
+	@echo "... GameLogic/Entities/Bonus.i"
+	@echo "... GameLogic/Entities/Bonus.s"
 	@echo "... GameLogic/Entities/Entity.o"
 	@echo "... GameLogic/Entities/Entity.i"
 	@echo "... GameLogic/Entities/Entity.s"

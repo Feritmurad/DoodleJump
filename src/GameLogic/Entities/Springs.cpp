@@ -10,13 +10,11 @@ namespace jumpgame {
     void Springs::update() {
         jumpgame::ObserverEvent observerevent(0,{0,0},Springsbonus);
         notifyObservers(observerevent);
+        Bonus::update();
+
     }
 
-    bool Springs::isUsed() const {
-        return used;
-    }
-
-    void Springs::setUsed(bool used) {
-        Springs::used = used;
+    event Springs::bonustype() {
+        return Springsbonus;
     }
 }

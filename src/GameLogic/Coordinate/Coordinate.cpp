@@ -22,7 +22,14 @@ namespace jumpgame{
     }
 
     bool Coordinate::validCoordinate() const {
-        if(x >= -3 && x <= 3 && y >= -4 && y <= 4){
+        if(x >= -3 && x <= 3.99 && y >= -4.99 && y <= 4){
+            return true;
+        }
+        return false;
+    }
+
+    bool Coordinate::validCoordinate2() const {
+        if(x >= -3 && x <= 3 && y >= -4.99 && y <= 4){
             return true;
         }
         return false;

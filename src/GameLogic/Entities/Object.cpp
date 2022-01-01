@@ -23,4 +23,8 @@ namespace jumpgame {
         return m_heigth;
     }
 
+    bool Object::checkValid() {
+        return getC().validCoordinate();
+    }
+
 }

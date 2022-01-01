@@ -42,6 +42,9 @@ namespace jumpgame {
 
         double getMWidth() const;
 
+        bool checkValid();
+
+
 
 
     private:

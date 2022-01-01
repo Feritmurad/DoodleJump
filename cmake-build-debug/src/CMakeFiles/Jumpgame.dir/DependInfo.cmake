@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Camera/Camera.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Bonus.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/HorizontalPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Object.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o.d"

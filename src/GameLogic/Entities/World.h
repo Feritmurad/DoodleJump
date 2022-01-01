@@ -28,6 +28,7 @@ namespace jumpgame{
 
         void checkPlayerPlatformCollision();
 
+
         const std::shared_ptr<Player> &getMPlayer() const;
 
         const std::set<std::shared_ptr<Platform>> &getMPlatforms() const;
@@ -72,10 +73,6 @@ namespace jumpgame{
         std::set<std::shared_ptr<VerticalPlatform>> m_verticalplatforms;
 
         std::set<std::shared_ptr<TempPlatform>> m_tempplatforms;
-
-        std::set<std::shared_ptr<Jetpack>> m_jetpacks;
-
-        std::set<std::shared_ptr<Springs>> m_springs;
 
         std::shared_ptr<AbstractEntityFactory> m_factory;
 

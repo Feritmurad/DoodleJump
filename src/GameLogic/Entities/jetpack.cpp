@@ -10,13 +10,12 @@ namespace jumpgame {
     void Jetpack::update() {
         jumpgame::ObserverEvent observerevent(0,{0,0},Jetpackbonus);
         notifyObservers(observerevent);
+        Bonus::update();
     }
 
-    bool Jetpack::isUsed() const {
-        return used;
+    event Jetpack::bonustype() {
+        return Jetpackbonus;
     }
 
-    void Jetpack::setUsed(bool used) {
-        Jetpack::used = used;
-    }
+
 }

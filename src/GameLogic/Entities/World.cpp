@@ -64,6 +64,12 @@ namespace jumpgame {
                 ) {
                     m_player->setMVstate(Collision);
                     platform->setMJumpedOn(true);
+                    if(platform->getMBonus() != nullptr){
+                        if(checkCollision(m_player,platform->getMBonus())){
+                            m_player->setMBonusstate(platform->getMBonus()->bonustype());
+                            platform->setMBonus(nullptr);
+                        }
+                    }
                 }
             }
         }
@@ -110,6 +116,7 @@ namespace jumpgame {
                 it4++;
             }
         }
+
     }
 
     const std::set<std::shared_ptr<HorizontalPlatform>> &World::getMHorizontalplatforms() const {
@@ -265,7 +272,7 @@ namespace jumpgame {
                 }
                 bool mustplatform = true;
                 for (const auto &platform: allPlatforms()) {
-                    if (platform->getC().getY() > 1) {
+                    if (platform->getC().getY() > 1.5) {
                         mustplatform = false;
                     }
                 }
@@ -293,9 +300,29 @@ namespace jumpgame {
             std::cout << hardplatformchance << std::endl;
             int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
             Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
+
+            bool bonus = true;
+            int bonuschance = Random::getInstance()->makerandom(1, 100);
+            Coordinate bonuscoord(newcoord.getX(),newcoord.getY());
+            auto b = std::make_shared<Bonus>(bonuscoord);
+            if(bonus){
+                newcoord.setY(newcoord.getY()-b->getMHeigth());
+                if(bonuschance <=101){
+                    b = std::make_shared<Jetpack>(bonuscoord);
+                    b->addObserver(m_Jetpackview);
+                }
+                else{
+                    b = std::make_shared<Springs>(bonuscoord);
+                    b->addObserver(m_Springsview);
+                }
+            }
+
                 if (Random::getInstance()->makerandom(1, 100) > hardplatformchance) {
                     auto newplatform = std::make_shared<Platform>(newcoord);
                     if (checkValidPlatform(newplatform)) {
+                        if(bonus){
+                            newplatform->setMBonus(b);
+                        }
                         m_platforms.insert(newplatform);
                         newplatform->addObserver(m_Platformview);
                     }
@@ -321,8 +348,6 @@ namespace jumpgame {
                         }
                     }
                 }
-
         }
-
 
 }

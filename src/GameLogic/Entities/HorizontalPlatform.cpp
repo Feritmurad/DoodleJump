@@ -13,7 +13,7 @@ namespace jumpgame {
 
     void HorizontalPlatform::move() {
         Coordinate c(getC().getX()+m_velocity_X,getC().getY());
-        if(!c.validCoordinate()){
+        if(!c.validCoordinate2()){
             m_velocity_X *=-1;
             Coordinate tempc(getC().getX()+m_velocity_X,getC().getY());
             c= tempc;

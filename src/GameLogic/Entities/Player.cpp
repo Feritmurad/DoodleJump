@@ -7,7 +7,7 @@
 namespace jumpgame{
 
     Player::Player(const Coordinate &c,const double &reachedheight,const double &Yvelocity,const double &Xvelocity, const double &gravity,VerticalState state,const double &height,const double &width) :
-    Object(c,height,width), m_velocity_Y(Yvelocity), m_velocity_X(Xvelocity),m_gravity(gravity), m_reachedheight(height), m_vstate(state) {
+    Object(c,height,width), m_velocity_X(Xvelocity), m_velocity_Y(Yvelocity),m_gravity(gravity), m_reachedheight(height), m_vstate(state), m_bonusstate(NoBonus) {
 
     }
 
@@ -20,13 +20,24 @@ namespace jumpgame{
     }
 
     void Player::jump() {
-        if(m_vstate == None or m_vstate == Collision){
-            m_velocity_Y = 0.25;
+        if(m_bonusstate == Jetpackbonus){
+            m_velocity_Y = 1;
+            m_jetpackreachheight = m_reachedheight+75;
+            m_bonusstate = NoBonus;
         }
-        else{
-            m_velocity_Y -= 0.015;
+
+        if(m_jetpackreachheight <= m_reachedheight){
+            if (m_vstate == None or m_vstate == Collision) {
+                m_velocity_Y = 0.25;
+                if(m_bonusstate == Springsbonus){
+                    m_velocity_Y = 0.25 * 5;
+                    m_bonusstate = NoBonus;
+                }
+            } else {
+                m_velocity_Y -= 0.015;
+            }
+            m_velocity_Y += m_gravity;
         }
-        m_velocity_Y += m_gravity;
         if(m_velocity_Y > 0){
             reachingnewheight = false;
             if(getC().getY() >= 0){
@@ -47,18 +58,21 @@ namespace jumpgame{
 
     void Player::move() {
         if(m_hstate == Left){
-            m_velocity_X = -0.075;
+            m_velocity_X = -0.1;
         }
         else if(m_hstate == Right){
-            m_velocity_X = 0.075;
+            m_velocity_X = 0.1;
 
         }
         else if(m_hstate == Static){
             m_velocity_X = 0;
         }
         Coordinate c(getC().getX()+m_velocity_X,getC().getY());
-        if(!c.validCoordinate()){
-            c.setX(-(c.getX()-m_velocity_X));
+        if(c.getX() > 3.99){
+            c.setX(-3);
+        }
+        else if(c.getX() < -3){
+            c.setX(3.99);
         }
         setC(c);
     }
@@ -97,6 +111,14 @@ namespace jumpgame{
 
     bool Player::isReachingnewheight() const {
         return reachingnewheight;
+    }
+
+    event Player::getMBonusstate() const {
+        return m_bonusstate;
+    }
+
+    void Player::setMBonusstate(event mBonusstate) {
+        m_bonusstate = mBonusstate;
     }
 
 

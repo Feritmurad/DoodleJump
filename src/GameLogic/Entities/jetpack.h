@@ -4,25 +4,22 @@
 
 #ifndef JUMPGAME_JETPACK_H
 #define JUMPGAME_JETPACK_H
-#include "Object.h"
+#include "Bonus.h"
+#include "iostream"
 
 namespace jumpgame {
 
-    class Jetpack : public Object {
+    class Jetpack : public Bonus {
     public:
-        explicit Jetpack(const Coordinate &c, const double &height = 0.4, const double &width = 1,
-                         const bool &jumped = false) : Object(c, height, width) {}
+        explicit Jetpack(const Coordinate &c, const double &height = 0.2, const double &width = 0.2) : Bonus(c, height, width) {}
 
         ~Jetpack() = default;
 
         void update() override;
 
-        bool isUsed() const;
+        event bonustype() override;
 
-        void setUsed(bool used);
 
-    private:
-        bool used;
 
     };
 }

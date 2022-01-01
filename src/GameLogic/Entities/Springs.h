@@ -5,25 +5,24 @@
 #ifndef JUMPGAME_SPRINGS_H
 #define JUMPGAME_SPRINGS_H
 
-#include "Object.h"
+#include "Bonus.h"
 
 namespace jumpgame {
 
-    class Springs : public Object {
+    class Springs : public Bonus {
     public:
-        explicit Springs(const Coordinate &c, const double &height = 0.4, const double &width = 1,
-                         const bool &jumped = false) : Object(c, height, width) {}
+        explicit Springs(const Coordinate &c, const double &height = 0.2, const double &width = 0.2) : Bonus(c, height, width) {}
 
         ~Springs() = default;
 
         void update() override;
 
-        bool isUsed() const;
+        event bonustype() override;
 
-        void setUsed(bool used);
+
 
     private:
-        bool used;
+
 
     };
 }

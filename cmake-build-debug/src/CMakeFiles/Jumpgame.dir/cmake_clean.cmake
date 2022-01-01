@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o.d"
   "CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o"
   "CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o.d"
+  "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o"
+  "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o.d"
   "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o"
   "CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o.d"
   "CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o"
