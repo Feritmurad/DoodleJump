@@ -301,13 +301,13 @@ namespace jumpgame {
             int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
             Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
 
-            bool bonus = true;
+            bool bonus = Random::getInstance()->makerandom(1, 100) <= 2;
             int bonuschance = Random::getInstance()->makerandom(1, 100);
             Coordinate bonuscoord(newcoord.getX(),newcoord.getY());
             auto b = std::make_shared<Bonus>(bonuscoord);
             if(bonus){
                 newcoord.setY(newcoord.getY()-b->getMHeigth());
-                if(bonuschance <=101){
+                if(bonuschance <=25){
                     b = std::make_shared<Jetpack>(bonuscoord);
                     b->addObserver(m_Jetpackview);
                 }
@@ -331,18 +331,27 @@ namespace jumpgame {
                     if (platformchance <= hardplatformchance / 3) {
                         auto newtempplatform = std::make_shared<TempPlatform>(newcoord);
                         if (checkValidPlatform(newtempplatform)) {
+                            if(bonus){
+                                newtempplatform->setMBonus(b);
+                            }
                             m_tempplatforms.insert(newtempplatform);
                             newtempplatform->addObserver(m_TempPlatformview);
                         }
                     } else if (platformchance <= (hardplatformchance / 3) * 2) {
                         auto newverticalplatform = std::make_shared<VerticalPlatform>(newcoord);
                         if (checkValidPlatform(newverticalplatform)) {
+                            if(bonus){
+                                newverticalplatform->setMBonus(b);
+                            }
                             m_verticalplatforms.insert(newverticalplatform);
                             newverticalplatform->addObserver(m_VerticalPlatformview);
                         }
                     } else {
                         auto newhorizontalplatform = std::make_shared<HorizontalPlatform>(newcoord);
                         if (checkValidPlatform(newhorizontalplatform)) {
+                            if(bonus){
+                                newhorizontalplatform->setMBonus(b);
+                            }
                             m_horizontalplatforms.insert(newhorizontalplatform);
                             newhorizontalplatform->addObserver(m_HorizontalPlatformview);
                         }

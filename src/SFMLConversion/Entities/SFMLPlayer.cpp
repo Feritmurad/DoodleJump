@@ -10,22 +10,21 @@ namespace SFMLjumpgame{
         std::shared_ptr<Camera> camera = std::make_shared<Camera>();
         if(getC().validCoordinate()){
             jumpgame::Coordinate tempc = camera->rescale(getC());
-                    /*
-            sf::Sprite m_playersprite;
+
+
             sf::Texture playertexture;
-            if (!playertexture.loadFromFile("Sprites/Player.png")) {
-                std::cout << "ERROR" << std::endl;
-            }
-            m_playersprite.setTexture(playertexture);
+            playertexture.loadFromFile("Sprites/GJ_GameSheet02.png");
+            sf::IntRect rectSourceSprite(700,700,25,25);
+            sf::Sprite m_playersprite(playertexture,rectSourceSprite);
             m_playersprite.setPosition(sf::Vector2f(tempc.getX(),tempc.getY()));
-            sf::Vector2f targetSize(60.f, 60.f);
-            m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
+            //sf::Vector2f targetSize(50.f, 50.f);
+            //m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
 
             getWindow()->draw(m_playersprite);
-            */
-            sf::RectangleShape rectangle(sf::Vector2f(50.f, 50.f));
-            rectangle.setPosition(tempc.getX(),tempc.getY());
-            getWindow()->draw(rectangle);
+
+            //sf::RectangleShape rectangle(sf::Vector2f(50.f, 50.f));
+            //rectangle.setPosition(tempc.getX(),tempc.getY());
+            //getWindow()->draw(rectangle);
 
 
 
