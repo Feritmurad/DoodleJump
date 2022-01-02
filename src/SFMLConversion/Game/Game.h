@@ -18,7 +18,7 @@
 #include "../../GameLogic/Entities/World.h"
 #include "../../GameLogic/Score/Score.h"
 #include "../../SFMLConversion/Factory/ConcreteFactory.h"
-
+#include "string"
 
 class Game {
 public:
@@ -26,10 +26,12 @@ public:
 
     void movement(sf::Event &event);
 
+    void ScoreText(const std::shared_ptr<sf::RenderWindow> &window);
+
+
 private:
     std::shared_ptr<jumpgame::World> m_world;
 
-    std::shared_ptr<jumpgame::Score> m_score;
 
 };
 

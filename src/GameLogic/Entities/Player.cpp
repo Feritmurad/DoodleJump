@@ -42,6 +42,8 @@ namespace jumpgame{
             reachingnewheight = false;
             if(getC().getY() >= 0){
                 m_reachedheight += m_velocity_Y;
+                ObserverEvent o(5);
+                notifyObservers(o);
                 reachingnewheight = true;
             }
             m_vstate = Jumping;

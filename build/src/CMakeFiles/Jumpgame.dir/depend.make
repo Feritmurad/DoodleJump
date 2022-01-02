@@ -19,6 +19,7 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Fact
 src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o: ../src/GameLogic/Utility/Random.h
 
@@ -125,6 +126,7 @@ src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Fac
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o: ../src/GameLogic/Utility/Random.h
 
@@ -188,6 +190,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/Gam
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.cpp
@@ -210,6 +213,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -234,6 +238,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/Ga
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -258,6 +263,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/Gam
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -281,6 +287,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/G
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -305,6 +312,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/Gam
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -329,6 +337,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/Ga
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -353,6 +362,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../s
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -377,6 +387,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: 
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h
@@ -401,6 +412,7 @@ src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Observer/Observable.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Observer/Observer.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Observer/ObserverEvent.h
+src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Score/Score.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Utility/Clock.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/GameLogic/Utility/Random.h
 src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o: ../src/SFMLConversion/Entities/SFMLEntity.h

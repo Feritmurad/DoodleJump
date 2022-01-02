@@ -11,7 +11,7 @@ namespace jumpgame {
 
     class Jetpack : public Bonus {
     public:
-        explicit Jetpack(const Coordinate &c, const double &height = 0.2, const double &width = 0.2) : Bonus(c, height, width) {}
+        explicit Jetpack(const Coordinate &c, const double &height = 0.5, const double &width = 0.5) : Bonus(c, height, width) {}
 
         ~Jetpack() = default;
 

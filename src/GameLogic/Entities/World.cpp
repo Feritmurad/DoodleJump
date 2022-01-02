@@ -28,12 +28,14 @@ namespace jumpgame {
         m_HorizontalPlatformview = m_factory->createHorizontalPlatformView();
         m_Jetpackview = m_factory->createJetpackView();
         m_Springsview = m_factory->createSpringsView();
+        m_Score = std::make_shared<Score>();
 
 
         jumpgame::Coordinate coordinate(0, -2);
         auto player = std::make_shared<jumpgame::Player>(coordinate);
         m_player = player;
         m_player->addObserver(m_Playerview);
+        m_player->addObserver(m_Score);
         generateRandomStart();
 
     }
@@ -301,7 +303,7 @@ namespace jumpgame {
             int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
             Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
 
-            bool bonus = Random::getInstance()->makerandom(1, 100) <= 2;
+            bool bonus = Random::getInstance()->makerandom(1, 100) <= 100;
             int bonuschance = Random::getInstance()->makerandom(1, 100);
             Coordinate bonuscoord(newcoord.getX(),newcoord.getY());
             auto b = std::make_shared<Bonus>(bonuscoord);
@@ -358,5 +360,13 @@ namespace jumpgame {
                     }
                 }
         }
+
+    const shared_ptr<Score> &World::getMScore() const {
+        return m_Score;
+    }
+
+    void World::setMScore(const shared_ptr<Score> &mScore) {
+        m_Score = mScore;
+    }
 
 }

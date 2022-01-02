@@ -16,7 +16,7 @@ namespace jumpgame {
 
     public:
 
-        explicit Bonus(const Coordinate &c, const double &height=0.2, const double &width=0.2) : Object(c, height, width),m_used(false) {}
+        explicit Bonus(const Coordinate &c, const double &height=0.5, const double &width=0.5) : Object(c, height, width),m_used(false) {}
 
         ~Bonus() = default;
 

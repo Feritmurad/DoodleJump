@@ -12,8 +12,6 @@ void Game::run()
     //make World
     m_world = std::make_shared<jumpgame::World>(std::make_shared<SFMLjumpgame::ConcreteFactory>(window));
     m_world->makeWorld();
-    //make score
-    m_score = std::make_shared<jumpgame::Score>();
 
     auto camera = std::make_shared<SFMLjumpgame::Camera>(m_world);
 
@@ -34,6 +32,7 @@ void Game::run()
 
             m_world->update();
             camera->moveForward();
+            ScoreText(window);
             //std::cout << Random::getInstance()->makerandom(-3.0,3.0) << std::endl;
             //std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
             //std::cout << m_world->getMPlayer()->isReachingnewheight() << std::endl;
@@ -59,5 +58,19 @@ void Game::movement(sf::Event &event) {
         m_world->playermove(jumpgame::Static);
 
     }
+
+}
+
+void Game::ScoreText(const std::shared_ptr<sf::RenderWindow> &window) {
+    sf::Font font;
+    font.loadFromFile("Font/drivecorps.ttf");
+    sf::Text text;
+    text.setFont(font);
+    std::string message = "Score: " + to_string(m_world->getMScore()->getPlayerScore());
+    text.setString(message);
+    text.setColor(sf::Color::Red);
+    text.setCharacterSize(40);
+    window->draw(text);
+
 
 }

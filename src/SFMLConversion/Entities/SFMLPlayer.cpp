@@ -13,12 +13,11 @@ namespace SFMLjumpgame{
 
 
             sf::Texture playertexture;
-            playertexture.loadFromFile("Sprites/GJ_GameSheet02.png");
-            sf::IntRect rectSourceSprite(700,700,25,25);
-            sf::Sprite m_playersprite(playertexture,rectSourceSprite);
+            playertexture.loadFromFile("Sprites/Player.png");
+            sf::Sprite m_playersprite(playertexture);
             m_playersprite.setPosition(sf::Vector2f(tempc.getX(),tempc.getY()));
-            //sf::Vector2f targetSize(50.f, 50.f);
-            //m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
+            sf::Vector2f targetSize(50.f, 50.f);
+            m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
 
             getWindow()->draw(m_playersprite);
 

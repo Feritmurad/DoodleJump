@@ -19,10 +19,14 @@ namespace SFMLjumpgame{
         // transform only if it is in geocoordintes
         if(getC().validCoordinate()){
             jumpgame::Coordinate tempc = camera->rescale(getC());
-            sf::RectangleShape rectangle(sf::Vector2f(20.f, 20.f));
-            rectangle.setFillColor(sf::Color::Red);
-            rectangle.setPosition(tempc.getX(),tempc.getY());
-            getWindow()->draw(rectangle);
+            sf::Texture playertexture;
+            playertexture.loadFromFile("Sprites/Jetpack.png");
+            sf::Sprite m_playersprite(playertexture);
+            m_playersprite.setPosition(sf::Vector2f(tempc.getX(),tempc.getY()));
+            sf::Vector2f targetSize(50.f, 50.f);
+            m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
+
+            getWindow()->draw(m_playersprite);
         }
         jumpgame::Coordinate tempcoord;
         setC(tempcoord);

@@ -14,6 +14,7 @@
 #include "TempPlatform.h"
 #include "jetpack.h"
 #include "Springs.h"
+#include "../Score/Score.h"
 
 namespace jumpgame{
 
@@ -63,6 +64,10 @@ namespace jumpgame{
 
         std::set<std::shared_ptr<Platform>> allPlatforms();
 
+        const shared_ptr<Score> &getMScore() const;
+
+        void setMScore(const shared_ptr<Score> &mScore);
+
     private:
         std::shared_ptr<Player> m_player;
 
@@ -89,6 +94,8 @@ namespace jumpgame{
         std::shared_ptr<Observer> m_Jetpackview;
 
         std::shared_ptr<Observer> m_Springsview;
+
+        std::shared_ptr<Score> m_Score;
 
 
 
