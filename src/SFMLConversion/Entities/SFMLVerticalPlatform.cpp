@@ -23,6 +23,8 @@ namespace SFMLjumpgame{
             jumpgame::Coordinate tempc = camera->rescale(getC());
             sf::RectangleShape rectangle(sf::Vector2f(100.f, 40.f));
             rectangle.setFillColor(sf::Color::Yellow);
+            rectangle.setOutlineThickness(2);
+            rectangle.setOutlineColor(sf::Color::Black);
             rectangle.setPosition(tempc.getX(),tempc.getY());
             getWindow()->draw(rectangle);
         }

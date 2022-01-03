@@ -41,6 +41,8 @@ namespace jumpgame {
 
         virtual std::shared_ptr<Observer> createSpringsView()=0;
 
+        virtual std::shared_ptr<Observer> createBGtileView()=0;
+
 
 
 

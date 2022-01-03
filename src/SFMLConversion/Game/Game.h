@@ -19,6 +19,10 @@
 #include "../../GameLogic/Score/Score.h"
 #include "../../SFMLConversion/Factory/ConcreteFactory.h"
 #include "string"
+#include <iostream>
+#include <fstream>
+#include <string>
+
 
 class Game {
 public:
@@ -27,6 +31,8 @@ public:
     void movement(sf::Event &event);
 
     void ScoreText(const std::shared_ptr<sf::RenderWindow> &window);
+
+    void GameOver(const std::shared_ptr<sf::RenderWindow> &window);
 
 
 private:

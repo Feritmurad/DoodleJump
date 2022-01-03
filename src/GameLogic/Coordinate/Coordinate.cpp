@@ -35,8 +35,8 @@ namespace jumpgame{
         return false;
     }
 
-    bool Coordinate::validHorizontally() const {
-        if(x>=-3 && x<=3){
+    bool Coordinate::validHorizontallyandTop() const {
+        if(x>=-3 && x<=3.99 && y <= 4){
             return true;
         }
         return false;

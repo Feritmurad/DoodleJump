@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Camera/Camera.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/BG_Tile.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Bonus.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Entity.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/HorizontalPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o.d"
@@ -28,6 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Score/Score.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Clock.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.cpp" "src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o.d"
+  "/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLBG_Tile.cpp" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o.d"
   "/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLJetpack.cpp" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o" "gcc" "src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o.d"

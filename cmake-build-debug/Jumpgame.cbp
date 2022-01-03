@@ -134,6 +134,12 @@
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Coordinate/Coordinate.h">
 			<Option target="Jumpgame"/>
 		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/BG_Tile.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/BG_Tile.h">
+			<Option target="Jumpgame"/>
+		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Entities/Bonus.cpp">
 			<Option target="Jumpgame"/>
 		</Unit>
@@ -240,6 +246,12 @@
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/GameLogic/Utility/Random.h">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLBG_Tile.cpp">
+			<Option target="Jumpgame"/>
+		</Unit>
+		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLBG_Tile.h">
 			<Option target="Jumpgame"/>
 		</Unit>
 		<Unit filename="/home/ferit/Desktop/Projects/Jump-game/src/SFMLConversion/Entities/SFMLEntity.cpp">

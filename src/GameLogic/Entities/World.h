@@ -15,20 +15,20 @@
 #include "jetpack.h"
 #include "Springs.h"
 #include "../Score/Score.h"
+#include "BG_Tile.h"
 
 namespace jumpgame{
 
-    class World : public Entity{
+    class World{
     public:
 
         explicit World(std::shared_ptr<AbstractEntityFactory> factory);
 
-        void update() override;
+        void update();
 
         void makeWorld();
 
         void checkPlayerPlatformCollision();
-
 
         const std::shared_ptr<Player> &getMPlayer() const;
 
@@ -68,6 +68,12 @@ namespace jumpgame{
 
         void setMScore(const shared_ptr<Score> &mScore);
 
+        void checkBackground();
+
+        const set<std::shared_ptr<BG_Tile>> &getMBgtile() const;
+
+        void setMBgtile(const set<std::shared_ptr<BG_Tile>> &mBgtile);
+
     private:
         std::shared_ptr<Player> m_player;
 
@@ -80,6 +86,11 @@ namespace jumpgame{
         std::set<std::shared_ptr<TempPlatform>> m_tempplatforms;
 
         std::shared_ptr<AbstractEntityFactory> m_factory;
+
+        std::set<std::shared_ptr<BG_Tile>> m_bgtile;
+
+
+    private:
 
         std::shared_ptr<Observer> m_Playerview;
 
@@ -94,6 +105,8 @@ namespace jumpgame{
         std::shared_ptr<Observer> m_Jetpackview;
 
         std::shared_ptr<Observer> m_Springsview;
+
+        std::shared_ptr<Observer> m_bgtileview;
 
         std::shared_ptr<Score> m_Score;
 

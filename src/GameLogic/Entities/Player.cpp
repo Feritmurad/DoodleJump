@@ -53,7 +53,7 @@ namespace jumpgame{
             m_vstate = Falling;
         }
         Coordinate c(getC().getX(),getC().getY()+m_velocity_Y);
-        if(c.validCoordinate()){
+        if(c.validHorizontallyandTop()){
             setC(c);
         }
     }

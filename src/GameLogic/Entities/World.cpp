@@ -10,7 +10,11 @@ namespace jumpgame {
 
     void World::update() {
         generateNewEntities();
+        checkBackground();
         checkPlayerPlatformCollision();
+        for (const auto &bgtile: m_bgtile) {
+            bgtile->update();
+        }
         for (const auto &platform: allPlatforms()) {
             platform->update();
         }
@@ -29,6 +33,18 @@ namespace jumpgame {
         m_Jetpackview = m_factory->createJetpackView();
         m_Springsview = m_factory->createSpringsView();
         m_Score = std::make_shared<Score>();
+        m_bgtileview = m_factory->createBGtileView();
+        Coordinate bgtilecoord(-3,4);
+        auto bgtile = std::make_shared<BG_Tile>(bgtilecoord);
+
+        bgtile->addObserver(m_bgtileview);
+        m_bgtile.insert(bgtile);
+
+        Coordinate bgtilecoord2(-3,13);
+        auto bgtile2 = std::make_shared<BG_Tile>(bgtilecoord2);
+        bgtile2->addObserver(m_bgtileview);
+        m_bgtile.insert(bgtile2);
+
 
 
         jumpgame::Coordinate coordinate(0, -2);
@@ -303,7 +319,7 @@ namespace jumpgame {
             int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
             Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
 
-            bool bonus = Random::getInstance()->makerandom(1, 100) <= 100;
+            bool bonus = Random::getInstance()->makerandom(1, 100) <= 4;
             int bonuschance = Random::getInstance()->makerandom(1, 100);
             Coordinate bonuscoord(newcoord.getX(),newcoord.getY());
             auto b = std::make_shared<Bonus>(bonuscoord);
@@ -367,6 +383,24 @@ namespace jumpgame {
 
     void World::setMScore(const shared_ptr<Score> &mScore) {
         m_Score = mScore;
+    }
+
+    void World::checkBackground() {
+        for (const auto &bgtile: m_bgtile){
+            if(bgtile->getC().getY() <-4.99){
+                Coordinate bgtilecoord(-3,13);
+                bgtile->setC(bgtilecoord);
+            }
+        }
+
+    }
+
+    const set<std::shared_ptr<BG_Tile>> &World::getMBgtile() const {
+        return m_bgtile;
+    }
+
+    void World::setMBgtile(const set<std::shared_ptr<BG_Tile>> &mBgtile) {
+        m_bgtile = mBgtile;
     }
 
 }

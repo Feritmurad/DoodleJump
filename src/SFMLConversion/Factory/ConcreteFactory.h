@@ -12,6 +12,7 @@
 #include "../Entities/SFMLHorizontalPlatform.h"
 #include "../Entities/SFMLJetpack.h"
 #include "../Entities/SFMLSprings.h"
+#include "../Entities/SFMLBG_Tile.h"
 
 
 namespace SFMLjumpgame{
@@ -35,6 +36,8 @@ public:
     std::shared_ptr<jumpgame::Observer> createJetpackView() override;
 
     std::shared_ptr<jumpgame::Observer> createSpringsView() override;
+
+    std::shared_ptr<jumpgame::Observer> createBGtileView() override;
 
 private:
     std::shared_ptr<sf::RenderWindow> m_window;

@@ -223,6 +223,30 @@ GameLogic/Coordinate/Coordinate.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.s
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.s
 
+GameLogic/Entities/BG_Tile.o: GameLogic/Entities/BG_Tile.cpp.o
+.PHONY : GameLogic/Entities/BG_Tile.o
+
+# target to build an object file
+GameLogic/Entities/BG_Tile.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.o
+.PHONY : GameLogic/Entities/BG_Tile.cpp.o
+
+GameLogic/Entities/BG_Tile.i: GameLogic/Entities/BG_Tile.cpp.i
+.PHONY : GameLogic/Entities/BG_Tile.i
+
+# target to preprocess a source file
+GameLogic/Entities/BG_Tile.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.i
+.PHONY : GameLogic/Entities/BG_Tile.cpp.i
+
+GameLogic/Entities/BG_Tile.s: GameLogic/Entities/BG_Tile.cpp.s
+.PHONY : GameLogic/Entities/BG_Tile.s
+
+# target to generate assembly for a file
+GameLogic/Entities/BG_Tile.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.s
+.PHONY : GameLogic/Entities/BG_Tile.cpp.s
+
 GameLogic/Entities/Bonus.o: GameLogic/Entities/Bonus.cpp.o
 .PHONY : GameLogic/Entities/Bonus.o
 
@@ -655,6 +679,30 @@ GameLogic/Utility/Random.cpp.s:
 	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
 .PHONY : GameLogic/Utility/Random.cpp.s
 
+SFMLConversion/Entities/SFMLBG_Tile.o: SFMLConversion/Entities/SFMLBG_Tile.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.o
+
+# target to build an object file
+SFMLConversion/Entities/SFMLBG_Tile.cpp.o:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.o
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.o
+
+SFMLConversion/Entities/SFMLBG_Tile.i: SFMLConversion/Entities/SFMLBG_Tile.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.i
+
+# target to preprocess a source file
+SFMLConversion/Entities/SFMLBG_Tile.cpp.i:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.i
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.i
+
+SFMLConversion/Entities/SFMLBG_Tile.s: SFMLConversion/Entities/SFMLBG_Tile.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.s
+
+# target to generate assembly for a file
+SFMLConversion/Entities/SFMLBG_Tile.cpp.s:
+	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.s
+.PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.s
+
 SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLEntity.o
 
@@ -962,6 +1010,9 @@ help:
 	@echo "... GameLogic/Coordinate/Coordinate.o"
 	@echo "... GameLogic/Coordinate/Coordinate.i"
 	@echo "... GameLogic/Coordinate/Coordinate.s"
+	@echo "... GameLogic/Entities/BG_Tile.o"
+	@echo "... GameLogic/Entities/BG_Tile.i"
+	@echo "... GameLogic/Entities/BG_Tile.s"
 	@echo "... GameLogic/Entities/Bonus.o"
 	@echo "... GameLogic/Entities/Bonus.i"
 	@echo "... GameLogic/Entities/Bonus.s"
@@ -1016,6 +1067,9 @@ help:
 	@echo "... GameLogic/Utility/Random.o"
 	@echo "... GameLogic/Utility/Random.i"
 	@echo "... GameLogic/Utility/Random.s"
+	@echo "... SFMLConversion/Entities/SFMLBG_Tile.o"
+	@echo "... SFMLConversion/Entities/SFMLBG_Tile.i"
+	@echo "... SFMLConversion/Entities/SFMLBG_Tile.s"
 	@echo "... SFMLConversion/Entities/SFMLEntity.o"
 	@echo "... SFMLConversion/Entities/SFMLEntity.i"
 	@echo "... SFMLConversion/Entities/SFMLEntity.s"

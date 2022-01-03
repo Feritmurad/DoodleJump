@@ -31,6 +31,10 @@ namespace SFMLjumpgame {
                                                   platform->getC().getY() - m_world->getMPlayer()->getMVelocityY());
                     platform->setC(newcoord);
                 }
+                for (const auto &bgtile: m_world->getMBgtile()) {
+                    jumpgame::Coordinate newcoord(bgtile->getC().getX(),bgtile->getC().getY()- 0.01);
+                    bgtile->setC(newcoord);
+                }
                 for (const auto &platform: m_world->getMVerticalplatforms()) {
                     platform->updateMMaxH(- m_world->getMPlayer()->getMVelocityY());
                     platform->updateMMinH(- m_world->getMPlayer()->getMVelocityY());

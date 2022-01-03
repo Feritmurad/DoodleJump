@@ -52,7 +52,7 @@ namespace jumpgame{
 
         bool validCoordinate2() const;
 
-        bool validHorizontally() const;
+        bool validHorizontallyandTop() const;
 
         bool operator>= (const Coordinate& c) const;
 

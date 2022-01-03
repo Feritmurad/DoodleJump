@@ -34,5 +34,9 @@ namespace SFMLjumpgame {
         return std::make_shared<SFMLSprings>(m_window);
     }
 
+    std::shared_ptr<jumpgame::Observer> ConcreteFactory::createBGtileView() {
+        return std::make_shared<SFMLBG_Tile>(m_window);
+    }
+
 
 }
