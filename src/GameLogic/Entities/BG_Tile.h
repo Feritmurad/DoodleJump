@@ -8,7 +8,7 @@
 #include "Bonus.h"
 #include "iostream"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class BG_Tile : public Object {
     public:

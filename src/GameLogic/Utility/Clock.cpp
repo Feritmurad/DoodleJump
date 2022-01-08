@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Clock.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     /*Instance = nullptr */
     Clock *Clock::instance = nullptr;

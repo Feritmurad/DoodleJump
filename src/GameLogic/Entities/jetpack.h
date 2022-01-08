@@ -7,7 +7,7 @@
 #include "Bonus.h"
 #include "iostream"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Jetpack : public Bonus {
     public:

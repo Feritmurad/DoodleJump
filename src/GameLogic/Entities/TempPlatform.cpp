@@ -4,6 +4,20 @@
 
 #include "TempPlatform.h"
 
-void jumpgame::TempPlatform::update() {
-    Platform::update();
+namespace DoodleJump {
+
+    void TempPlatform::update() {
+        Platform::update();
+    }
+
+    void TempPlatform::updateScore() {
+        if (isMJumpedOn()) {
+            ObserverEvent e(-100);
+            notifyObservers(e);
+        } else {
+            ObserverEvent e(50);
+            notifyObservers(e);
+        }
+    }
+
 }

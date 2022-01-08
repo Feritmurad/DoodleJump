@@ -36,7 +36,7 @@ public:
 
 
 private:
-    std::shared_ptr<jumpgame::World> m_world;
+    std::shared_ptr<DoodleJump::World> m_world;
 
 
 };

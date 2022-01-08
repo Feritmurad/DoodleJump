@@ -4,45 +4,28 @@
 
 #include "SFMLPlayer.h"
 
-namespace SFMLjumpgame{
+namespace SFMLDoodleJump{
+
+
 
     void SFMLPlayer::draw(){
-        std::shared_ptr<Camera> camera = std::make_shared<Camera>();
+        std::shared_ptr<DoodleJump::Camera> camera = std::make_shared<DoodleJump::Camera>();
         if(getC().validCoordinate()){
-            jumpgame::Coordinate tempc = camera->rescale(getC());
-
-
+            DoodleJump::Coordinate tempc = camera->rescale(getC());
             sf::Texture playertexture;
             playertexture.loadFromFile("Sprites/Player.png");
             sf::Sprite m_playersprite(playertexture);
             m_playersprite.setPosition(sf::Vector2f(tempc.getX(),tempc.getY()));
             sf::Vector2f targetSize(50.f, 50.f);
             m_playersprite.setScale(targetSize.x/m_playersprite.getLocalBounds().width, targetSize.y/m_playersprite.getLocalBounds().height);
-
             getWindow()->draw(m_playersprite);
-
-            //sf::RectangleShape rectangle(sf::Vector2f(50.f, 50.f));
-            //rectangle.setPosition(tempc.getX(),tempc.getY());
-            //getWindow()->draw(rectangle);
-
-
-
         }
-        jumpgame::Coordinate tempcoord;
+        DoodleJump::Coordinate tempcoord;
         setC(tempcoord);
     }
 
-    void SFMLPlayer::handleEvent(const jumpgame::ObserverEvent &event) {
-        // if update amount is 0 ( so no score update we have to change pos of player)
-        if(event.getMUpdateAmount() == 0 && event.getMBonusevent() == jumpgame::NoBonus){
-            setC(event.getMCoordinate());
-            draw();
-        }
-    }
 
-    SFMLPlayer::SFMLPlayer(const shared_ptr<sf::RenderWindow> &window, const jumpgame::Coordinate &c) : SFMLObject(window, c) {
 
-    }
-
+    SFMLPlayer::SFMLPlayer(const shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c) : SFMLObject(window,c){}
 
 }

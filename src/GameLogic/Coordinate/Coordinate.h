@@ -5,7 +5,7 @@
 #ifndef GAME_ARRAYWORLD_H
 #define GAME_ARRAYWORLD_H
 
-namespace jumpgame{
+namespace DoodleJump{
     class Coordinate {
 
     private:

@@ -57,10 +57,10 @@ RM = /snap/clion/178/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferit/Desktop/Projects/Jump-game
+CMAKE_SOURCE_DIR = /home/ferit/Desktop/Projects/DoodleJump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug/CMakeFiles /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug/CMakeFiles /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Jumpgame
+# Target rules for targets named DoodleJump
 
 # Build rule for target.
-Jumpgame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Jumpgame
-.PHONY : Jumpgame
+DoodleJump: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DoodleJump
+.PHONY : DoodleJump
 
 # fast build rule for target.
-Jumpgame/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
-.PHONY : Jumpgame/fast
+DoodleJump/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/build
+.PHONY : DoodleJump/fast
 
 # Help Target
 help:
@@ -186,7 +186,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Jumpgame"
+	@echo "... DoodleJump"
 .PHONY : help
 
 

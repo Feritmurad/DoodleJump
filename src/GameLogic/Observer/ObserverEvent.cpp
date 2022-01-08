@@ -4,15 +4,17 @@
 
 #include "ObserverEvent.h"
 
-const jumpgame::Coordinate &jumpgame::ObserverEvent::getMCoordinate() const {
-    return m_coordinate;
-}
+namespace DoodleJump {
 
-int jumpgame::ObserverEvent::getMUpdateAmount() const {
-    return m_update_amount;
-}
+    const Coordinate &ObserverEvent::getMCoordinate() const {
+        return m_coordinate;
+    }
 
-jumpgame::event jumpgame::ObserverEvent::getMBonusevent() const {
-    return m_bonusevent;
-}
+    int ObserverEvent::getMUpdateAmount() const {
+        return m_update_amount;
+    }
 
+    event ObserverEvent::getMBonusevent() const {
+        return m_bonusevent;
+    }
+}

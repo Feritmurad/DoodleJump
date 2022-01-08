@@ -6,7 +6,7 @@
 #define JUMPGAME_OBSERVEREVENT_H
 #include "../Coordinate/Coordinate.h"
 
-namespace jumpgame {
+namespace DoodleJump {
     enum event{Jetpackbonus,Springsbonus,NoBonus};
     class ObserverEvent {
 

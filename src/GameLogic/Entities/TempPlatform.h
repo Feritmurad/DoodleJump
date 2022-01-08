@@ -6,7 +6,7 @@
 #define JUMPGAME_TEMPPLATFORM_H
 #include "Platform.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class TempPlatform : public Platform {
     public:
@@ -14,6 +14,8 @@ namespace jumpgame {
         explicit TempPlatform(const Coordinate &c,const double &height=0.4,const double &width=1, const bool &jumped = false) : Platform(c,height,width,jumped) {}
 
         void update() override;
+
+        void updateScore() override;
 
     };
 

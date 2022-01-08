@@ -6,15 +6,15 @@
 #define JUMPGAME_SFMLPLAYER_H
 #include "SFMLObject.h"
 
-namespace SFMLjumpgame {
+namespace SFMLDoodleJump {
 
 class SFMLPlayer : public SFMLObject{
         public:
-            explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const jumpgame::Coordinate &c = {0,0});
+            explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const DoodleJump::Coordinate &c = {0,0});
 
-            void draw();
+            void draw() override;
 
-            void handleEvent(const jumpgame::ObserverEvent &event) override;
+
 
         private:
 

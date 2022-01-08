@@ -8,12 +8,9 @@
 #include "../Observer/Observer.h"
 
 
-namespace SFMLjumpgame{
-    class SFMLPlayer;
-}
 
 
-namespace jumpgame {
+namespace DoodleJump {
     class AbstractEntityFactory {
 
     public:

@@ -4,7 +4,7 @@
 
 #include "Object.h"
 
-namespace jumpgame {
+namespace DoodleJump {
     
     Coordinate Object::getC() const {
         return m_c;

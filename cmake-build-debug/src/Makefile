@@ -57,10 +57,10 @@ RM = /snap/clion/178/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferit/Desktop/Projects/Jump-game
+CMAKE_SOURCE_DIR = /home/ferit/Desktop/Projects/DoodleJump
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -89,16 +89,6 @@ install/local/fast: preinstall/fast
 	/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -108,6 +98,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -132,14 +132,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug/CMakeFiles /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug/src//CMakeFiles/progress.marks
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug/CMakeFiles 0
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug/CMakeFiles /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug/src//CMakeFiles/progress.marks
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,39 +148,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/Jumpgame.dir/rule:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Jumpgame.dir/rule
-.PHONY : src/CMakeFiles/Jumpgame.dir/rule
+src/CMakeFiles/DoodleJump.dir/rule:
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/DoodleJump.dir/rule
+.PHONY : src/CMakeFiles/DoodleJump.dir/rule
 
 # Convenience name for target.
-Jumpgame: src/CMakeFiles/Jumpgame.dir/rule
-.PHONY : Jumpgame
+DoodleJump: src/CMakeFiles/DoodleJump.dir/rule
+.PHONY : DoodleJump
 
 # fast build rule for target.
-Jumpgame/fast:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/build
-.PHONY : Jumpgame/fast
+DoodleJump/fast:
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/build
+.PHONY : DoodleJump/fast
 
 GameLogic/Camera/Camera.o: GameLogic/Camera/Camera.cpp.o
 .PHONY : GameLogic/Camera/Camera.o
 
 # target to build an object file
 GameLogic/Camera/Camera.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Camera/Camera.cpp.o
 .PHONY : GameLogic/Camera/Camera.cpp.o
 
 GameLogic/Camera/Camera.i: GameLogic/Camera/Camera.cpp.i
@@ -188,7 +188,7 @@ GameLogic/Camera/Camera.i: GameLogic/Camera/Camera.cpp.i
 
 # target to preprocess a source file
 GameLogic/Camera/Camera.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Camera/Camera.cpp.i
 .PHONY : GameLogic/Camera/Camera.cpp.i
 
 GameLogic/Camera/Camera.s: GameLogic/Camera/Camera.cpp.s
@@ -196,7 +196,7 @@ GameLogic/Camera/Camera.s: GameLogic/Camera/Camera.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Camera/Camera.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Camera/Camera.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Camera/Camera.cpp.s
 .PHONY : GameLogic/Camera/Camera.cpp.s
 
 GameLogic/Coordinate/Coordinate.o: GameLogic/Coordinate/Coordinate.cpp.o
@@ -204,7 +204,7 @@ GameLogic/Coordinate/Coordinate.o: GameLogic/Coordinate/Coordinate.cpp.o
 
 # target to build an object file
 GameLogic/Coordinate/Coordinate.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Coordinate/Coordinate.cpp.o
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.o
 
 GameLogic/Coordinate/Coordinate.i: GameLogic/Coordinate/Coordinate.cpp.i
@@ -212,7 +212,7 @@ GameLogic/Coordinate/Coordinate.i: GameLogic/Coordinate/Coordinate.cpp.i
 
 # target to preprocess a source file
 GameLogic/Coordinate/Coordinate.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Coordinate/Coordinate.cpp.i
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.i
 
 GameLogic/Coordinate/Coordinate.s: GameLogic/Coordinate/Coordinate.cpp.s
@@ -220,7 +220,7 @@ GameLogic/Coordinate/Coordinate.s: GameLogic/Coordinate/Coordinate.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Coordinate/Coordinate.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Coordinate/Coordinate.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Coordinate/Coordinate.cpp.s
 .PHONY : GameLogic/Coordinate/Coordinate.cpp.s
 
 GameLogic/Entities/BG_Tile.o: GameLogic/Entities/BG_Tile.cpp.o
@@ -228,7 +228,7 @@ GameLogic/Entities/BG_Tile.o: GameLogic/Entities/BG_Tile.cpp.o
 
 # target to build an object file
 GameLogic/Entities/BG_Tile.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/BG_Tile.cpp.o
 .PHONY : GameLogic/Entities/BG_Tile.cpp.o
 
 GameLogic/Entities/BG_Tile.i: GameLogic/Entities/BG_Tile.cpp.i
@@ -236,7 +236,7 @@ GameLogic/Entities/BG_Tile.i: GameLogic/Entities/BG_Tile.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/BG_Tile.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/BG_Tile.cpp.i
 .PHONY : GameLogic/Entities/BG_Tile.cpp.i
 
 GameLogic/Entities/BG_Tile.s: GameLogic/Entities/BG_Tile.cpp.s
@@ -244,7 +244,7 @@ GameLogic/Entities/BG_Tile.s: GameLogic/Entities/BG_Tile.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/BG_Tile.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/BG_Tile.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/BG_Tile.cpp.s
 .PHONY : GameLogic/Entities/BG_Tile.cpp.s
 
 GameLogic/Entities/Bonus.o: GameLogic/Entities/Bonus.cpp.o
@@ -252,7 +252,7 @@ GameLogic/Entities/Bonus.o: GameLogic/Entities/Bonus.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Bonus.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Bonus.cpp.o
 .PHONY : GameLogic/Entities/Bonus.cpp.o
 
 GameLogic/Entities/Bonus.i: GameLogic/Entities/Bonus.cpp.i
@@ -260,7 +260,7 @@ GameLogic/Entities/Bonus.i: GameLogic/Entities/Bonus.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Bonus.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Bonus.cpp.i
 .PHONY : GameLogic/Entities/Bonus.cpp.i
 
 GameLogic/Entities/Bonus.s: GameLogic/Entities/Bonus.cpp.s
@@ -268,7 +268,7 @@ GameLogic/Entities/Bonus.s: GameLogic/Entities/Bonus.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Bonus.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Bonus.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Bonus.cpp.s
 .PHONY : GameLogic/Entities/Bonus.cpp.s
 
 GameLogic/Entities/Entity.o: GameLogic/Entities/Entity.cpp.o
@@ -276,7 +276,7 @@ GameLogic/Entities/Entity.o: GameLogic/Entities/Entity.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Entity.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Entity.cpp.o
 .PHONY : GameLogic/Entities/Entity.cpp.o
 
 GameLogic/Entities/Entity.i: GameLogic/Entities/Entity.cpp.i
@@ -284,7 +284,7 @@ GameLogic/Entities/Entity.i: GameLogic/Entities/Entity.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Entity.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Entity.cpp.i
 .PHONY : GameLogic/Entities/Entity.cpp.i
 
 GameLogic/Entities/Entity.s: GameLogic/Entities/Entity.cpp.s
@@ -292,7 +292,7 @@ GameLogic/Entities/Entity.s: GameLogic/Entities/Entity.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Entity.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Entity.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Entity.cpp.s
 .PHONY : GameLogic/Entities/Entity.cpp.s
 
 GameLogic/Entities/HorizontalPlatform.o: GameLogic/Entities/HorizontalPlatform.cpp.o
@@ -300,7 +300,7 @@ GameLogic/Entities/HorizontalPlatform.o: GameLogic/Entities/HorizontalPlatform.c
 
 # target to build an object file
 GameLogic/Entities/HorizontalPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/HorizontalPlatform.cpp.o
 .PHONY : GameLogic/Entities/HorizontalPlatform.cpp.o
 
 GameLogic/Entities/HorizontalPlatform.i: GameLogic/Entities/HorizontalPlatform.cpp.i
@@ -308,7 +308,7 @@ GameLogic/Entities/HorizontalPlatform.i: GameLogic/Entities/HorizontalPlatform.c
 
 # target to preprocess a source file
 GameLogic/Entities/HorizontalPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/HorizontalPlatform.cpp.i
 .PHONY : GameLogic/Entities/HorizontalPlatform.cpp.i
 
 GameLogic/Entities/HorizontalPlatform.s: GameLogic/Entities/HorizontalPlatform.cpp.s
@@ -316,7 +316,7 @@ GameLogic/Entities/HorizontalPlatform.s: GameLogic/Entities/HorizontalPlatform.c
 
 # target to generate assembly for a file
 GameLogic/Entities/HorizontalPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/HorizontalPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/HorizontalPlatform.cpp.s
 .PHONY : GameLogic/Entities/HorizontalPlatform.cpp.s
 
 GameLogic/Entities/Object.o: GameLogic/Entities/Object.cpp.o
@@ -324,7 +324,7 @@ GameLogic/Entities/Object.o: GameLogic/Entities/Object.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Object.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Object.cpp.o
 .PHONY : GameLogic/Entities/Object.cpp.o
 
 GameLogic/Entities/Object.i: GameLogic/Entities/Object.cpp.i
@@ -332,7 +332,7 @@ GameLogic/Entities/Object.i: GameLogic/Entities/Object.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Object.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Object.cpp.i
 .PHONY : GameLogic/Entities/Object.cpp.i
 
 GameLogic/Entities/Object.s: GameLogic/Entities/Object.cpp.s
@@ -340,7 +340,7 @@ GameLogic/Entities/Object.s: GameLogic/Entities/Object.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Object.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Object.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Object.cpp.s
 .PHONY : GameLogic/Entities/Object.cpp.s
 
 GameLogic/Entities/Platform.o: GameLogic/Entities/Platform.cpp.o
@@ -348,7 +348,7 @@ GameLogic/Entities/Platform.o: GameLogic/Entities/Platform.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Platform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Platform.cpp.o
 .PHONY : GameLogic/Entities/Platform.cpp.o
 
 GameLogic/Entities/Platform.i: GameLogic/Entities/Platform.cpp.i
@@ -356,7 +356,7 @@ GameLogic/Entities/Platform.i: GameLogic/Entities/Platform.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Platform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Platform.cpp.i
 .PHONY : GameLogic/Entities/Platform.cpp.i
 
 GameLogic/Entities/Platform.s: GameLogic/Entities/Platform.cpp.s
@@ -364,7 +364,7 @@ GameLogic/Entities/Platform.s: GameLogic/Entities/Platform.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Platform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Platform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Platform.cpp.s
 .PHONY : GameLogic/Entities/Platform.cpp.s
 
 GameLogic/Entities/Player.o: GameLogic/Entities/Player.cpp.o
@@ -372,7 +372,7 @@ GameLogic/Entities/Player.o: GameLogic/Entities/Player.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Player.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Player.cpp.o
 .PHONY : GameLogic/Entities/Player.cpp.o
 
 GameLogic/Entities/Player.i: GameLogic/Entities/Player.cpp.i
@@ -380,7 +380,7 @@ GameLogic/Entities/Player.i: GameLogic/Entities/Player.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Player.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Player.cpp.i
 .PHONY : GameLogic/Entities/Player.cpp.i
 
 GameLogic/Entities/Player.s: GameLogic/Entities/Player.cpp.s
@@ -388,7 +388,7 @@ GameLogic/Entities/Player.s: GameLogic/Entities/Player.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Player.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Player.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Player.cpp.s
 .PHONY : GameLogic/Entities/Player.cpp.s
 
 GameLogic/Entities/Springs.o: GameLogic/Entities/Springs.cpp.o
@@ -396,7 +396,7 @@ GameLogic/Entities/Springs.o: GameLogic/Entities/Springs.cpp.o
 
 # target to build an object file
 GameLogic/Entities/Springs.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Springs.cpp.o
 .PHONY : GameLogic/Entities/Springs.cpp.o
 
 GameLogic/Entities/Springs.i: GameLogic/Entities/Springs.cpp.i
@@ -404,7 +404,7 @@ GameLogic/Entities/Springs.i: GameLogic/Entities/Springs.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/Springs.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Springs.cpp.i
 .PHONY : GameLogic/Entities/Springs.cpp.i
 
 GameLogic/Entities/Springs.s: GameLogic/Entities/Springs.cpp.s
@@ -412,7 +412,7 @@ GameLogic/Entities/Springs.s: GameLogic/Entities/Springs.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/Springs.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/Springs.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/Springs.cpp.s
 .PHONY : GameLogic/Entities/Springs.cpp.s
 
 GameLogic/Entities/TempPlatform.o: GameLogic/Entities/TempPlatform.cpp.o
@@ -420,7 +420,7 @@ GameLogic/Entities/TempPlatform.o: GameLogic/Entities/TempPlatform.cpp.o
 
 # target to build an object file
 GameLogic/Entities/TempPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/TempPlatform.cpp.o
 .PHONY : GameLogic/Entities/TempPlatform.cpp.o
 
 GameLogic/Entities/TempPlatform.i: GameLogic/Entities/TempPlatform.cpp.i
@@ -428,7 +428,7 @@ GameLogic/Entities/TempPlatform.i: GameLogic/Entities/TempPlatform.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/TempPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/TempPlatform.cpp.i
 .PHONY : GameLogic/Entities/TempPlatform.cpp.i
 
 GameLogic/Entities/TempPlatform.s: GameLogic/Entities/TempPlatform.cpp.s
@@ -436,7 +436,7 @@ GameLogic/Entities/TempPlatform.s: GameLogic/Entities/TempPlatform.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/TempPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/TempPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/TempPlatform.cpp.s
 .PHONY : GameLogic/Entities/TempPlatform.cpp.s
 
 GameLogic/Entities/VerticalPlatform.o: GameLogic/Entities/VerticalPlatform.cpp.o
@@ -444,7 +444,7 @@ GameLogic/Entities/VerticalPlatform.o: GameLogic/Entities/VerticalPlatform.cpp.o
 
 # target to build an object file
 GameLogic/Entities/VerticalPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/VerticalPlatform.cpp.o
 .PHONY : GameLogic/Entities/VerticalPlatform.cpp.o
 
 GameLogic/Entities/VerticalPlatform.i: GameLogic/Entities/VerticalPlatform.cpp.i
@@ -452,7 +452,7 @@ GameLogic/Entities/VerticalPlatform.i: GameLogic/Entities/VerticalPlatform.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/VerticalPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/VerticalPlatform.cpp.i
 .PHONY : GameLogic/Entities/VerticalPlatform.cpp.i
 
 GameLogic/Entities/VerticalPlatform.s: GameLogic/Entities/VerticalPlatform.cpp.s
@@ -460,7 +460,7 @@ GameLogic/Entities/VerticalPlatform.s: GameLogic/Entities/VerticalPlatform.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/VerticalPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/VerticalPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/VerticalPlatform.cpp.s
 .PHONY : GameLogic/Entities/VerticalPlatform.cpp.s
 
 GameLogic/Entities/World.o: GameLogic/Entities/World.cpp.o
@@ -468,7 +468,7 @@ GameLogic/Entities/World.o: GameLogic/Entities/World.cpp.o
 
 # target to build an object file
 GameLogic/Entities/World.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/World.cpp.o
 .PHONY : GameLogic/Entities/World.cpp.o
 
 GameLogic/Entities/World.i: GameLogic/Entities/World.cpp.i
@@ -476,7 +476,7 @@ GameLogic/Entities/World.i: GameLogic/Entities/World.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/World.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/World.cpp.i
 .PHONY : GameLogic/Entities/World.cpp.i
 
 GameLogic/Entities/World.s: GameLogic/Entities/World.cpp.s
@@ -484,7 +484,7 @@ GameLogic/Entities/World.s: GameLogic/Entities/World.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/World.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/World.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/World.cpp.s
 .PHONY : GameLogic/Entities/World.cpp.s
 
 GameLogic/Entities/jetpack.o: GameLogic/Entities/jetpack.cpp.o
@@ -492,7 +492,7 @@ GameLogic/Entities/jetpack.o: GameLogic/Entities/jetpack.cpp.o
 
 # target to build an object file
 GameLogic/Entities/jetpack.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/jetpack.cpp.o
 .PHONY : GameLogic/Entities/jetpack.cpp.o
 
 GameLogic/Entities/jetpack.i: GameLogic/Entities/jetpack.cpp.i
@@ -500,7 +500,7 @@ GameLogic/Entities/jetpack.i: GameLogic/Entities/jetpack.cpp.i
 
 # target to preprocess a source file
 GameLogic/Entities/jetpack.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/jetpack.cpp.i
 .PHONY : GameLogic/Entities/jetpack.cpp.i
 
 GameLogic/Entities/jetpack.s: GameLogic/Entities/jetpack.cpp.s
@@ -508,7 +508,7 @@ GameLogic/Entities/jetpack.s: GameLogic/Entities/jetpack.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Entities/jetpack.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Entities/jetpack.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Entities/jetpack.cpp.s
 .PHONY : GameLogic/Entities/jetpack.cpp.s
 
 GameLogic/Factory/AbstractEntityFactory.o: GameLogic/Factory/AbstractEntityFactory.cpp.o
@@ -516,7 +516,7 @@ GameLogic/Factory/AbstractEntityFactory.o: GameLogic/Factory/AbstractEntityFacto
 
 # target to build an object file
 GameLogic/Factory/AbstractEntityFactory.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Factory/AbstractEntityFactory.cpp.o
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.o
 
 GameLogic/Factory/AbstractEntityFactory.i: GameLogic/Factory/AbstractEntityFactory.cpp.i
@@ -524,7 +524,7 @@ GameLogic/Factory/AbstractEntityFactory.i: GameLogic/Factory/AbstractEntityFacto
 
 # target to preprocess a source file
 GameLogic/Factory/AbstractEntityFactory.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Factory/AbstractEntityFactory.cpp.i
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.i
 
 GameLogic/Factory/AbstractEntityFactory.s: GameLogic/Factory/AbstractEntityFactory.cpp.s
@@ -532,7 +532,7 @@ GameLogic/Factory/AbstractEntityFactory.s: GameLogic/Factory/AbstractEntityFacto
 
 # target to generate assembly for a file
 GameLogic/Factory/AbstractEntityFactory.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Factory/AbstractEntityFactory.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Factory/AbstractEntityFactory.cpp.s
 .PHONY : GameLogic/Factory/AbstractEntityFactory.cpp.s
 
 GameLogic/Observer/Observable.o: GameLogic/Observer/Observable.cpp.o
@@ -540,7 +540,7 @@ GameLogic/Observer/Observable.o: GameLogic/Observer/Observable.cpp.o
 
 # target to build an object file
 GameLogic/Observer/Observable.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observable.cpp.o
 .PHONY : GameLogic/Observer/Observable.cpp.o
 
 GameLogic/Observer/Observable.i: GameLogic/Observer/Observable.cpp.i
@@ -548,7 +548,7 @@ GameLogic/Observer/Observable.i: GameLogic/Observer/Observable.cpp.i
 
 # target to preprocess a source file
 GameLogic/Observer/Observable.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observable.cpp.i
 .PHONY : GameLogic/Observer/Observable.cpp.i
 
 GameLogic/Observer/Observable.s: GameLogic/Observer/Observable.cpp.s
@@ -556,7 +556,7 @@ GameLogic/Observer/Observable.s: GameLogic/Observer/Observable.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Observer/Observable.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observable.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observable.cpp.s
 .PHONY : GameLogic/Observer/Observable.cpp.s
 
 GameLogic/Observer/Observer.o: GameLogic/Observer/Observer.cpp.o
@@ -564,7 +564,7 @@ GameLogic/Observer/Observer.o: GameLogic/Observer/Observer.cpp.o
 
 # target to build an object file
 GameLogic/Observer/Observer.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observer.cpp.o
 .PHONY : GameLogic/Observer/Observer.cpp.o
 
 GameLogic/Observer/Observer.i: GameLogic/Observer/Observer.cpp.i
@@ -572,7 +572,7 @@ GameLogic/Observer/Observer.i: GameLogic/Observer/Observer.cpp.i
 
 # target to preprocess a source file
 GameLogic/Observer/Observer.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observer.cpp.i
 .PHONY : GameLogic/Observer/Observer.cpp.i
 
 GameLogic/Observer/Observer.s: GameLogic/Observer/Observer.cpp.s
@@ -580,7 +580,7 @@ GameLogic/Observer/Observer.s: GameLogic/Observer/Observer.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Observer/Observer.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/Observer.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/Observer.cpp.s
 .PHONY : GameLogic/Observer/Observer.cpp.s
 
 GameLogic/Observer/ObserverEvent.o: GameLogic/Observer/ObserverEvent.cpp.o
@@ -588,7 +588,7 @@ GameLogic/Observer/ObserverEvent.o: GameLogic/Observer/ObserverEvent.cpp.o
 
 # target to build an object file
 GameLogic/Observer/ObserverEvent.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/ObserverEvent.cpp.o
 .PHONY : GameLogic/Observer/ObserverEvent.cpp.o
 
 GameLogic/Observer/ObserverEvent.i: GameLogic/Observer/ObserverEvent.cpp.i
@@ -596,7 +596,7 @@ GameLogic/Observer/ObserverEvent.i: GameLogic/Observer/ObserverEvent.cpp.i
 
 # target to preprocess a source file
 GameLogic/Observer/ObserverEvent.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/ObserverEvent.cpp.i
 .PHONY : GameLogic/Observer/ObserverEvent.cpp.i
 
 GameLogic/Observer/ObserverEvent.s: GameLogic/Observer/ObserverEvent.cpp.s
@@ -604,7 +604,7 @@ GameLogic/Observer/ObserverEvent.s: GameLogic/Observer/ObserverEvent.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Observer/ObserverEvent.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Observer/ObserverEvent.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Observer/ObserverEvent.cpp.s
 .PHONY : GameLogic/Observer/ObserverEvent.cpp.s
 
 GameLogic/Score/Score.o: GameLogic/Score/Score.cpp.o
@@ -612,7 +612,7 @@ GameLogic/Score/Score.o: GameLogic/Score/Score.cpp.o
 
 # target to build an object file
 GameLogic/Score/Score.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Score/Score.cpp.o
 .PHONY : GameLogic/Score/Score.cpp.o
 
 GameLogic/Score/Score.i: GameLogic/Score/Score.cpp.i
@@ -620,7 +620,7 @@ GameLogic/Score/Score.i: GameLogic/Score/Score.cpp.i
 
 # target to preprocess a source file
 GameLogic/Score/Score.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Score/Score.cpp.i
 .PHONY : GameLogic/Score/Score.cpp.i
 
 GameLogic/Score/Score.s: GameLogic/Score/Score.cpp.s
@@ -628,7 +628,7 @@ GameLogic/Score/Score.s: GameLogic/Score/Score.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Score/Score.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Score/Score.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Score/Score.cpp.s
 .PHONY : GameLogic/Score/Score.cpp.s
 
 GameLogic/Utility/Clock.o: GameLogic/Utility/Clock.cpp.o
@@ -636,7 +636,7 @@ GameLogic/Utility/Clock.o: GameLogic/Utility/Clock.cpp.o
 
 # target to build an object file
 GameLogic/Utility/Clock.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Clock.cpp.o
 .PHONY : GameLogic/Utility/Clock.cpp.o
 
 GameLogic/Utility/Clock.i: GameLogic/Utility/Clock.cpp.i
@@ -644,7 +644,7 @@ GameLogic/Utility/Clock.i: GameLogic/Utility/Clock.cpp.i
 
 # target to preprocess a source file
 GameLogic/Utility/Clock.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Clock.cpp.i
 .PHONY : GameLogic/Utility/Clock.cpp.i
 
 GameLogic/Utility/Clock.s: GameLogic/Utility/Clock.cpp.s
@@ -652,7 +652,7 @@ GameLogic/Utility/Clock.s: GameLogic/Utility/Clock.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Utility/Clock.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Clock.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Clock.cpp.s
 .PHONY : GameLogic/Utility/Clock.cpp.s
 
 GameLogic/Utility/Random.o: GameLogic/Utility/Random.cpp.o
@@ -660,7 +660,7 @@ GameLogic/Utility/Random.o: GameLogic/Utility/Random.cpp.o
 
 # target to build an object file
 GameLogic/Utility/Random.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Random.cpp.o
 .PHONY : GameLogic/Utility/Random.cpp.o
 
 GameLogic/Utility/Random.i: GameLogic/Utility/Random.cpp.i
@@ -668,7 +668,7 @@ GameLogic/Utility/Random.i: GameLogic/Utility/Random.cpp.i
 
 # target to preprocess a source file
 GameLogic/Utility/Random.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Random.cpp.i
 .PHONY : GameLogic/Utility/Random.cpp.i
 
 GameLogic/Utility/Random.s: GameLogic/Utility/Random.cpp.s
@@ -676,7 +676,7 @@ GameLogic/Utility/Random.s: GameLogic/Utility/Random.cpp.s
 
 # target to generate assembly for a file
 GameLogic/Utility/Random.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/GameLogic/Utility/Random.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/GameLogic/Utility/Random.cpp.s
 .PHONY : GameLogic/Utility/Random.cpp.s
 
 SFMLConversion/Entities/SFMLBG_Tile.o: SFMLConversion/Entities/SFMLBG_Tile.cpp.o
@@ -684,7 +684,7 @@ SFMLConversion/Entities/SFMLBG_Tile.o: SFMLConversion/Entities/SFMLBG_Tile.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLBG_Tile.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.o
 
 SFMLConversion/Entities/SFMLBG_Tile.i: SFMLConversion/Entities/SFMLBG_Tile.cpp.i
@@ -692,7 +692,7 @@ SFMLConversion/Entities/SFMLBG_Tile.i: SFMLConversion/Entities/SFMLBG_Tile.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLBG_Tile.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.i
 
 SFMLConversion/Entities/SFMLBG_Tile.s: SFMLConversion/Entities/SFMLBG_Tile.cpp.s
@@ -700,7 +700,7 @@ SFMLConversion/Entities/SFMLBG_Tile.s: SFMLConversion/Entities/SFMLBG_Tile.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLBG_Tile.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLBG_Tile.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLBG_Tile.cpp.s
 
 SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
@@ -708,7 +708,7 @@ SFMLConversion/Entities/SFMLEntity.o: SFMLConversion/Entities/SFMLEntity.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLEntity.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLEntity.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.o
 
 SFMLConversion/Entities/SFMLEntity.i: SFMLConversion/Entities/SFMLEntity.cpp.i
@@ -716,7 +716,7 @@ SFMLConversion/Entities/SFMLEntity.i: SFMLConversion/Entities/SFMLEntity.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLEntity.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLEntity.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.i
 
 SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
@@ -724,7 +724,7 @@ SFMLConversion/Entities/SFMLEntity.s: SFMLConversion/Entities/SFMLEntity.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLEntity.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLEntity.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLEntity.cpp.s
 
 SFMLConversion/Entities/SFMLHorizontalPlatform.o: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
@@ -732,7 +732,7 @@ SFMLConversion/Entities/SFMLHorizontalPlatform.o: SFMLConversion/Entities/SFMLHo
 
 # target to build an object file
 SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.o
 
 SFMLConversion/Entities/SFMLHorizontalPlatform.i: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
@@ -740,7 +740,7 @@ SFMLConversion/Entities/SFMLHorizontalPlatform.i: SFMLConversion/Entities/SFMLHo
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.i
 
 SFMLConversion/Entities/SFMLHorizontalPlatform.s: SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
@@ -748,7 +748,7 @@ SFMLConversion/Entities/SFMLHorizontalPlatform.s: SFMLConversion/Entities/SFMLHo
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLHorizontalPlatform.cpp.s
 
 SFMLConversion/Entities/SFMLJetpack.o: SFMLConversion/Entities/SFMLJetpack.cpp.o
@@ -756,7 +756,7 @@ SFMLConversion/Entities/SFMLJetpack.o: SFMLConversion/Entities/SFMLJetpack.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLJetpack.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLJetpack.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.o
 
 SFMLConversion/Entities/SFMLJetpack.i: SFMLConversion/Entities/SFMLJetpack.cpp.i
@@ -764,7 +764,7 @@ SFMLConversion/Entities/SFMLJetpack.i: SFMLConversion/Entities/SFMLJetpack.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLJetpack.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLJetpack.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.i
 
 SFMLConversion/Entities/SFMLJetpack.s: SFMLConversion/Entities/SFMLJetpack.cpp.s
@@ -772,7 +772,7 @@ SFMLConversion/Entities/SFMLJetpack.s: SFMLConversion/Entities/SFMLJetpack.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLJetpack.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLJetpack.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLJetpack.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLJetpack.cpp.s
 
 SFMLConversion/Entities/SFMLObject.o: SFMLConversion/Entities/SFMLObject.cpp.o
@@ -780,7 +780,7 @@ SFMLConversion/Entities/SFMLObject.o: SFMLConversion/Entities/SFMLObject.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLObject.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLObject.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLObject.cpp.o
 
 SFMLConversion/Entities/SFMLObject.i: SFMLConversion/Entities/SFMLObject.cpp.i
@@ -788,7 +788,7 @@ SFMLConversion/Entities/SFMLObject.i: SFMLConversion/Entities/SFMLObject.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLObject.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLObject.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLObject.cpp.i
 
 SFMLConversion/Entities/SFMLObject.s: SFMLConversion/Entities/SFMLObject.cpp.s
@@ -796,7 +796,7 @@ SFMLConversion/Entities/SFMLObject.s: SFMLConversion/Entities/SFMLObject.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLObject.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLObject.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLObject.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLObject.cpp.s
 
 SFMLConversion/Entities/SFMLPlatform.o: SFMLConversion/Entities/SFMLPlatform.cpp.o
@@ -804,7 +804,7 @@ SFMLConversion/Entities/SFMLPlatform.o: SFMLConversion/Entities/SFMLPlatform.cpp
 
 # target to build an object file
 SFMLConversion/Entities/SFMLPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlatform.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.o
 
 SFMLConversion/Entities/SFMLPlatform.i: SFMLConversion/Entities/SFMLPlatform.cpp.i
@@ -812,7 +812,7 @@ SFMLConversion/Entities/SFMLPlatform.i: SFMLConversion/Entities/SFMLPlatform.cpp
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlatform.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.i
 
 SFMLConversion/Entities/SFMLPlatform.s: SFMLConversion/Entities/SFMLPlatform.cpp.s
@@ -820,7 +820,7 @@ SFMLConversion/Entities/SFMLPlatform.s: SFMLConversion/Entities/SFMLPlatform.cpp
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlatform.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLPlatform.cpp.s
 
 SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
@@ -828,7 +828,7 @@ SFMLConversion/Entities/SFMLPlayer.o: SFMLConversion/Entities/SFMLPlayer.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLPlayer.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlayer.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.o
 
 SFMLConversion/Entities/SFMLPlayer.i: SFMLConversion/Entities/SFMLPlayer.cpp.i
@@ -836,7 +836,7 @@ SFMLConversion/Entities/SFMLPlayer.i: SFMLConversion/Entities/SFMLPlayer.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLPlayer.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlayer.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.i
 
 SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
@@ -844,7 +844,7 @@ SFMLConversion/Entities/SFMLPlayer.s: SFMLConversion/Entities/SFMLPlayer.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLPlayer.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLPlayer.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLPlayer.cpp.s
 
 SFMLConversion/Entities/SFMLSprings.o: SFMLConversion/Entities/SFMLSprings.cpp.o
@@ -852,7 +852,7 @@ SFMLConversion/Entities/SFMLSprings.o: SFMLConversion/Entities/SFMLSprings.cpp.o
 
 # target to build an object file
 SFMLConversion/Entities/SFMLSprings.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLSprings.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLSprings.cpp.o
 
 SFMLConversion/Entities/SFMLSprings.i: SFMLConversion/Entities/SFMLSprings.cpp.i
@@ -860,7 +860,7 @@ SFMLConversion/Entities/SFMLSprings.i: SFMLConversion/Entities/SFMLSprings.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLSprings.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLSprings.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLSprings.cpp.i
 
 SFMLConversion/Entities/SFMLSprings.s: SFMLConversion/Entities/SFMLSprings.cpp.s
@@ -868,7 +868,7 @@ SFMLConversion/Entities/SFMLSprings.s: SFMLConversion/Entities/SFMLSprings.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLSprings.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLSprings.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLSprings.cpp.s
 
 SFMLConversion/Entities/SFMLTempPlatform.o: SFMLConversion/Entities/SFMLTempPlatform.cpp.o
@@ -876,7 +876,7 @@ SFMLConversion/Entities/SFMLTempPlatform.o: SFMLConversion/Entities/SFMLTempPlat
 
 # target to build an object file
 SFMLConversion/Entities/SFMLTempPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.o
 
 SFMLConversion/Entities/SFMLTempPlatform.i: SFMLConversion/Entities/SFMLTempPlatform.cpp.i
@@ -884,7 +884,7 @@ SFMLConversion/Entities/SFMLTempPlatform.i: SFMLConversion/Entities/SFMLTempPlat
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLTempPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.i
 
 SFMLConversion/Entities/SFMLTempPlatform.s: SFMLConversion/Entities/SFMLTempPlatform.cpp.s
@@ -892,7 +892,7 @@ SFMLConversion/Entities/SFMLTempPlatform.s: SFMLConversion/Entities/SFMLTempPlat
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLTempPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLTempPlatform.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLTempPlatform.cpp.s
 
 SFMLConversion/Entities/SFMLVerticalPlatform.o: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
@@ -900,7 +900,7 @@ SFMLConversion/Entities/SFMLVerticalPlatform.o: SFMLConversion/Entities/SFMLVert
 
 # target to build an object file
 SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
 .PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.o
 
 SFMLConversion/Entities/SFMLVerticalPlatform.i: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
@@ -908,7 +908,7 @@ SFMLConversion/Entities/SFMLVerticalPlatform.i: SFMLConversion/Entities/SFMLVert
 
 # target to preprocess a source file
 SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
 .PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.i
 
 SFMLConversion/Entities/SFMLVerticalPlatform.s: SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
@@ -916,7 +916,7 @@ SFMLConversion/Entities/SFMLVerticalPlatform.s: SFMLConversion/Entities/SFMLVert
 
 # target to generate assembly for a file
 SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
 .PHONY : SFMLConversion/Entities/SFMLVerticalPlatform.cpp.s
 
 SFMLConversion/Factory/ConcreteFactory.o: SFMLConversion/Factory/ConcreteFactory.cpp.o
@@ -924,7 +924,7 @@ SFMLConversion/Factory/ConcreteFactory.o: SFMLConversion/Factory/ConcreteFactory
 
 # target to build an object file
 SFMLConversion/Factory/ConcreteFactory.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Factory/ConcreteFactory.cpp.o
 .PHONY : SFMLConversion/Factory/ConcreteFactory.cpp.o
 
 SFMLConversion/Factory/ConcreteFactory.i: SFMLConversion/Factory/ConcreteFactory.cpp.i
@@ -932,7 +932,7 @@ SFMLConversion/Factory/ConcreteFactory.i: SFMLConversion/Factory/ConcreteFactory
 
 # target to preprocess a source file
 SFMLConversion/Factory/ConcreteFactory.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Factory/ConcreteFactory.cpp.i
 .PHONY : SFMLConversion/Factory/ConcreteFactory.cpp.i
 
 SFMLConversion/Factory/ConcreteFactory.s: SFMLConversion/Factory/ConcreteFactory.cpp.s
@@ -940,7 +940,7 @@ SFMLConversion/Factory/ConcreteFactory.s: SFMLConversion/Factory/ConcreteFactory
 
 # target to generate assembly for a file
 SFMLConversion/Factory/ConcreteFactory.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Factory/ConcreteFactory.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Factory/ConcreteFactory.cpp.s
 .PHONY : SFMLConversion/Factory/ConcreteFactory.cpp.s
 
 SFMLConversion/Game/Game.o: SFMLConversion/Game/Game.cpp.o
@@ -948,7 +948,7 @@ SFMLConversion/Game/Game.o: SFMLConversion/Game/Game.cpp.o
 
 # target to build an object file
 SFMLConversion/Game/Game.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Game/Game.cpp.o
 .PHONY : SFMLConversion/Game/Game.cpp.o
 
 SFMLConversion/Game/Game.i: SFMLConversion/Game/Game.cpp.i
@@ -956,7 +956,7 @@ SFMLConversion/Game/Game.i: SFMLConversion/Game/Game.cpp.i
 
 # target to preprocess a source file
 SFMLConversion/Game/Game.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Game/Game.cpp.i
 .PHONY : SFMLConversion/Game/Game.cpp.i
 
 SFMLConversion/Game/Game.s: SFMLConversion/Game/Game.cpp.s
@@ -964,7 +964,7 @@ SFMLConversion/Game/Game.s: SFMLConversion/Game/Game.cpp.s
 
 # target to generate assembly for a file
 SFMLConversion/Game/Game.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/SFMLConversion/Game/Game.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/SFMLConversion/Game/Game.cpp.s
 .PHONY : SFMLConversion/Game/Game.cpp.s
 
 main.o: main.cpp.o
@@ -972,7 +972,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.o
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -980,7 +980,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.i
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -988,7 +988,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Jumpgame.dir/build.make src/CMakeFiles/Jumpgame.dir/main.cpp.s
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/DoodleJump.dir/build.make src/CMakeFiles/DoodleJump.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -1003,7 +1003,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Jumpgame"
+	@echo "... DoodleJump"
 	@echo "... GameLogic/Camera/Camera.o"
 	@echo "... GameLogic/Camera/Camera.i"
 	@echo "... GameLogic/Camera/Camera.s"
@@ -1117,6 +1117,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ferit/Desktop/Projects/Jump-game/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ferit/Desktop/Projects/DoodleJump/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

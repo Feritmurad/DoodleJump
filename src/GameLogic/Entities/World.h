@@ -17,7 +17,7 @@
 #include "../Score/Score.h"
 #include "BG_Tile.h"
 
-namespace jumpgame{
+namespace DoodleJump{
 
     class World{
     public:

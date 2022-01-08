@@ -6,7 +6,7 @@
 
 #include <utility>
 
-namespace jumpgame {
+namespace DoodleJump {
 
     void World::update() {
         generateNewEntities();
@@ -47,8 +47,8 @@ namespace jumpgame {
 
 
 
-        jumpgame::Coordinate coordinate(0, -2);
-        auto player = std::make_shared<jumpgame::Player>(coordinate);
+        Coordinate coordinate(0, -2);
+        auto player = std::make_shared<Player>(coordinate);
         m_player = player;
         m_player->addObserver(m_Playerview);
         m_player->addObserver(m_Score);
@@ -81,6 +81,7 @@ namespace jumpgame {
                 )
                 ) {
                     m_player->setMVstate(Collision);
+                    platform->updateScore();
                     platform->setMJumpedOn(true);
                     if(platform->getMBonus() != nullptr){
                         if(checkCollision(m_player,platform->getMBonus())){
@@ -315,7 +316,7 @@ namespace jumpgame {
                 randomplatform = 0;
             }
             int hardplatformchance = 100.0 - randomplatform;
-            std::cout << hardplatformchance << std::endl;
+            //std::cout << hardplatformchance << std::endl;
             int platformchance = Random::getInstance()->makerandom(0, hardplatformchance);
             Coordinate newcoord(Random::getInstance()->makerandom(-3.0, 3.0), 4.0);
 
@@ -343,6 +344,8 @@ namespace jumpgame {
                         }
                         m_platforms.insert(newplatform);
                         newplatform->addObserver(m_Platformview);
+                        newplatform->addObserver(m_Score);
+
                     }
 
                 } else {
@@ -354,6 +357,8 @@ namespace jumpgame {
                             }
                             m_tempplatforms.insert(newtempplatform);
                             newtempplatform->addObserver(m_TempPlatformview);
+                            newtempplatform->addObserver(m_Score);
+
                         }
                     } else if (platformchance <= (hardplatformchance / 3) * 2) {
                         auto newverticalplatform = std::make_shared<VerticalPlatform>(newcoord);
@@ -363,6 +368,8 @@ namespace jumpgame {
                             }
                             m_verticalplatforms.insert(newverticalplatform);
                             newverticalplatform->addObserver(m_VerticalPlatformview);
+                            newverticalplatform->addObserver(m_Score);
+
                         }
                     } else {
                         auto newhorizontalplatform = std::make_shared<HorizontalPlatform>(newcoord);
@@ -372,6 +379,8 @@ namespace jumpgame {
                             }
                             m_horizontalplatforms.insert(newhorizontalplatform);
                             newhorizontalplatform->addObserver(m_HorizontalPlatformview);
+                            newhorizontalplatform->addObserver(m_Score);
+
                         }
                     }
                 }
@@ -388,7 +397,7 @@ namespace jumpgame {
     void World::checkBackground() {
         for (const auto &bgtile: m_bgtile){
             if(bgtile->getC().getY() <-4.99){
-                Coordinate bgtilecoord(-3,13);
+                Coordinate bgtilecoord(-3,bgtile->getC().getY()+18);
                 bgtile->setC(bgtilecoord);
             }
         }

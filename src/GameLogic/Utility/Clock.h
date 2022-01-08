@@ -7,7 +7,7 @@
 #include <iostream>
 #include "chrono"
 
-namespace jumpgame {
+namespace DoodleJump {
     class Clock {
     private:
         int Tick = 0;

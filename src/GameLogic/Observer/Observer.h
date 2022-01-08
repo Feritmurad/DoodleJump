@@ -6,7 +6,7 @@
 #define JUMPGAME_OBSERVER_H
 #include "ObserverEvent.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
 
     class Observer {

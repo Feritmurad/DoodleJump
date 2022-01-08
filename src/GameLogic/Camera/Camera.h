@@ -7,14 +7,13 @@
 #include "../Coordinate/Coordinate.h"
 #include "../Entities/World.h"
 
-namespace SFMLjumpgame {
+namespace DoodleJump {
 
     class Camera {
     private:
         int res_x = 700;
         int res_y = 900;
-        std::shared_ptr<jumpgame::World> m_world;
-        bool cameramove;
+        std::shared_ptr<DoodleJump::World> m_world;
 
     public:
         /**
@@ -25,13 +24,13 @@ namespace SFMLjumpgame {
         /**
          *
          */
-         explicit Camera(const std::shared_ptr<jumpgame::World> &world) : m_world(world) {}
+         explicit Camera(const std::shared_ptr<World> &world) : m_world(world) {}
 
         /**
          * function that will make coordinates into pixel
          * @param coordinate: coordinates of entity that will be rescaled
          */
-        jumpgame::Coordinate rescale(jumpgame::Coordinate coordinate);
+        Coordinate rescale(Coordinate coordinate);
 
         void moveForward();
 

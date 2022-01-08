@@ -4,11 +4,11 @@
 
 #include "Platform.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
 
     void Platform::update() {
-        jumpgame::ObserverEvent observerevent(0,getC());
+        ObserverEvent observerevent(0,getC());
         notifyObservers(observerevent);
         if(m_bonus != nullptr){
             Coordinate bonuscoord(getC().getX()+(getMWidth()/2)-0.25,getC().getY()+m_bonus->getMHeigth());
@@ -33,6 +33,18 @@ namespace jumpgame {
 
     void Platform::setMBonus(const std::shared_ptr<Bonus> &mBonus) {
         m_bonus = mBonus;
+    }
+
+    void Platform::updateScore(){
+        if(m_jumpedOn){
+            ObserverEvent e(-100);
+            notifyObservers(e);
+        }
+        else{
+            ObserverEvent e(25);
+            notifyObservers(e);
+        }
+
     }
 
 }

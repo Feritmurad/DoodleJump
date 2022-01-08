@@ -9,7 +9,7 @@
 #include "vector"
 #include "memory"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Observable {
 
@@ -30,7 +30,7 @@ namespace jumpgame {
          /**
          * function that notifies all the observers
          */
-        virtual void notifyObservers(const jumpgame::ObserverEvent &event);
+        virtual void notifyObservers(const DoodleJump::ObserverEvent &event);
 
         const std::vector<std::shared_ptr<Observer>> &getObservers() const;
 

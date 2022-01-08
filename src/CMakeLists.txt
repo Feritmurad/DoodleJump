@@ -1,7 +1,7 @@
 set(CMAKE_CXX_STANDARD 14)
 
 ADD_EXECUTABLE(
-        Jumpgame
+        DoodleJump
         main.cpp
         GameLogic/Entities/Entity.h
         GameLogic/Entities/Entity.cpp
@@ -50,6 +50,6 @@ ADD_EXECUTABLE(
         SFMLConversion/Factory/ConcreteFactory.cpp
         SFMLConversion/Factory/ConcreteFactory.h GameLogic/Entities/jetpack.cpp GameLogic/Entities/jetpack.h GameLogic/Entities/Springs.cpp GameLogic/Entities/Springs.h SFMLConversion/Entities/SFMLJetpack.cpp SFMLConversion/Entities/SFMLJetpack.h SFMLConversion/Entities/SFMLSprings.cpp SFMLConversion/Entities/SFMLSprings.h SFMLConversion/Entities/SFMLTempPlatform.cpp SFMLConversion/Entities/SFMLTempPlatform.h SFMLConversion/Entities/SFMLVerticalPlatform.cpp SFMLConversion/Entities/SFMLVerticalPlatform.h SFMLConversion/Entities/SFMLHorizontalPlatform.cpp SFMLConversion/Entities/SFMLHorizontalPlatform.h GameLogic/Entities/Bonus.cpp GameLogic/Entities/Bonus.h GameLogic/Entities/BG_Tile.cpp GameLogic/Entities/BG_Tile.h SFMLConversion/Entities/SFMLBG_Tile.cpp SFMLConversion/Entities/SFMLBG_Tile.h)
 
-TARGET_LINK_LIBRARIES (Jumpgame sfml-graphics sfml-window sfml-system sfml-audio)
-INSTALL(TARGETS Jumpgame DESTINATION ${PROJECT_SOURCE_DIR}/bin)
+TARGET_LINK_LIBRARIES (DoodleJump sfml-graphics sfml-window sfml-system sfml-audio)
+INSTALL(TARGETS DoodleJump DESTINATION ${PROJECT_SOURCE_DIR}/bin)
 

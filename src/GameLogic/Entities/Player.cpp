@@ -4,7 +4,7 @@
 
 #include "Player.h"
 
-namespace jumpgame{
+namespace DoodleJump{
 
     Player::Player(const Coordinate &c,const double &reachedheight,const double &Yvelocity,const double &Xvelocity, const double &gravity,VerticalState state,const double &height,const double &width) :
     Object(c,height,width), m_velocity_X(Xvelocity), m_velocity_Y(Yvelocity),m_gravity(gravity), m_reachedheight(height), m_vstate(state), m_bonusstate(NoBonus) {
@@ -30,7 +30,7 @@ namespace jumpgame{
             if (m_vstate == None or m_vstate == Collision) {
                 m_velocity_Y = 0.25;
                 if(m_bonusstate == Springsbonus){
-                    m_velocity_Y = 0.25 * 5;
+                    m_velocity_Y = 0.25 * 2.26; // makes the jump 5 times higher
                     m_bonusstate = NoBonus;
                 }
             } else {

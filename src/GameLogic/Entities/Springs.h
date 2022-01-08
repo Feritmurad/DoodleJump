@@ -7,7 +7,7 @@
 
 #include "Bonus.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Springs : public Bonus {
     public:

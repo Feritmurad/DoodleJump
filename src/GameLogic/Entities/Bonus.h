@@ -6,7 +6,7 @@
 #define JUMPGAME_BONUS_H
 #include "Object.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Bonus : public Object {
 

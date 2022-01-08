@@ -8,7 +8,7 @@
 #include "Bonus.h"
 #include "iostream"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Platform : public Object{
     public:
@@ -18,7 +18,6 @@ namespace jumpgame {
 
         void update() override;
 
-
         bool isMJumpedOn() const;
 
         void setMJumpedOn(bool mJumpedOn);
@@ -26,6 +25,8 @@ namespace jumpgame {
         const std::shared_ptr<Bonus> &getMBonus() const;
 
         void setMBonus(const std::shared_ptr<Bonus> &mBonus);
+
+        virtual void updateScore() ;
 
     private:
         bool m_jumpedOn;

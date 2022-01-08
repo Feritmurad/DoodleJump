@@ -15,29 +15,29 @@
 #include "../Entities/SFMLBG_Tile.h"
 
 
-namespace SFMLjumpgame{
+namespace SFMLDoodleJump{
 
-class ConcreteFactory : public jumpgame::AbstractEntityFactory{
+class ConcreteFactory : public DoodleJump::AbstractEntityFactory{
 
 public:
 
     explicit ConcreteFactory(const std::shared_ptr<sf::RenderWindow> &window) : m_window(window) {}
 
-    std::shared_ptr<jumpgame::Observer> createPlayerView() override;
+    std::shared_ptr<DoodleJump::Observer> createPlayerView() override;
 
-    std::shared_ptr<jumpgame::Observer> createPlatformView() override;
+    std::shared_ptr<DoodleJump::Observer> createPlatformView() override;
 
-    std::shared_ptr<jumpgame::Observer> createTempPlatformView() override;
+    std::shared_ptr<DoodleJump::Observer> createTempPlatformView() override;
 
-    std::shared_ptr<jumpgame::Observer> createVerticalPlatformView() override;
+    std::shared_ptr<DoodleJump::Observer> createVerticalPlatformView() override;
 
-    std::shared_ptr<jumpgame::Observer> createHorizontalPlatformView() override;
+    std::shared_ptr<DoodleJump::Observer> createHorizontalPlatformView() override;
 
-    std::shared_ptr<jumpgame::Observer> createJetpackView() override;
+    std::shared_ptr<DoodleJump::Observer> createJetpackView() override;
 
-    std::shared_ptr<jumpgame::Observer> createSpringsView() override;
+    std::shared_ptr<DoodleJump::Observer> createSpringsView() override;
 
-    std::shared_ptr<jumpgame::Observer> createBGtileView() override;
+    std::shared_ptr<DoodleJump::Observer> createBGtileView() override;
 
 private:
     std::shared_ptr<sf::RenderWindow> m_window;

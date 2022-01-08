@@ -7,9 +7,9 @@
 #include "SFMLEntity.h"
 #include "../../GameLogic/Coordinate/Coordinate.h"
 
-namespace SFMLjumpgame{
+namespace SFMLDoodleJump{
 
-class SFMLObject : public SFMLEntity , public jumpgame::Observer {
+    class SFMLObject : public SFMLEntity , public DoodleJump::Observer {
     public:
 
         /**
@@ -21,28 +21,34 @@ class SFMLObject : public SFMLEntity , public jumpgame::Observer {
          * Constructior with coordinate
          * @param c: coordinate of object
          */
-        SFMLObject(const std::shared_ptr<sf::RenderWindow> &window, const jumpgame::Coordinate &c={0,0}) : SFMLEntity(window),
-                                                                                                           m_c(c) {}
+        explicit SFMLObject(const std::shared_ptr<sf::RenderWindow> &windowconst,const DoodleJump::Coordinate &c={0,0});
 
-public:
+    public:
 
-    /**
-    * Getter for c
-    */
-    jumpgame::Coordinate getC() const;
+        /**
+        * Getter for c
+        */
+        DoodleJump::Coordinate getC() const;
 
-    /**
-     * Setter for c
-     */
-    void setC(const jumpgame::Coordinate& c);
+        /**
+         * Setter for c
+         */
+        void setC(const DoodleJump::Coordinate& c);
 
-    void handleEvent(const jumpgame::ObserverEvent &event) override;
+        void handleEvent(const DoodleJump::ObserverEvent &event) override;
 
-private:
-    jumpgame::Coordinate m_c;
+        virtual void draw();
+
+        virtual sf::RectangleShape makePlatformshape(const sf::Color &color);
 
 
-};
+
+
+    private:
+        DoodleJump::Coordinate m_c;
+
+
+    };
 
 }
 

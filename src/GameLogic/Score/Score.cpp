@@ -4,7 +4,7 @@
 
 #include "Score.h"
 
-namespace jumpgame{
+namespace DoodleJump{
 
     void Score::handleEvent(const ObserverEvent &event){
         if(event.getMUpdateAmount() != 0){

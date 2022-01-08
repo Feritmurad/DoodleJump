@@ -6,7 +6,7 @@
 #define JUMPGAME_SFMLPLATFORM_H
 #include "SFMLObject.h"
 
-namespace SFMLjumpgame {
+namespace SFMLDoodleJump {
 
     class SFMLPlatform : public SFMLObject {
     public:
@@ -20,11 +20,11 @@ namespace SFMLjumpgame {
          * Constructior with coordinate
          * @param c: coordinate of object
          */
-        explicit SFMLPlatform(const std::shared_ptr<sf::RenderWindow> &window, const jumpgame::Coordinate &c={0,0}) : SFMLObject(window,c) {}
+        explicit SFMLPlatform(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
 
-        void handleEvent(const jumpgame::ObserverEvent &event) override;
 
-        void draw();
+        void draw() override;
+
 
     };
 

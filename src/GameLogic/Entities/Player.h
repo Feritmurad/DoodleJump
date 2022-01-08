@@ -10,7 +10,7 @@
 #include "iostream"
 #include "../Utility/Clock.h"
 
-namespace jumpgame {
+namespace DoodleJump {
     enum VerticalState{Jumping,Falling,Collision,None};
     enum Horizontalstate{Static,Left,Right};
 

@@ -3,22 +3,15 @@
 //
 
 #include "SFMLJetpack.h"
-namespace SFMLjumpgame{
+namespace SFMLDoodleJump{
 
-    void SFMLJetpack::handleEvent(const jumpgame::ObserverEvent &event) {
-        if(event.getMUpdateAmount() == 0 && event.getMBonusevent() == jumpgame::NoBonus){
-            setC(event.getMCoordinate());
-            draw();
-        }
-
-    }
 
     void SFMLJetpack::draw() {
-        std::shared_ptr<Camera> camera = std::make_shared<Camera>();
+        std::shared_ptr<DoodleJump::Camera> camera = std::make_shared<DoodleJump::Camera>();
         // transform to pixel
         // transform only if it is in geocoordintes
         if(getC().validCoordinate()){
-            jumpgame::Coordinate tempc = camera->rescale(getC());
+            DoodleJump::Coordinate tempc = camera->rescale(getC());
             sf::Texture playertexture;
             playertexture.loadFromFile("Sprites/Jetpack.png");
             sf::Sprite m_playersprite(playertexture);
@@ -28,7 +21,7 @@ namespace SFMLjumpgame{
 
             getWindow()->draw(m_playersprite);
         }
-        jumpgame::Coordinate tempcoord;
+        DoodleJump::Coordinate tempcoord;
         setC(tempcoord);
     }
 

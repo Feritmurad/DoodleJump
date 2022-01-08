@@ -4,11 +4,11 @@
 
 #include "Springs.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
 
     void Springs::update() {
-        jumpgame::ObserverEvent observerevent(0,{0,0},Springsbonus);
+        ObserverEvent observerevent(0,{0,0},Springsbonus);
         notifyObservers(observerevent);
         Bonus::update();
 

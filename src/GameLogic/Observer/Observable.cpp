@@ -4,7 +4,7 @@
 
 #include "Observable.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     void Observable::addObserver(std::shared_ptr <Observer> observer) {
         observers.emplace_back(observer);

@@ -4,7 +4,7 @@
 
 #include "HorizontalPlatform.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     void HorizontalPlatform::update() {
         move();
@@ -19,5 +19,16 @@ namespace jumpgame {
             c= tempc;
         }
         setC(c);
+    }
+
+    void HorizontalPlatform::updateScore() {
+        if(isMJumpedOn()){
+            ObserverEvent e(-100);
+            notifyObservers(e);
+        }
+        else{
+            ObserverEvent e(50);
+            notifyObservers(e);
+        }
     }
 }

@@ -4,11 +4,12 @@
 
 #include "jetpack.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
 
     void Jetpack::update() {
-        jumpgame::ObserverEvent observerevent(0,{0,0},Jetpackbonus);
+
+        ObserverEvent observerevent(0,{0,0},Jetpackbonus);
         notifyObservers(observerevent);
         Bonus::update();
     }

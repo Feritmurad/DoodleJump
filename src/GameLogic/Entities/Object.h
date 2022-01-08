@@ -8,7 +8,7 @@
 #include "Entity.h"
 #include "../Observer/Observable.h"
 
-namespace jumpgame {
+namespace DoodleJump {
     class Object : public Entity, public Observable {
 
     public:

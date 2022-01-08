@@ -8,7 +8,7 @@
 #include "iostream"
 
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class VerticalPlatform : public Platform {
 
@@ -28,6 +28,8 @@ namespace jumpgame {
         double getMMaxH() const;
 
         void updateMMaxH(double mMaxH);
+
+        void updateScore() override;
 
     private:
         double m_velocity_Y;

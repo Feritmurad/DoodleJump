@@ -5,15 +5,15 @@
 #include "Game.h"
 void Game::run()
 {
-    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(700,900),"Jumpgame");
+    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(700,900),"DoodleJump");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
     //make World
-    m_world = std::make_shared<jumpgame::World>(std::make_shared<SFMLjumpgame::ConcreteFactory>(window));
+    m_world = std::make_shared<DoodleJump::World>(std::make_shared<SFMLDoodleJump::ConcreteFactory>(window));
     m_world->makeWorld();
 
-    auto camera = std::make_shared<SFMLjumpgame::Camera>(m_world);
+    auto camera = std::make_shared<DoodleJump::Camera>(m_world);
 
     while (window->isOpen())
     {
@@ -23,7 +23,7 @@ void Game::run()
             if (event.type == sf::Event::Closed)
                 window->close();
         }
-        jumpgame::Clock *clock = jumpgame::Clock::getInstance(30);
+        DoodleJump::Clock *clock = DoodleJump::Clock::getInstance(30);
         if(clock->tick()){
 
             window->clear();
@@ -33,10 +33,6 @@ void Game::run()
             m_world->update();
             camera->moveForward();
             ScoreText(window);
-            //std::cout << Random::getInstance()->makerandom(-3.0,3.0) << std::endl;
-            //std::cout << m_world->getMPlayer()->getMReachedheight() << std::endl;
-            //std::cout << m_world->getMPlayer()->isReachingnewheight() << std::endl;
-
             window->display();
             GameOver(window);
         }
@@ -46,17 +42,17 @@ void Game::run()
 
 void Game::movement(sf::Event &event) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        m_world->playermove(jumpgame::Left);
+        m_world->playermove(DoodleJump::Left);
     }
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        m_world->playermove(jumpgame::Right);
+        m_world->playermove(DoodleJump::Right);
     }
     else if (event.type == sf::Event::KeyReleased &&
         (event.key.code == sf::Keyboard::Left ||
         event.key.code == sf::Keyboard::A ||
         event.key.code == sf::Keyboard::Right ||
         event.key.code == sf::Keyboard::R)) {
-        m_world->playermove(jumpgame::Static);
+        m_world->playermove(DoodleJump::Static);
 
     }
 

@@ -7,7 +7,7 @@
 
 #include "../Observer/Observer.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Score : public Observer {
     public:

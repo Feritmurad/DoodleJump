@@ -4,19 +4,22 @@
 
 #include "Bonus.h"
 
-bool jumpgame::Bonus::isMUsed() const {
-    return m_used;
-}
+namespace DoodleJump {
 
-void jumpgame::Bonus::setMUsed(bool mUsed) {
-    m_used = mUsed;
-}
+    bool Bonus::isMUsed() const {
+        return m_used;
+    }
 
-void jumpgame::Bonus::update() {
-    jumpgame::ObserverEvent observerevent(0,getC());
-    notifyObservers(observerevent);
-}
+    void Bonus::setMUsed(bool mUsed) {
+        m_used = mUsed;
+    }
 
-jumpgame::event jumpgame::Bonus::bonustype() {
-    return jumpgame::NoBonus;
+    void Bonus::update() {
+        ObserverEvent observerevent(0, getC());
+        notifyObservers(observerevent);
+    }
+
+    event Bonus::bonustype() {
+        return NoBonus;
+    }
 }

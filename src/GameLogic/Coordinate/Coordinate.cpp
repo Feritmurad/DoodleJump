@@ -4,7 +4,7 @@
 
 #include "Coordinate.h"
 
-namespace jumpgame{
+namespace DoodleJump{
     double Coordinate::getX() const {
         return x;
     }

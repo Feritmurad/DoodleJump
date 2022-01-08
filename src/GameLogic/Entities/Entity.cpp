@@ -4,7 +4,7 @@
 
 #include "Entity.h"
 
-namespace jumpgame {
+namespace DoodleJump {
     Entity::Entity() = default;
 
     Entity::~Entity() = default;

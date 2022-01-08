@@ -6,7 +6,7 @@
 #define JUMPGAME_HORIZONTALPLATFORM_H
 #include "Platform.h"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class HorizontalPlatform : public Platform {
 
@@ -18,6 +18,8 @@ namespace jumpgame {
         void update() override;
 
         void move();
+
+        void updateScore() override;
 
     private:
         double m_velocity_X;

@@ -4,7 +4,7 @@
 
 #include "SFMLEntity.h"
 
-namespace SFMLjumpgame{
+namespace SFMLDoodleJump{
 
 
     const std::shared_ptr<sf::RenderWindow> &SFMLEntity::getWindow() const {

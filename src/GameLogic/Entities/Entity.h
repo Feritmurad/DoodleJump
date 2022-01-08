@@ -7,7 +7,7 @@
 
 #include "memory"
 
-namespace jumpgame {
+namespace DoodleJump {
 
     class Entity {
     public:

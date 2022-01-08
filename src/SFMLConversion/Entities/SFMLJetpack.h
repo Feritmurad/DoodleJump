@@ -7,7 +7,7 @@
 #include "SFMLObject.h"
 
 
-namespace SFMLjumpgame {
+namespace SFMLDoodleJump {
 
     class SFMLJetpack : public SFMLObject {
     public:
@@ -21,11 +21,10 @@ namespace SFMLjumpgame {
          * Constructior with coordinate
          * @param c: coordinate of object
          */
-        explicit SFMLJetpack(const std::shared_ptr<sf::RenderWindow> &window, const jumpgame::Coordinate &c={0,0}) : SFMLObject(window,c) {}
+        explicit SFMLJetpack(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
 
-        void handleEvent(const jumpgame::ObserverEvent &event) override;
 
-        void draw();
+        void draw() override;
 
     };
 

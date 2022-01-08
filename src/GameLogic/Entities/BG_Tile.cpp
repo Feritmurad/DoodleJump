@@ -3,9 +3,10 @@
 //
 
 #include "BG_Tile.h"
+namespace DoodleJump {
 
-void jumpgame::BG_Tile::update() {
-    std::cout<< "bgtile" << getC().getX() << "," << getC().getY() << std::endl;
-    jumpgame::ObserverEvent observerevent(0,getC());
-    notifyObservers(observerevent);
+    void BG_Tile::update() {
+        ObserverEvent observerevent(0, getC());
+        notifyObservers(observerevent);
+    }
 }

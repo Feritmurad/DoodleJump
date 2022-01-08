@@ -9,14 +9,14 @@
 #include "../../GameLogic/Observer/Observer.h"
 #include "iostream"
 
-namespace SFMLjumpgame {
+namespace SFMLDoodleJump {
 
     class SFMLEntity {
         public:
             /**
              * default constructor
              */
-            SFMLEntity(const std::shared_ptr<sf::RenderWindow>& window) : m_window(window) {}
+            explicit SFMLEntity(const std::shared_ptr<sf::RenderWindow>& window) : m_window(window) {}
 
             /**
              * default destructor
