@@ -14,7 +14,7 @@ namespace SFMLDoodleJump{
         // transform only if it is in geocoordintes
         if(getC().validCoordinate()){
             DoodleJump::Coordinate tempc = camera->rescale(getC());
-            sf::RectangleShape rectangle = makePlatformshape(sf::Color::Green);
+            sf::RectangleShape rectangle = makePlatformshape(sf::Color::White);
             rectangle.setPosition(tempc.getX(),tempc.getY());
             getWindow()->draw(rectangle);
         }

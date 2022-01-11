@@ -26,12 +26,27 @@
 
 class Game {
 public:
+    /**
+     * function that runs the game
+     */
     void run();
 
+    /**
+     * function that gets the input of keyboard
+     * @param event
+     */
     void movement(sf::Event &event);
 
+    /**
+     * Function that makes the score text
+     * @param window
+     */
     void ScoreText(const std::shared_ptr<sf::RenderWindow> &window);
 
+    /**
+     * Function that checks if the game is over and changes the window if its over
+     * @param window
+     */
     void GameOver(const std::shared_ptr<sf::RenderWindow> &window);
 
 

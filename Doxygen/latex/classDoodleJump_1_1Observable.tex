@@ -1,0 +1,69 @@
+\hypertarget{classDoodleJump_1_1Observable}{}\doxysection{Doodle\+Jump\+::Observable Class Reference}
+\label{classDoodleJump_1_1Observable}\index{DoodleJump::Observable@{DoodleJump::Observable}}
+
+
+Inheritance diagram for Doodle\+Jump\+::Observable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDoodleJump_1_1Observable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDoodleJump_1_1Observable_a5c58f338bba65ceba4eb64515a17e9c0}{add\+Observer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$ observer)
+\item 
+void \mbox{\hyperlink{classDoodleJump_1_1Observable_a9b7ea2c93f1dee955e5b1113d5457c27}{remove\+Observer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$ observer)
+\item 
+virtual void \mbox{\hyperlink{classDoodleJump_1_1Observable_a2f4377fda045762af53a6e2103df9d87}{notify\+Observers}} (const \mbox{\hyperlink{classDoodleJump_1_1ObserverEvent}{Doodle\+Jump\+::\+Observer\+Event}} \&event)
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$ $>$ \& \mbox{\hyperlink{classDoodleJump_1_1Observable_abfc973972460a7e2896cae22edc1e118}{get\+Observers}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoodleJump_1_1Observable_a5c58f338bba65ceba4eb64515a17e9c0}\label{classDoodleJump_1_1Observable_a5c58f338bba65ceba4eb64515a17e9c0}} 
+\index{DoodleJump::Observable@{DoodleJump::Observable}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!DoodleJump::Observable@{DoodleJump::Observable}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Observable\+::add\+Observer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$}]{observer }\end{DoxyParamCaption})}
+
+function to add a observer to the list 
+\begin{DoxyParams}{Parameters}
+{\em observer} & the observer that is going to be added to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDoodleJump_1_1Observable_abfc973972460a7e2896cae22edc1e118}\label{classDoodleJump_1_1Observable_abfc973972460a7e2896cae22edc1e118}} 
+\index{DoodleJump::Observable@{DoodleJump::Observable}!getObservers@{getObservers}}
+\index{getObservers@{getObservers}!DoodleJump::Observable@{DoodleJump::Observable}}
+\doxysubsubsection{\texorpdfstring{getObservers()}{getObservers()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$ $>$ \& Doodle\+Jump\+::\+Observable\+::get\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for observers \begin{DoxyReturn}{Returns}
+observers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoodleJump_1_1Observable_a2f4377fda045762af53a6e2103df9d87}\label{classDoodleJump_1_1Observable_a2f4377fda045762af53a6e2103df9d87}} 
+\index{DoodleJump::Observable@{DoodleJump::Observable}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!DoodleJump::Observable@{DoodleJump::Observable}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Observable\+::notify\+Observers (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDoodleJump_1_1ObserverEvent}{Doodle\+Jump\+::\+Observer\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+function that notifies all the observers \mbox{\Hypertarget{classDoodleJump_1_1Observable_a9b7ea2c93f1dee955e5b1113d5457c27}\label{classDoodleJump_1_1Observable_a9b7ea2c93f1dee955e5b1113d5457c27}} 
+\index{DoodleJump::Observable@{DoodleJump::Observable}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!DoodleJump::Observable@{DoodleJump::Observable}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Observable\+::remove\+Observer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Observer}{Observer}} $>$}]{observer }\end{DoxyParamCaption})}
+
+function to remove a observer from the list 
+\begin{DoxyParams}{Parameters}
+{\em observer} & the observer that is going to be removed from the list \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+Game\+Logic/\+Observer/Observable.\+h\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+Game\+Logic/\+Observer/Observable.\+cpp\end{DoxyCompactItemize}

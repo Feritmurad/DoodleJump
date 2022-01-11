@@ -18,5 +18,10 @@ namespace DoodleJump {
         return Jetpackbonus;
     }
 
+    void Jetpack::updateScore() {
+        ObserverEvent e(375);
+        notifyObservers(e);
+    }
+
 
 }

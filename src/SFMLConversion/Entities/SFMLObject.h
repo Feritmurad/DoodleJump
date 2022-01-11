@@ -15,10 +15,11 @@ namespace SFMLDoodleJump{
         /**
          * default destructor
          */
-        ~SFMLObject();
+        ~SFMLObject() override = default;
 
         /**
-         * Constructior with coordinate
+         * Constructor with coordinate
+         * @param window: window
          * @param c: coordinate of object
          */
         explicit SFMLObject(const std::shared_ptr<sf::RenderWindow> &windowconst,const DoodleJump::Coordinate &c={0,0});
@@ -35,10 +36,22 @@ namespace SFMLDoodleJump{
          */
         void setC(const DoodleJump::Coordinate& c);
 
+        /**
+         * Handles an ObserverEvent
+         * @param event
+         */
         void handleEvent(const DoodleJump::ObserverEvent &event) override;
 
+        /**
+         * Draws the object on the window
+         */
         virtual void draw();
 
+        /**
+         * Virtual function that makes a rectangle
+         * @param color: color of the rectangle
+         * @return rectangle
+         */
         virtual sf::RectangleShape makePlatformshape(const sf::Color &color);
 
 

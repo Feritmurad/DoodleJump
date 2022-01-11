@@ -45,8 +45,6 @@ namespace DoodleJump {
         bgtile2->addObserver(m_bgtileview);
         m_bgtile.insert(bgtile2);
 
-
-
         Coordinate coordinate(0, -2);
         auto player = std::make_shared<Player>(coordinate);
         m_player = player;
@@ -85,6 +83,7 @@ namespace DoodleJump {
                     platform->setMJumpedOn(true);
                     if(platform->getMBonus() != nullptr){
                         if(checkCollision(m_player,platform->getMBonus())){
+                            platform->getMBonus()->updateScore();
                             m_player->setMBonusstate(platform->getMBonus()->bonustype());
                             platform->setMBonus(nullptr);
                         }
@@ -329,10 +328,12 @@ namespace DoodleJump {
                 if(bonuschance <=25){
                     b = std::make_shared<Jetpack>(bonuscoord);
                     b->addObserver(m_Jetpackview);
+                    b->addObserver(m_Score);
                 }
                 else{
                     b = std::make_shared<Springs>(bonuscoord);
                     b->addObserver(m_Springsview);
+                    b->addObserver(m_Score);
                 }
             }
 

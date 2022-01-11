@@ -22,16 +22,20 @@ namespace DoodleJump {
         Camera() = default;
 
         /**
-         *
+         * Simple constructor
+         * @param world: World with all its entities
          */
          explicit Camera(const std::shared_ptr<World> &world) : m_world(world) {}
 
         /**
-         * function that will make coordinates into pixel
+         * Transforms coordinates to pixels
          * @param coordinate: coordinates of entity that will be rescaled
          */
         Coordinate rescale(Coordinate coordinate);
 
+        /**
+         * Makes sure the camera follows the player when the player reaches new height
+         */
         void moveForward();
 
     };

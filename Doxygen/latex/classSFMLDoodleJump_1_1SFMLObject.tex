@@ -1,0 +1,121 @@
+\hypertarget{classSFMLDoodleJump_1_1SFMLObject}{}\doxysection{S\+F\+M\+L\+Doodle\+Jump\+::S\+F\+M\+L\+Object Class Reference}
+\label{classSFMLDoodleJump_1_1SFMLObject}\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+
+
+Inheritance diagram for S\+F\+M\+L\+Doodle\+Jump\+::S\+F\+M\+L\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSFMLDoodleJump_1_1SFMLObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+F\+M\+L\+Doodle\+Jump\+::S\+F\+M\+L\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSFMLDoodleJump_1_1SFMLObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_aaf6ed3d2766e6c53535beb93c3d45b4c}{$\sim$\+S\+F\+M\+L\+Object}} () override=default
+\item 
+\mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_aff478ac0697f6364ca650e1eb0b4cb9c}{S\+F\+M\+L\+Object}} (const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&windowconst, const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} \&c=\{0, 0\})
+\item 
+\mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_ad88b85c4cc3934cdee3ffff9a653e1c2}{getC}} () const
+\item 
+void \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_afe0386d3d08918c2ede468c77c09d107}{setC}} (const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} \&c)
+\item 
+void \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_a49211efa94229213e4aa216aa381ffa2}{handle\+Event}} (const \mbox{\hyperlink{classDoodleJump_1_1ObserverEvent}{Doodle\+Jump\+::\+Observer\+Event}} \&event) override
+\item 
+virtual void \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_af8a6fc58c9da8c2f466ba150dff8f3e8}{draw}} ()
+\item 
+virtual sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLObject_a8d3ad97a35e65e356331695eb7b96b00}{make\+Platformshape}} (const sf\+::\+Color \&color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_aaf6ed3d2766e6c53535beb93c3d45b4c}\label{classSFMLDoodleJump_1_1SFMLObject_aaf6ed3d2766e6c53535beb93c3d45b4c}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!````~SFMLObject@{$\sim$SFMLObject}}
+\index{````~SFMLObject@{$\sim$SFMLObject}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLObject()}{~SFMLObject()}}
+{\footnotesize\ttfamily S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::$\sim$\+S\+F\+M\+L\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+default destructor \mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_aff478ac0697f6364ca650e1eb0b4cb9c}\label{classSFMLDoodleJump_1_1SFMLObject_aff478ac0697f6364ca650e1eb0b4cb9c}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!SFMLObject@{SFMLObject}}
+\index{SFMLObject@{SFMLObject}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{SFMLObject()}{SFMLObject()}}
+{\footnotesize\ttfamily S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::\+S\+F\+M\+L\+Object (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{windowconst,  }\item[{const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} \&}]{c = {\ttfamily \{0,0\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor with coordinate 
+\begin{DoxyParams}{Parameters}
+{\em window} & window \\
+\hline
+{\em c} & coordinate of object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_af8a6fc58c9da8c2f466ba150dff8f3e8}\label{classSFMLDoodleJump_1_1SFMLObject_af8a6fc58c9da8c2f466ba150dff8f3e8}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!draw@{draw}}
+\index{draw@{draw}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the object on the window 
+
+Reimplemented in \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLBG__Tile_af101a9df3a7fcf532502ef57705563a7}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+B\+G\+\_\+\+Tile}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLJetpack_a1ca6e889800040589ef0a52f42c6032c}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Jetpack}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLSprings_af72afddbc45deb923969639aee801831}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Springs}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLHorizontalPlatform_a7ec2622cf560e1cb72c602524911d02e}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Horizontal\+Platform}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLPlatform_ae6d77f08a41b2bdac5f626b13ea56eed}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Platform}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLTempPlatform_a4555a20f3bd7c6afa36c0f26b86c2517}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Temp\+Platform}}, \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLVerticalPlatform_a8c0a6f1e83eafeb5705d39030e172cc4}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Vertical\+Platform}}, and \mbox{\hyperlink{classSFMLDoodleJump_1_1SFMLPlayer_a1156094222c5ef7eb6f47a6eea9126c2}{S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Player}}.
+
+\mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_ad88b85c4cc3934cdee3ffff9a653e1c2}\label{classSFMLDoodleJump_1_1SFMLObject_ad88b85c4cc3934cdee3ffff9a653e1c2}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!getC@{getC}}
+\index{getC@{getC}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{getC()}{getC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::getC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for c \mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_a49211efa94229213e4aa216aa381ffa2}\label{classSFMLDoodleJump_1_1SFMLObject_a49211efa94229213e4aa216aa381ffa2}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::handle\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDoodleJump_1_1ObserverEvent}{Doodle\+Jump\+::\+Observer\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles an Observer\+Event 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classDoodleJump_1_1Observer_ae6e749a187801e94ea3c079e4d4a404e}{Doodle\+Jump\+::\+Observer}}.
+
+\mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_a8d3ad97a35e65e356331695eb7b96b00}\label{classSFMLDoodleJump_1_1SFMLObject_a8d3ad97a35e65e356331695eb7b96b00}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!makePlatformshape@{makePlatformshape}}
+\index{makePlatformshape@{makePlatformshape}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{makePlatformshape()}{makePlatformshape()}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::make\+Platformshape (\begin{DoxyParamCaption}\item[{const sf\+::\+Color \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function that makes a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em color} & color of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rectangle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSFMLDoodleJump_1_1SFMLObject_afe0386d3d08918c2ede468c77c09d107}\label{classSFMLDoodleJump_1_1SFMLObject_afe0386d3d08918c2ede468c77c09d107}} 
+\index{SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}!setC@{setC}}
+\index{setC@{setC}!SFMLDoodleJump::SFMLObject@{SFMLDoodleJump::SFMLObject}}
+\doxysubsubsection{\texorpdfstring{setC()}{setC()}}
+{\footnotesize\ttfamily void S\+F\+M\+L\+Doodle\+Jump\+::\+S\+F\+M\+L\+Object\+::setC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Doodle\+Jump\+::\+Coordinate}} \&}]{c }\end{DoxyParamCaption})}
+
+Setter for c 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+S\+F\+M\+L\+Conversion/\+Entities/S\+F\+M\+L\+Object.\+h\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+S\+F\+M\+L\+Conversion/\+Entities/S\+F\+M\+L\+Object.\+cpp\end{DoxyCompactItemize}

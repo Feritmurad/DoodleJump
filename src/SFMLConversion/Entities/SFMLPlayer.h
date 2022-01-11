@@ -8,15 +8,25 @@
 
 namespace SFMLDoodleJump {
 
-class SFMLPlayer : public SFMLObject{
+    class SFMLPlayer : public SFMLObject{
         public:
-            explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const DoodleJump::Coordinate &c = {0,0});
+        /**
+         * Constructor with coordinate
+         * @param window: window
+         * @param c: coordinate of object
+         */
+        explicit SFMLPlayer(const std::shared_ptr<sf::RenderWindow> &window,const DoodleJump::Coordinate &c = {0,0});
 
-            void draw() override;
+        /**
+         * Draws the object on the window
+         */
+        void draw() override;
 
+        /**
+         * Default destructor
+         */
+        ~SFMLPlayer() override = default;
 
-
-        private:
 
     };
 

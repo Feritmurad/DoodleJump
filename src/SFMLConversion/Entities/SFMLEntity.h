@@ -21,7 +21,7 @@ namespace SFMLDoodleJump {
             /**
              * default destructor
              */
-            ~SFMLEntity();
+            virtual ~SFMLEntity() = default;;
 
             /**
             * Getter for m_window

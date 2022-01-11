@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['score_71',['Score',['../classDoodleJump_1_1Score.html',1,'DoodleJump::Score'],['../classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57',1,'DoodleJump::Score::Score()']]],
+  ['scoretext_72',['ScoreText',['../classGame.html#ac2cec776f6de0b77ca5c2f66a8cd9b41',1,'Game']]],
+  ['setc_73',['setC',['../classDoodleJump_1_1Object.html#a94feae93f5c9a9cf0149e3ff74849412',1,'DoodleJump::Object::setC()'],['../classSFMLDoodleJump_1_1SFMLObject.html#afe0386d3d08918c2ede468c77c09d107',1,'SFMLDoodleJump::SFMLObject::setC()']]],
+  ['setmbonus_74',['setMBonus',['../classDoodleJump_1_1Platform.html#aa1170e8854f93bce08bc3d52b6bb9608',1,'DoodleJump::Platform']]],
+  ['setmjumpedon_75',['setMJumpedOn',['../classDoodleJump_1_1Platform.html#a7776833738d48eb37b4da997821bdfe7',1,'DoodleJump::Platform']]],
+  ['setmused_76',['setMUsed',['../classDoodleJump_1_1Bonus.html#a34e1c7736eb51c319ae16060585bef39',1,'DoodleJump::Bonus']]],
+  ['setx_77',['setX',['../classDoodleJump_1_1Coordinate.html#a764c16ab7d522b4d1fe6c67012c4815f',1,'DoodleJump::Coordinate']]],
+  ['sety_78',['setY',['../classDoodleJump_1_1Coordinate.html#a8069623678e6d83d1ea018b1acccc932',1,'DoodleJump::Coordinate']]],
+  ['sfmlbg_5ftile_79',['SFMLBG_Tile',['../classSFMLDoodleJump_1_1SFMLBG__Tile.html',1,'SFMLDoodleJump::SFMLBG_Tile'],['../classSFMLDoodleJump_1_1SFMLBG__Tile.html#a81e52e265432a05f37af0990a8f69500',1,'SFMLDoodleJump::SFMLBG_Tile::SFMLBG_Tile()']]],
+  ['sfmlentity_80',['SFMLEntity',['../classSFMLDoodleJump_1_1SFMLEntity.html',1,'SFMLDoodleJump::SFMLEntity'],['../classSFMLDoodleJump_1_1SFMLEntity.html#a2ecef6f533c401bcffe35485f44ff0bd',1,'SFMLDoodleJump::SFMLEntity::SFMLEntity()']]],
+  ['sfmlhorizontalplatform_81',['SFMLHorizontalPlatform',['../classSFMLDoodleJump_1_1SFMLHorizontalPlatform.html',1,'SFMLDoodleJump::SFMLHorizontalPlatform'],['../classSFMLDoodleJump_1_1SFMLHorizontalPlatform.html#ab9d37cbb5638bfed3632c461fffc4017',1,'SFMLDoodleJump::SFMLHorizontalPlatform::SFMLHorizontalPlatform()']]],
+  ['sfmljetpack_82',['SFMLJetpack',['../classSFMLDoodleJump_1_1SFMLJetpack.html',1,'SFMLDoodleJump::SFMLJetpack'],['../classSFMLDoodleJump_1_1SFMLJetpack.html#a3f14de48050100378f65a334537a0aac',1,'SFMLDoodleJump::SFMLJetpack::SFMLJetpack()']]],
+  ['sfmlobject_83',['SFMLObject',['../classSFMLDoodleJump_1_1SFMLObject.html',1,'SFMLDoodleJump::SFMLObject'],['../classSFMLDoodleJump_1_1SFMLObject.html#aff478ac0697f6364ca650e1eb0b4cb9c',1,'SFMLDoodleJump::SFMLObject::SFMLObject()']]],
+  ['sfmlplatform_84',['SFMLPlatform',['../classSFMLDoodleJump_1_1SFMLPlatform.html',1,'SFMLDoodleJump::SFMLPlatform'],['../classSFMLDoodleJump_1_1SFMLPlatform.html#af75a782c69d9590a3e08e768df49ea1b',1,'SFMLDoodleJump::SFMLPlatform::SFMLPlatform()']]],
+  ['sfmlplayer_85',['SFMLPlayer',['../classSFMLDoodleJump_1_1SFMLPlayer.html',1,'SFMLDoodleJump::SFMLPlayer'],['../classSFMLDoodleJump_1_1SFMLPlayer.html#a84f7bddaa45879b3621fcd9a0cab387f',1,'SFMLDoodleJump::SFMLPlayer::SFMLPlayer()']]],
+  ['sfmlsprings_86',['SFMLSprings',['../classSFMLDoodleJump_1_1SFMLSprings.html',1,'SFMLDoodleJump::SFMLSprings'],['../classSFMLDoodleJump_1_1SFMLSprings.html#a541b7cd79226cd33d5c8ba13a73f2a6a',1,'SFMLDoodleJump::SFMLSprings::SFMLSprings()']]],
+  ['sfmltempplatform_87',['SFMLTempPlatform',['../classSFMLDoodleJump_1_1SFMLTempPlatform.html',1,'SFMLDoodleJump::SFMLTempPlatform'],['../classSFMLDoodleJump_1_1SFMLTempPlatform.html#a36d001691322297ebd557af4e640278e',1,'SFMLDoodleJump::SFMLTempPlatform::SFMLTempPlatform()']]],
+  ['sfmlverticalplatform_88',['SFMLVerticalPlatform',['../classSFMLDoodleJump_1_1SFMLVerticalPlatform.html',1,'SFMLDoodleJump::SFMLVerticalPlatform'],['../classSFMLDoodleJump_1_1SFMLVerticalPlatform.html#a4a1730628332a2476d333cbf2b7d4858',1,'SFMLDoodleJump::SFMLVerticalPlatform::SFMLVerticalPlatform()']]],
+  ['springs_89',['Springs',['../classDoodleJump_1_1Springs.html',1,'DoodleJump::Springs'],['../classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3',1,'DoodleJump::Springs::Springs()']]]
+];

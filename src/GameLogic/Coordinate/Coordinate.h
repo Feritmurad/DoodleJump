@@ -48,12 +48,25 @@ namespace DoodleJump{
          */
         void setY(double yy);
 
+        /**
+         * Checks if coordinates are valid with extended y and x
+         * @return bool
+         */
         bool validCoordinate() const;
 
+        /**
+         * Checks if coordinates are valid with extended y
+         * @return bool
+         */
         bool validCoordinate2() const;
 
+        /**
+         * Checks if Coordinates are valid for x and for only max y
+         * @return bool
+         */
         bool validHorizontallyandTop() const;
 
+        ///////////////////// Overloaded operators /////////////////////
         bool operator>= (const Coordinate& c) const;
 
         bool operator>(const Coordinate& c) const;
@@ -61,6 +74,7 @@ namespace DoodleJump{
         bool operator<(const Coordinate& c) const;
 
         bool operator==(const Coordinate& c) const;
+        ////////////////////////////////////////////////////////////////
 
 
     };

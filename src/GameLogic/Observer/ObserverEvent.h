@@ -8,17 +8,23 @@
 
 namespace DoodleJump {
     enum event{Jetpackbonus,Springsbonus,NoBonus};
-    class ObserverEvent {
 
+    class ObserverEvent {
 
     private:
         int m_update_amount;
-
         Coordinate m_coordinate;
-
         event m_bonusevent;
 
     public:
+        /**
+         * Constructor
+         * @param update_amount: update amount for score
+         * @param coordinate: coordinate of object
+         * @param bonusevent: bonustype
+         */
+        explicit ObserverEvent(int update_amount=0, const Coordinate &coordinate={0,0},event bonusevent = NoBonus) : m_update_amount(update_amount), m_coordinate(coordinate), m_bonusevent(bonusevent) {}
+
         /**
          * Getter for m_bonusevent
          * @return m_bonusevent
@@ -37,12 +43,7 @@ namespace DoodleJump {
          * @return m_update_amount
          */
         int getMUpdateAmount() const;
-
-        explicit ObserverEvent(int update_amount=0, const Coordinate &coordinate={0,0},event bonusevent = NoBonus) : m_update_amount(update_amount), m_coordinate(coordinate), m_bonusevent(bonusevent) {}
-
-
     };
-
 }
 
 

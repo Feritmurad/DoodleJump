@@ -22,4 +22,8 @@ namespace DoodleJump {
     event Bonus::bonustype() {
         return NoBonus;
     }
+
+    void Bonus::updateScore() {
+
+    }
 }

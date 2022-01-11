@@ -11,15 +11,35 @@ namespace DoodleJump {
 
     class Jetpack : public Bonus {
     public:
+
+        /**
+         * Simple constructor
+         * @param c: coordinate of the object
+         * @param height: Height of the object
+         * @param width: Width of the object
+         */
         explicit Jetpack(const Coordinate &c, const double &height = 0.5, const double &width = 0.5) : Bonus(c, height, width) {}
 
-        ~Jetpack() = default;
+        /**
+         * Default destructor
+         */
+        ~Jetpack() override = default;
 
+        /**
+         * Update the object and notify observers
+         */
         void update() override;
 
+        /**
+         * virtual function that returns the type of bonus
+         * @return @enum event
+         */
         event bonustype() override;
 
-
+        /**
+         * virtual function that updates score
+         */
+        void updateScore() override;
 
     };
 }

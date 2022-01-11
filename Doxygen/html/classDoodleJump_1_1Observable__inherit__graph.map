@@ -1,0 +1,13 @@
+<map id="DoodleJump::Observable" name="DoodleJump::Observable">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,188,108"/>
+<area shape="rect" id="node2" href="$classDoodleJump_1_1Object.html" title=" " alt="" coords="236,81,387,108"/>
+<area shape="rect" id="node3" href="$classDoodleJump_1_1BG__Tile.html" title=" " alt="" coords="438,5,597,32"/>
+<area shape="rect" id="node4" href="$classDoodleJump_1_1Bonus.html" title=" " alt="" coords="443,56,592,83"/>
+<area shape="rect" id="node7" href="$classDoodleJump_1_1Platform.html" title=" " alt="" coords="435,107,600,133"/>
+<area shape="rect" id="node11" href="$classDoodleJump_1_1Player.html" title=" " alt="" coords="442,157,593,184"/>
+<area shape="rect" id="node5" href="$classDoodleJump_1_1Jetpack.html" title=" " alt="" coords="685,5,843,32"/>
+<area shape="rect" id="node6" href="$classDoodleJump_1_1Springs.html" title=" " alt="" coords="685,56,843,83"/>
+<area shape="rect" id="node8" href="$classDoodleJump_1_1HorizontalPlatform.html" title=" " alt="" coords="648,107,880,133"/>
+<area shape="rect" id="node9" href="$classDoodleJump_1_1TempPlatform.html" title=" " alt="" coords="664,157,864,184"/>
+<area shape="rect" id="node10" href="$classDoodleJump_1_1VerticalPlatform.html" title=" " alt="" coords="657,208,871,235"/>
+</map>

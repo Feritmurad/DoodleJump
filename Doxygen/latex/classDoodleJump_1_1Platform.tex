@@ -1,0 +1,140 @@
+\hypertarget{classDoodleJump_1_1Platform}{}\doxysection{Doodle\+Jump\+::Platform Class Reference}
+\label{classDoodleJump_1_1Platform}\index{DoodleJump::Platform@{DoodleJump::Platform}}
+
+
+Inheritance diagram for Doodle\+Jump\+::Platform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDoodleJump_1_1Platform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Doodle\+Jump\+::Platform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classDoodleJump_1_1Platform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDoodleJump_1_1Platform_a23c3971adec80413756f84ffb4c05d1d}{Platform}} (const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Coordinate}} \&c, const double \&height=0.\+4, const double \&width=1, const bool \&jumped=false)
+\item 
+\mbox{\hyperlink{classDoodleJump_1_1Platform_ac0cd3f5fb5ce39732961744b8e997724}{$\sim$\+Platform}} () override=default
+\item 
+void \mbox{\hyperlink{classDoodleJump_1_1Platform_a9abac061c5472f11a59b7abcf950fff7}{update}} () override
+\item 
+bool \mbox{\hyperlink{classDoodleJump_1_1Platform_a30b6359eb61bb330590b27af1d2fc48f}{is\+M\+Jumped\+On}} () const
+\item 
+void \mbox{\hyperlink{classDoodleJump_1_1Platform_a7776833738d48eb37b4da997821bdfe7}{set\+M\+Jumped\+On}} (bool m\+Jumped\+On)
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Bonus}{Bonus}} $>$ \& \mbox{\hyperlink{classDoodleJump_1_1Platform_acddd52f3a7ccc8b7bdc732de32d22965}{get\+M\+Bonus}} () const
+\item 
+void \mbox{\hyperlink{classDoodleJump_1_1Platform_aa1170e8854f93bce08bc3d52b6bb9608}{set\+M\+Bonus}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Bonus}{Bonus}} $>$ \&m\+Bonus)
+\item 
+virtual void \mbox{\hyperlink{classDoodleJump_1_1Platform_aa3b255ae8971ca84cff9574c1fc79b2f}{update\+Score}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_a23c3971adec80413756f84ffb4c05d1d}\label{classDoodleJump_1_1Platform_a23c3971adec80413756f84ffb4c05d1d}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}}
+{\footnotesize\ttfamily Doodle\+Jump\+::\+Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDoodleJump_1_1Coordinate}{Coordinate}} \&}]{c,  }\item[{const double \&}]{height = {\ttfamily 0.4},  }\item[{const double \&}]{width = {\ttfamily 1},  }\item[{const bool \&}]{jumped = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Simple constructor 
+\begin{DoxyParams}{Parameters}
+{\em c} & coordinate of the object \\
+\hline
+{\em height} & Height of the object \\
+\hline
+{\em width} & Width of the object \\
+\hline
+{\em jumped} & indicates if the player has jumped on this platform before \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_ac0cd3f5fb5ce39732961744b8e997724}\label{classDoodleJump_1_1Platform_ac0cd3f5fb5ce39732961744b8e997724}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!````~Platform@{$\sim$Platform}}
+\index{````~Platform@{$\sim$Platform}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{$\sim$Platform()}{~Platform()}}
+{\footnotesize\ttfamily Doodle\+Jump\+::\+Platform\+::$\sim$\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_acddd52f3a7ccc8b7bdc732de32d22965}\label{classDoodleJump_1_1Platform_acddd52f3a7ccc8b7bdc732de32d22965}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!getMBonus@{getMBonus}}
+\index{getMBonus@{getMBonus}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{getMBonus()}{getMBonus()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Bonus}{Bonus}} $>$ \& Doodle\+Jump\+::\+Platform\+::get\+M\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for m\+\_\+bonus \begin{DoxyReturn}{Returns}
+\+: m\+\_\+bonus 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_a30b6359eb61bb330590b27af1d2fc48f}\label{classDoodleJump_1_1Platform_a30b6359eb61bb330590b27af1d2fc48f}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!isMJumpedOn@{isMJumpedOn}}
+\index{isMJumpedOn@{isMJumpedOn}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{isMJumpedOn()}{isMJumpedOn()}}
+{\footnotesize\ttfamily bool Doodle\+Jump\+::\+Platform\+::is\+M\+Jumped\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for m\+\_\+jumped\+On \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_aa1170e8854f93bce08bc3d52b6bb9608}\label{classDoodleJump_1_1Platform_aa1170e8854f93bce08bc3d52b6bb9608}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!setMBonus@{setMBonus}}
+\index{setMBonus@{setMBonus}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{setMBonus()}{setMBonus()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Platform\+::set\+M\+Bonus (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDoodleJump_1_1Bonus}{Bonus}} $>$ \&}]{m\+Bonus }\end{DoxyParamCaption})}
+
+Setter for m\+\_\+bonus 
+\begin{DoxyParams}{Parameters}
+{\em m\+Bonus} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_a7776833738d48eb37b4da997821bdfe7}\label{classDoodleJump_1_1Platform_a7776833738d48eb37b4da997821bdfe7}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!setMJumpedOn@{setMJumpedOn}}
+\index{setMJumpedOn@{setMJumpedOn}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{setMJumpedOn()}{setMJumpedOn()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Platform\+::set\+M\+Jumped\+On (\begin{DoxyParamCaption}\item[{bool}]{m\+Jumped\+On }\end{DoxyParamCaption})}
+
+Setter for m\+\_\+jumped\+On 
+\begin{DoxyParams}{Parameters}
+{\em m\+Jumped\+On} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_a9abac061c5472f11a59b7abcf950fff7}\label{classDoodleJump_1_1Platform_a9abac061c5472f11a59b7abcf950fff7}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!update@{update}}
+\index{update@{update}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Platform\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the object and notify observers 
+
+Implements \mbox{\hyperlink{classDoodleJump_1_1Entity_aed9cc675668afb38ff83c94896a17d80}{Doodle\+Jump\+::\+Entity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classDoodleJump_1_1VerticalPlatform_a88d31dc349bd55b263baec636b7ee355}{Doodle\+Jump\+::\+Vertical\+Platform}}, and \mbox{\hyperlink{classDoodleJump_1_1TempPlatform_a6f19ec2593ddcb1117b17dc6ab359cc4}{Doodle\+Jump\+::\+Temp\+Platform}}.
+
+\mbox{\Hypertarget{classDoodleJump_1_1Platform_aa3b255ae8971ca84cff9574c1fc79b2f}\label{classDoodleJump_1_1Platform_aa3b255ae8971ca84cff9574c1fc79b2f}} 
+\index{DoodleJump::Platform@{DoodleJump::Platform}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!DoodleJump::Platform@{DoodleJump::Platform}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void Doodle\+Jump\+::\+Platform\+::update\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+virtual function that updates score 
+
+Reimplemented in \mbox{\hyperlink{classDoodleJump_1_1HorizontalPlatform_a46dece4a0dc818742dba6a46095e499a}{Doodle\+Jump\+::\+Horizontal\+Platform}}, \mbox{\hyperlink{classDoodleJump_1_1VerticalPlatform_a27cb52f2bc99ca05167c5f14d946ff1a}{Doodle\+Jump\+::\+Vertical\+Platform}}, and \mbox{\hyperlink{classDoodleJump_1_1TempPlatform_a07677092add53c01bb4cea56b599cf20}{Doodle\+Jump\+::\+Temp\+Platform}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+Game\+Logic/\+Entities/Platform.\+h\item 
+/home/ferit/\+Desktop/\+Projects/\+Doodle\+Jump/src/\+Game\+Logic/\+Entities/Platform.\+cpp\end{DoxyCompactItemize}

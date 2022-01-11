@@ -17,4 +17,9 @@ namespace DoodleJump {
     event Springs::bonustype() {
         return Springsbonus;
     }
+
+    void Springs::updateScore() {
+        ObserverEvent e(150);
+        notifyObservers(e);
+    }
 }

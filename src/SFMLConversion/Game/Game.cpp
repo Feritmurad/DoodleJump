@@ -36,7 +36,6 @@ void Game::run()
             window->display();
             GameOver(window);
         }
-
     }
 }
 
@@ -146,10 +145,8 @@ void Game::GameOver(const shared_ptr<sf::RenderWindow> &window) {
                 if (event.type == sf::Event::Closed)
                     window->close();
             }
-
-
-            }
-
         }
+
     }
+}
 

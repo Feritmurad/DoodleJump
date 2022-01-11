@@ -32,13 +32,14 @@ namespace DoodleJump {
          */
         virtual void notifyObservers(const DoodleJump::ObserverEvent &event);
 
+        /**
+         * Getter for observers
+         * @return observers
+         */
         const std::vector<std::shared_ptr<Observer>> &getObservers() const;
 
 
     private:
-        /*
-         * vector that contains all the Observers
-         */
         std::vector <std::shared_ptr<Observer>> observers;
 
 

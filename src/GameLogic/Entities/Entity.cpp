@@ -4,8 +4,3 @@
 
 #include "Entity.h"
 
-namespace DoodleJump {
-    Entity::Entity() = default;
-
-    Entity::~Entity() = default;
-}

@@ -16,6 +16,8 @@ namespace DoodleJump {
          */
         Score() : player_score(0) {}
 
+        ~Score() = default;
+
         /**
         * overriden function to handle a event
         */

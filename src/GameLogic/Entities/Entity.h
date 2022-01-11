@@ -10,18 +10,21 @@
 namespace DoodleJump {
 
     class Entity {
+
     public:
+
         /**
          * default constructor
          */
-        Entity();
+        Entity() = default;
+
         /**
          * default destructor
          */
-        ~Entity();
+        virtual ~Entity() = default;;
 
         /**
-         * virtual function to update entity
+         * pure virtual function to update entity
          */
         virtual void update() = 0;
     };

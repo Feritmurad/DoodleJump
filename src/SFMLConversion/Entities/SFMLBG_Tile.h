@@ -13,17 +13,20 @@ namespace SFMLDoodleJump {
     public:
 
         /**
-        * default destructor
+        * Default destructor
         */
-        ~SFMLBG_Tile() = default;
+        ~SFMLBG_Tile() override = default;
 
         /**
-         * Constructior with coordinate
+         * Constructor with coordinate
+         * @param window: window
          * @param c: coordinate of object
          */
         explicit SFMLBG_Tile(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c = {0, 0}) : SFMLObject(window,c) {}
 
-
+        /**
+         * Draws the object on the window
+         */
         void draw() override;
 
     };

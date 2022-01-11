@@ -15,42 +15,64 @@ namespace DoodleJump {
     enum Horizontalstate{Static,Left,Right};
 
     class Player : public Object {
+
         public:
-            /**
-             * Constructior with coordinate
-             * @param c: coordinate of object
-             */
+        /**
+         * Constructior
+         * @param c: coordinate of object
+         * @param reachedheight: reached height of player
+         * @param Yvelocity: vertical velocity
+         * @param Xvelocity: horizontal velocity
+         * @param gravity : gravity
+         * @param state: state of player
+         * @param height: Height of the object
+         * @param width: Width of the object
+         */
+        explicit Player(const Coordinate &c,const double &reachedheight=0.0,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=0.5,const double &width=0.5);
 
-            explicit Player(const Coordinate &c,const double &reachedheight=0.0,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=0.5,const double &width=0.5);
+        /**
+         * Default destructor
+         */
+        ~Player() override = default;
 
+        /**
+         * function that makes the player jump
+         */
+        void jump();
 
-            void jump();
+        /**
+         * Moves the player
+         */
+        void move();
 
-            void move();
+        /**
+        * Update the object and notify observers
+        */
+        void update() override;
 
-            void update() override;
+        ////////////////// Getters and Setters //////////////////
+        VerticalState getMVstate() const;
 
-            VerticalState getMVstate() const;
+        void setMVstate(VerticalState mVstate);
 
-            void setMVstate(VerticalState mVstate);
+        Horizontalstate getMHstate() const;
 
-            Horizontalstate getMHstate() const;
+        void setMHstate(Horizontalstate mHstate);
 
-            void setMHstate(Horizontalstate mHstate);
+        double getMVelocityY() const;
 
-            double getMVelocityY() const;
+        double getMReachedheight() const;
 
-            double getMReachedheight() const;
+        void updateMReachedheight(double mReachedheight);
 
-            void updateMReachedheight(double mReachedheight);
+        void setMVelocityY(double mVelocityY);
 
-            void setMVelocityY(double mVelocityY);
-
-            bool isReachingnewheight() const;
+        bool isReachingnewheight() const;
 
         event getMBonusstate() const;
 
         void setMBonusstate(event mBonusstate);
+        /////////////////////////////////////////////////////////
 
     private:
         double m_velocity_X;

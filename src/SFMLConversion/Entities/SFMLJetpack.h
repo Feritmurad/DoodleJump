@@ -15,15 +15,18 @@ namespace SFMLDoodleJump {
         /**
         * default destructor
         */
-        ~SFMLJetpack() = default;
+        ~SFMLJetpack() override = default;
 
         /**
-         * Constructior with coordinate
+         * Constructor with coordinate
+         * @param window: window
          * @param c: coordinate of object
          */
         explicit SFMLJetpack(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
 
-
+        /**
+         * Draws the object on the window
+         */
         void draw() override;
 
     };

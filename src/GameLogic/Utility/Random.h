@@ -12,32 +12,45 @@ using namespace std;
 
 class Random {
 private:
-    /*
+    /**
      * Stored instance
      */
     static Random *instance;
 
-    /*
+    /**
      * Private constructor
      */
     Random();
 
 public:
-    /*Static acces method */
+    /**
+     * Static acces method
+     * */
     static Random *getInstance();
 
-    /*Delete copy constructor*/
+    /**
+     * Deleted copy constructor
+     * */
     Random(const Random &obj) = delete;
 
-    /*Delete copy assignment*/
+    /**
+     * Deleted copy assignment
+     */
     Random &operator=(const Random &) = delete;
 
-    /*
-     *Create random integer
+    /**
+     * Generates a random integer between 2 integers
+     * @param first: first integer
+     * @param last:  second integer
+     * @return integer
      */
     int makerandom(int first, int last);
-    /*
-     *Create random integer
+
+    /**
+     * Generates a random double between 2 doubles
+     * @param first: first double
+     * @param last:  second double
+     * @return double
      */
     double makerandom(double first, double last);
 

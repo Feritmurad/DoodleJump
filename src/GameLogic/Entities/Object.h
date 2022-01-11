@@ -9,24 +9,22 @@
 #include "../Observer/Observable.h"
 
 namespace DoodleJump {
+
     class Object : public Entity, public Observable {
 
     public:
-
         /**
          * default destructor
          */
-        ~Object() = default;
+        ~Object() override = default;
 
         /**
-         * Constructior with coordinate
-         * @param c: coordinate of object
+         * Simple constructor
+         * @param c: coordinate of the object
+         * @param height: Height of the object
+         * @param width: Width of the object
          */
          explicit Object(const Coordinate &c,const double &height,const double &width) : m_c(c),m_heigth(height),m_width(width) {}
-
-
-
-    public:
 
         /**
         * Getter for c
@@ -38,14 +36,23 @@ namespace DoodleJump {
          */
         void setC(const Coordinate& m_c);
 
+        /**
+         * Getter for m_height
+         * @return: height of object
+         */
         double getMHeigth() const;
 
+        /**
+         * Getter for m_width
+         * @return: width of object
+         */
         double getMWidth() const;
 
+        /**
+         * Checks if object has valid coordinates
+         * @return bool
+         */
         bool checkValid();
-
-
-
 
     private:
 

@@ -11,6 +11,5 @@ namespace SFMLDoodleJump{
         return m_window;
     }
 
-    SFMLEntity::~SFMLEntity() = default;
 
 }
