@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TurboHiker: /home/ferit/Desktop/Projects/DoodleJump/src/GameLogic/Entities/World.h Source File</title>
+<title>DoodleJump: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/DoodleJump/src/GameLogic/Entities/World.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TurboHiker
+   <div id="projectname">DoodleJump
    </div>
   </td>
  </tr>
@@ -75,24 +75,24 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef GAME_WORLD_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define GAME_WORLD_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Player.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Platform.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;HorizontalPlatform.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;VerticalPlatform.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;set&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../Factory/AbstractEntityFactory.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../Utility/Random.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;TempPlatform.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;jetpack.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;Springs.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../Score/Score.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;BG_Tile.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Factory/AbstractEntityFactory.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Score/Score.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Utility/Random.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;BG_Tile.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;HorizontalPlatform.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Platform.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Player.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Springs.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;TempPlatform.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;VerticalPlatform.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;jetpack.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;set&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>DoodleJump{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>DoodleJump {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1World.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classDoodleJump_1_1World.html">World</a>{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1World.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoodleJump_1_1World.html">World</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classDoodleJump_1_1World.html#a8bb6550c6fac0ee559cb9f9e52652f4a">World</a>(std::shared_ptr&lt;AbstractEntityFactory&gt; factory);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1World.html#ae5f59e77e0b96cf11b430546ddaafbd7">update</a>();</div>
@@ -115,11 +115,11 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#a5bfe642d2297306cfcb382f978e56c04">checkHVValidPlatform</a>(<span class="keyword">const</span> std::shared_ptr&lt;Platform&gt;&amp; nPlatform);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#a4e501e816d21597cd5b0ff8706198162">checkCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj1,<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#a4e501e816d21597cd5b0ff8706198162">checkCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj1, <span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#ab31437963e136b6641657d180a0a39c4">checkXCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;VerticalPlatform&gt;&amp; obj1,<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#ab31437963e136b6641657d180a0a39c4">checkXCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;VerticalPlatform&gt;&amp; obj1, <span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#aa5e01f9737d0518168f51d767d1cc0a5">checkYCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj1,<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1World.html#aa5e01f9737d0518168f51d767d1cc0a5">checkYCollision</a>(<span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj1, <span class="keyword">const</span> std::shared_ptr&lt;Object&gt;&amp; obj2);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1World.html#ac42a1a88e36a867d3be06e9f9938e0bd">generateNewEntities</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
@@ -129,23 +129,23 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        std::set&lt;std::shared_ptr&lt;Platform&gt;&gt; <a class="code" href="classDoodleJump_1_1World.html#a7ac1140f1a3693a6a6d3d08c2ab5d2de">allPlatforms</a>();</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">const</span> shared_ptr&lt;Score&gt; &amp;getMScore() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">const</span> shared_ptr&lt;Score&gt;&amp; getMScore() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span> setMScore(<span class="keyword">const</span> shared_ptr&lt;Score&gt; &amp;mScore);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span> setMScore(<span class="keyword">const</span> shared_ptr&lt;Score&gt;&amp; mScore);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">const</span> set&lt;std::shared_ptr&lt;BG_Tile&gt;&gt; &amp;getMBgtile() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">const</span> set&lt;std::shared_ptr&lt;BG_Tile&gt;&gt;&amp; getMBgtile() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> setMBgtile(<span class="keyword">const</span> set&lt;std::shared_ptr&lt;BG_Tile&gt;&gt; &amp;mBgtile);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> setMBgtile(<span class="keyword">const</span> set&lt;std::shared_ptr&lt;BG_Tile&gt;&gt;&amp; mBgtile);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> std::shared_ptr&lt;Player&gt; &amp;getMPlayer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> std::shared_ptr&lt;Player&gt;&amp; getMPlayer() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;Platform&gt;&gt; &amp;getMPlatforms() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;Platform&gt;&gt;&amp; getMPlatforms() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;HorizontalPlatform&gt;&gt; &amp;getMHorizontalplatforms() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;HorizontalPlatform&gt;&gt;&amp; getMHorizontalplatforms() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;VerticalPlatform&gt;&gt; &amp;getMVerticalplatforms() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">const</span> std::set&lt;std::shared_ptr&lt;VerticalPlatform&gt;&gt;&amp; getMVerticalplatforms() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        std::shared_ptr&lt;Player&gt; m_player;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        std::set&lt;std::shared_ptr&lt;Platform&gt;&gt; m_platforms;</div>
@@ -177,33 +177,29 @@ $(function() {
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        std::shared_ptr&lt;Observer&gt; m_bgtileview;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        std::shared_ptr&lt;Score&gt; m_Score;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    };</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif //GAME_WORLD_H</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} <span class="comment">// namespace DoodleJump</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif // GAME_WORLD_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassDoodleJump_1_1World_html_aa5e01f9737d0518168f51d767d1cc0a5"><div class="ttname"><a href="classDoodleJump_1_1World.html#aa5e01f9737d0518168f51d767d1cc0a5">DoodleJump::World::checkYCollision</a></div><div class="ttdeci">bool checkYCollision(const std::shared_ptr&lt; Object &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:254</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_aba9ce0316d917b4e94b85c17f2222dcb"><div class="ttname"><a href="classDoodleJump_1_1World.html#aba9ce0316d917b4e94b85c17f2222dcb">DoodleJump::World::checkBackground</a></div><div class="ttdeci">void checkBackground()</div><div class="ttdef"><b>Definition:</b> World.cpp:398</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_ac42a1a88e36a867d3be06e9f9938e0bd"><div class="ttname"><a href="classDoodleJump_1_1World.html#ac42a1a88e36a867d3be06e9f9938e0bd">DoodleJump::World::generateNewEntities</a></div><div class="ttdeci">void generateNewEntities()</div><div class="ttdef"><b>Definition:</b> World.cpp:269</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_ab31437963e136b6641657d180a0a39c4"><div class="ttname"><a href="classDoodleJump_1_1World.html#ab31437963e136b6641657d180a0a39c4">DoodleJump::World::checkXCollision</a></div><div class="ttdeci">bool checkXCollision(const std::shared_ptr&lt; VerticalPlatform &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:242</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_aa5e01f9737d0518168f51d767d1cc0a5"><div class="ttname"><a href="classDoodleJump_1_1World.html#aa5e01f9737d0518168f51d767d1cc0a5">DoodleJump::World::checkYCollision</a></div><div class="ttdeci">bool checkYCollision(const std::shared_ptr&lt; Object &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:250</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_aba9ce0316d917b4e94b85c17f2222dcb"><div class="ttname"><a href="classDoodleJump_1_1World.html#aba9ce0316d917b4e94b85c17f2222dcb">DoodleJump::World::checkBackground</a></div><div class="ttdeci">void checkBackground()</div><div class="ttdef"><b>Definition:</b> World.cpp:386</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_ac42a1a88e36a867d3be06e9f9938e0bd"><div class="ttname"><a href="classDoodleJump_1_1World.html#ac42a1a88e36a867d3be06e9f9938e0bd">DoodleJump::World::generateNewEntities</a></div><div class="ttdeci">void generateNewEntities()</div><div class="ttdef"><b>Definition:</b> World.cpp:262</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_ab31437963e136b6641657d180a0a39c4"><div class="ttname"><a href="classDoodleJump_1_1World.html#ab31437963e136b6641657d180a0a39c4">DoodleJump::World::checkXCollision</a></div><div class="ttdeci">bool checkXCollision(const std::shared_ptr&lt; VerticalPlatform &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:237</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1World_html_ae5f59e77e0b96cf11b430546ddaafbd7"><div class="ttname"><a href="classDoodleJump_1_1World.html#ae5f59e77e0b96cf11b430546ddaafbd7">DoodleJump::World::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> World.cpp:11</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1World_html"><div class="ttname"><a href="classDoodleJump_1_1World.html">DoodleJump::World</a></div><div class="ttdef"><b>Definition:</b> World.h:22</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a333d89f72a5ccb7ed59fc081f506d337"><div class="ttname"><a href="classDoodleJump_1_1World.html#a333d89f72a5ccb7ed59fc081f506d337">DoodleJump::World::checkValidPlatform</a></div><div class="ttdeci">bool checkValidPlatform(const std::shared_ptr&lt; Platform &gt; &amp;nPlatform)</div><div class="ttdef"><b>Definition:</b> World.cpp:218</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a4c52d1977894db32cef3af2ee9e84b56"><div class="ttname"><a href="classDoodleJump_1_1World.html#a4c52d1977894db32cef3af2ee9e84b56">DoodleJump::World::deletePlatforms</a></div><div class="ttdeci">void deletePlatforms()</div><div class="ttdef"><b>Definition:</b> World.cpp:100</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a5359a74a7ffb4a03306dd0c01ef6eee5"><div class="ttname"><a href="classDoodleJump_1_1World.html#a5359a74a7ffb4a03306dd0c01ef6eee5">DoodleJump::World::generateRandomStart</a></div><div class="ttdeci">void generateRandomStart()</div><div class="ttdef"><b>Definition:</b> World.cpp:148</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a333d89f72a5ccb7ed59fc081f506d337"><div class="ttname"><a href="classDoodleJump_1_1World.html#a333d89f72a5ccb7ed59fc081f506d337">DoodleJump::World::checkValidPlatform</a></div><div class="ttdeci">bool checkValidPlatform(const std::shared_ptr&lt; Platform &gt; &amp;nPlatform)</div><div class="ttdef"><b>Definition:</b> World.cpp:212</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a4c52d1977894db32cef3af2ee9e84b56"><div class="ttname"><a href="classDoodleJump_1_1World.html#a4c52d1977894db32cef3af2ee9e84b56">DoodleJump::World::deletePlatforms</a></div><div class="ttdeci">void deletePlatforms()</div><div class="ttdef"><b>Definition:</b> World.cpp:93</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a5359a74a7ffb4a03306dd0c01ef6eee5"><div class="ttname"><a href="classDoodleJump_1_1World.html#a5359a74a7ffb4a03306dd0c01ef6eee5">DoodleJump::World::generateRandomStart</a></div><div class="ttdeci">void generateRandomStart()</div><div class="ttdef"><b>Definition:</b> World.cpp:136</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1World_html_aca97a3783a6236818f5e04ba5fd14591"><div class="ttname"><a href="classDoodleJump_1_1World.html#aca97a3783a6236818f5e04ba5fd14591">DoodleJump::World::makeWorld</a></div><div class="ttdeci">void makeWorld()</div><div class="ttdef"><b>Definition:</b> World.cpp:26</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a7ac1140f1a3693a6a6d3d08c2ab5d2de"><div class="ttname"><a href="classDoodleJump_1_1World.html#a7ac1140f1a3693a6a6d3d08c2ab5d2de">DoodleJump::World::allPlatforms</a></div><div class="ttdeci">std::set&lt; std::shared_ptr&lt; Platform &gt; &gt; allPlatforms()</div><div class="ttdef"><b>Definition:</b> World.cpp:303</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a8bb6550c6fac0ee559cb9f9e52652f4a"><div class="ttname"><a href="classDoodleJump_1_1World.html#a8bb6550c6fac0ee559cb9f9e52652f4a">DoodleJump::World::World</a></div><div class="ttdeci">World(std::shared_ptr&lt; AbstractEntityFactory &gt; factory)</div><div class="ttdef"><b>Definition:</b> World.cpp:263</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a5bfe642d2297306cfcb382f978e56c04"><div class="ttname"><a href="classDoodleJump_1_1World.html#a5bfe642d2297306cfcb382f978e56c04">DoodleJump::World::checkHVValidPlatform</a></div><div class="ttdeci">bool checkHVValidPlatform(const std::shared_ptr&lt; Platform &gt; &amp;nPlatform)</div><div class="ttdef"><b>Definition:</b> World.cpp:204</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_acd919d54a04daa7dd79a112337fd7cd6"><div class="ttname"><a href="classDoodleJump_1_1World.html#acd919d54a04daa7dd79a112337fd7cd6">DoodleJump::World::playermove</a></div><div class="ttdeci">void playermove(Horizontalstate state)</div><div class="ttdef"><b>Definition:</b> World.cpp:96</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a4e501e816d21597cd5b0ff8706198162"><div class="ttname"><a href="classDoodleJump_1_1World.html#a4e501e816d21597cd5b0ff8706198162">DoodleJump::World::checkCollision</a></div><div class="ttdeci">bool checkCollision(const std::shared_ptr&lt; Object &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:231</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_a007b5a74dee6b4ec4438cb6b5b9086fb"><div class="ttname"><a href="classDoodleJump_1_1World.html#a007b5a74dee6b4ec4438cb6b5b9086fb">DoodleJump::World::makeRandomPlatform</a></div><div class="ttdeci">void makeRandomPlatform()</div><div class="ttdef"><b>Definition:</b> World.cpp:312</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1World_html_ac157dd189375588459659aead33f3937"><div class="ttname"><a href="classDoodleJump_1_1World.html#ac157dd189375588459659aead33f3937">DoodleJump::World::checkPlayerPlatformCollision</a></div><div class="ttdeci">void checkPlayerPlatformCollision()</div><div class="ttdef"><b>Definition:</b> World.cpp:65</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a7ac1140f1a3693a6a6d3d08c2ab5d2de"><div class="ttname"><a href="classDoodleJump_1_1World.html#a7ac1140f1a3693a6a6d3d08c2ab5d2de">DoodleJump::World::allPlatforms</a></div><div class="ttdeci">std::set&lt; std::shared_ptr&lt; Platform &gt; &gt; allPlatforms()</div><div class="ttdef"><b>Definition:</b> World.cpp:298</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a8bb6550c6fac0ee559cb9f9e52652f4a"><div class="ttname"><a href="classDoodleJump_1_1World.html#a8bb6550c6fac0ee559cb9f9e52652f4a">DoodleJump::World::World</a></div><div class="ttdeci">World(std::shared_ptr&lt; AbstractEntityFactory &gt; factory)</div><div class="ttdef"><b>Definition:</b> World.cpp:260</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a5bfe642d2297306cfcb382f978e56c04"><div class="ttname"><a href="classDoodleJump_1_1World.html#a5bfe642d2297306cfcb382f978e56c04">DoodleJump::World::checkHVValidPlatform</a></div><div class="ttdeci">bool checkHVValidPlatform(const std::shared_ptr&lt; Platform &gt; &amp;nPlatform)</div><div class="ttdef"><b>Definition:</b> World.cpp:193</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_acd919d54a04daa7dd79a112337fd7cd6"><div class="ttname"><a href="classDoodleJump_1_1World.html#acd919d54a04daa7dd79a112337fd7cd6">DoodleJump::World::playermove</a></div><div class="ttdeci">void playermove(Horizontalstate state)</div><div class="ttdef"><b>Definition:</b> World.cpp:91</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a4e501e816d21597cd5b0ff8706198162"><div class="ttname"><a href="classDoodleJump_1_1World.html#a4e501e816d21597cd5b0ff8706198162">DoodleJump::World::checkCollision</a></div><div class="ttdeci">bool checkCollision(const std::shared_ptr&lt; Object &gt; &amp;obj1, const std::shared_ptr&lt; Object &gt; &amp;obj2)</div><div class="ttdef"><b>Definition:</b> World.cpp:226</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_a007b5a74dee6b4ec4438cb6b5b9086fb"><div class="ttname"><a href="classDoodleJump_1_1World.html#a007b5a74dee6b4ec4438cb6b5b9086fb">DoodleJump::World::makeRandomPlatform</a></div><div class="ttdeci">void makeRandomPlatform()</div><div class="ttdef"><b>Definition:</b> World.cpp:308</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1World_html_ac157dd189375588459659aead33f3937"><div class="ttname"><a href="classDoodleJump_1_1World.html#ac157dd189375588459659aead33f3937">DoodleJump::World::checkPlayerPlatformCollision</a></div><div class="ttdeci">void checkPlayerPlatformCollision()</div><div class="ttdef"><b>Definition:</b> World.cpp:61</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

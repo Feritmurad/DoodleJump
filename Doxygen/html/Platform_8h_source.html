@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TurboHiker: /home/ferit/Desktop/Projects/DoodleJump/src/GameLogic/Entities/Platform.h Source File</title>
+<title>DoodleJump: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/DoodleJump/src/GameLogic/Entities/Platform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TurboHiker
+   <div id="projectname">DoodleJump
    </div>
   </td>
  </tr>
@@ -75,54 +75,55 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef JUMPGAME_PLATFORM_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define JUMPGAME_PLATFORM_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Bonus.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Bonus.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;iostream&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>DoodleJump {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Platform.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Platform.html">Platform</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Object.html">Object</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Platform.html#a23c3971adec80413756f84ffb4c05d1d">   23</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classDoodleJump_1_1Platform.html#a23c3971adec80413756f84ffb4c05d1d">Platform</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Coordinate.html">Coordinate</a> &amp;c,<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;height=0.4,<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;width=1, <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;jumped = <span class="keyword">false</span>) : <a class="code" href="classDoodleJump_1_1Object.html">Object</a>(c,height,width) , m_jumpedOn(jumped), m_bonus(nullptr){}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classDoodleJump_1_1Platform.html#ac0cd3f5fb5ce39732961744b8e997724">~Platform</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#a9abac061c5472f11a59b7abcf950fff7">update</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1Platform.html#a30b6359eb61bb330590b27af1d2fc48f">isMJumpedOn</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#a7776833738d48eb37b4da997821bdfe7">setMJumpedOn</a>(<span class="keywordtype">bool</span> mJumpedOn);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::shared_ptr&lt;Bonus&gt; &amp;<a class="code" href="classDoodleJump_1_1Platform.html#acddd52f3a7ccc8b7bdc732de32d22965">getMBonus</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#aa1170e8854f93bce08bc3d52b6bb9608">setMBonus</a>(<span class="keyword">const</span> std::shared_ptr&lt;Bonus&gt; &amp;mBonus);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#aa3b255ae8971ca84cff9574c1fc79b2f">updateScore</a>() ;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">bool</span> m_jumpedOn;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::shared_ptr&lt;Bonus&gt; m_bonus;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Platform.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Platform.html">Platform</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Object.html">Object</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Platform.html#a23c3971adec80413756f84ffb4c05d1d">   23</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classDoodleJump_1_1Platform.html#a23c3971adec80413756f84ffb4c05d1d">Platform</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Coordinate.html">Coordinate</a>&amp; c, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; height = 0.4, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; width = 1,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; jumped = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            : <a class="code" href="classDoodleJump_1_1Object.html">Object</a>(c, height, width), m_jumpedOn(jumped), m_bonus(nullptr)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classDoodleJump_1_1Platform.html#ac0cd3f5fb5ce39732961744b8e997724">~Platform</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#a9abac061c5472f11a59b7abcf950fff7">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1Platform.html#a30b6359eb61bb330590b27af1d2fc48f">isMJumpedOn</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#a7776833738d48eb37b4da997821bdfe7">setMJumpedOn</a>(<span class="keywordtype">bool</span> mJumpedOn);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> std::shared_ptr&lt;Bonus&gt;&amp; <a class="code" href="classDoodleJump_1_1Platform.html#acddd52f3a7ccc8b7bdc732de32d22965">getMBonus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#aa1170e8854f93bce08bc3d52b6bb9608">setMBonus</a>(<span class="keyword">const</span> std::shared_ptr&lt;Bonus&gt;&amp; mBonus);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Platform.html#aa3b255ae8971ca84cff9574c1fc79b2f">updateScore</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> m_jumpedOn;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::shared_ptr&lt;Bonus&gt; m_bonus;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif //JUMPGAME_PLATFORM_H</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace DoodleJump</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // JUMPGAME_PLATFORM_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassDoodleJump_1_1Platform_html_a23c3971adec80413756f84ffb4c05d1d"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a23c3971adec80413756f84ffb4c05d1d">DoodleJump::Platform::Platform</a></div><div class="ttdeci">Platform(const Coordinate &amp;c, const double &amp;height=0.4, const double &amp;width=1, const bool &amp;jumped=false)</div><div class="ttdef"><b>Definition:</b> Platform.h:23</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a30b6359eb61bb330590b27af1d2fc48f"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a30b6359eb61bb330590b27af1d2fc48f">DoodleJump::Platform::isMJumpedOn</a></div><div class="ttdeci">bool isMJumpedOn() const</div><div class="ttdef"><b>Definition:</b> Platform.cpp:26</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a30b6359eb61bb330590b27af1d2fc48f"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a30b6359eb61bb330590b27af1d2fc48f">DoodleJump::Platform::isMJumpedOn</a></div><div class="ttdeci">bool isMJumpedOn() const</div><div class="ttdef"><b>Definition:</b> Platform.cpp:22</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Platform_html"><div class="ttname"><a href="classDoodleJump_1_1Platform.html">DoodleJump::Platform</a></div><div class="ttdef"><b>Definition:</b> Platform.h:13</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_aa1170e8854f93bce08bc3d52b6bb9608"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#aa1170e8854f93bce08bc3d52b6bb9608">DoodleJump::Platform::setMBonus</a></div><div class="ttdeci">void setMBonus(const std::shared_ptr&lt; Bonus &gt; &amp;mBonus)</div><div class="ttdef"><b>Definition:</b> Platform.cpp:34</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a9abac061c5472f11a59b7abcf950fff7"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a9abac061c5472f11a59b7abcf950fff7">DoodleJump::Platform::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition:</b> Platform.cpp:10</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_aa1170e8854f93bce08bc3d52b6bb9608"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#aa1170e8854f93bce08bc3d52b6bb9608">DoodleJump::Platform::setMBonus</a></div><div class="ttdeci">void setMBonus(const std::shared_ptr&lt; Bonus &gt; &amp;mBonus)</div><div class="ttdef"><b>Definition:</b> Platform.cpp:26</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a9abac061c5472f11a59b7abcf950fff7"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a9abac061c5472f11a59b7abcf950fff7">DoodleJump::Platform::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition:</b> Platform.cpp:9</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Coordinate_html"><div class="ttname"><a href="classDoodleJump_1_1Coordinate.html">DoodleJump::Coordinate</a></div><div class="ttdef"><b>Definition:</b> Coordinate.h:9</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a7776833738d48eb37b4da997821bdfe7"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a7776833738d48eb37b4da997821bdfe7">DoodleJump::Platform::setMJumpedOn</a></div><div class="ttdeci">void setMJumpedOn(bool mJumpedOn)</div><div class="ttdef"><b>Definition:</b> Platform.cpp:22</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_acddd52f3a7ccc8b7bdc732de32d22965"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#acddd52f3a7ccc8b7bdc732de32d22965">DoodleJump::Platform::getMBonus</a></div><div class="ttdeci">const std::shared_ptr&lt; Bonus &gt; &amp; getMBonus() const</div><div class="ttdef"><b>Definition:</b> Platform.cpp:30</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_a7776833738d48eb37b4da997821bdfe7"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#a7776833738d48eb37b4da997821bdfe7">DoodleJump::Platform::setMJumpedOn</a></div><div class="ttdeci">void setMJumpedOn(bool mJumpedOn)</div><div class="ttdef"><b>Definition:</b> Platform.cpp:20</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_acddd52f3a7ccc8b7bdc732de32d22965"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#acddd52f3a7ccc8b7bdc732de32d22965">DoodleJump::Platform::getMBonus</a></div><div class="ttdeci">const std::shared_ptr&lt; Bonus &gt; &amp; getMBonus() const</div><div class="ttdef"><b>Definition:</b> Platform.cpp:24</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Object_html"><div class="ttname"><a href="classDoodleJump_1_1Object.html">DoodleJump::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:13</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Platform_html_aa3b255ae8971ca84cff9574c1fc79b2f"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#aa3b255ae8971ca84cff9574c1fc79b2f">DoodleJump::Platform::updateScore</a></div><div class="ttdeci">virtual void updateScore()</div><div class="ttdef"><b>Definition:</b> Platform.cpp:38</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Platform_html_aa3b255ae8971ca84cff9574c1fc79b2f"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#aa3b255ae8971ca84cff9574c1fc79b2f">DoodleJump::Platform::updateScore</a></div><div class="ttdeci">virtual void updateScore()</div><div class="ttdef"><b>Definition:</b> Platform.cpp:28</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Platform_html_ac0cd3f5fb5ce39732961744b8e997724"><div class="ttname"><a href="classDoodleJump_1_1Platform.html#ac0cd3f5fb5ce39732961744b8e997724">DoodleJump::Platform::~Platform</a></div><div class="ttdeci">~Platform() override=default</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

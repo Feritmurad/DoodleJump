@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TurboHiker: /home/ferit/Desktop/Projects/DoodleJump/src/GameLogic/Utility/Clock.h Source File</title>
+<title>DoodleJump: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/DoodleJump/src/GameLogic/Utility/Clock.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TurboHiker
+   <div id="projectname">DoodleJump
    </div>
   </td>
  </tr>
@@ -75,41 +75,42 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef JUMPGAME_CLOCK_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define JUMPGAME_CLOCK_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;chrono&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;chrono&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>DoodleJump {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Clock.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> Tick = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::chrono::system_clock::time_point startTime;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> *instance;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>(<span class="keywordtype">int</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> *<a class="code" href="classDoodleJump_1_1Clock.html#a9649e06c71558779c28152124610d4fe">getInstance</a>(<span class="keywordtype">int</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> &amp;obj) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> &amp;<a class="code" href="classDoodleJump_1_1Clock.html#a40261a89262f14b749bbe979ca8aebbe">operator=</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Clock.html#a6497a7133771732bcd6d8e84bbaa363a">reset</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::chrono::system_clock::time_point <a class="code" href="classDoodleJump_1_1Clock.html#a2c18c3f7b40dd91f9875807901445271">currentTime</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif //JUMPGAME_CLOCK_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Clock.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Clock.html">Clock</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">int</span> Tick = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::chrono::system_clock::time_point startTime;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>* instance;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>(<span class="keywordtype">int</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>* <a class="code" href="classDoodleJump_1_1Clock.html#a9649e06c71558779c28152124610d4fe">getInstance</a>(<span class="keywordtype">int</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>&amp; obj) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>&amp; <a class="code" href="classDoodleJump_1_1Clock.html#a40261a89262f14b749bbe979ca8aebbe">operator=</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Clock.html">Clock</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">tick</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Clock.html#a6497a7133771732bcd6d8e84bbaa363a">reset</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::chrono::system_clock::time_point <a class="code" href="classDoodleJump_1_1Clock.html#a2c18c3f7b40dd91f9875807901445271">currentTime</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace DoodleJump</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // JUMPGAME_CLOCK_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassDoodleJump_1_1Clock_html"><div class="ttname"><a href="classDoodleJump_1_1Clock.html">DoodleJump::Clock</a></div><div class="ttdef"><b>Definition:</b> Clock.h:11</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Clock_html_a40261a89262f14b749bbe979ca8aebbe"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a40261a89262f14b749bbe979ca8aebbe">DoodleJump::Clock::operator=</a></div><div class="ttdeci">Clock &amp; operator=(const Clock &amp;)=delete</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Clock_html_a9649e06c71558779c28152124610d4fe"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a9649e06c71558779c28152124610d4fe">DoodleJump::Clock::getInstance</a></div><div class="ttdeci">static Clock * getInstance(int tick)</div><div class="ttdef"><b>Definition:</b> Clock.cpp:13</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a3cc9fc7feabdbb3c34f8e342faed457b"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">DoodleJump::Clock::tick</a></div><div class="ttdeci">bool tick()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:34</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a2c18c3f7b40dd91f9875807901445271"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a2c18c3f7b40dd91f9875807901445271">DoodleJump::Clock::currentTime</a></div><div class="ttdeci">std::chrono::system_clock::time_point currentTime()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:30</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a6497a7133771732bcd6d8e84bbaa363a"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a6497a7133771732bcd6d8e84bbaa363a">DoodleJump::Clock::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:20</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a3cc9fc7feabdbb3c34f8e342faed457b"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a3cc9fc7feabdbb3c34f8e342faed457b">DoodleJump::Clock::tick</a></div><div class="ttdeci">bool tick()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:31</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a2c18c3f7b40dd91f9875807901445271"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a2c18c3f7b40dd91f9875807901445271">DoodleJump::Clock::currentTime</a></div><div class="ttdeci">std::chrono::system_clock::time_point currentTime()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:29</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Clock_html_a6497a7133771732bcd6d8e84bbaa363a"><div class="ttname"><a href="classDoodleJump_1_1Clock.html#a6497a7133771732bcd6d8e84bbaa363a">DoodleJump::Clock::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> Clock.cpp:21</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

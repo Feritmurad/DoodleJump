@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TurboHiker: /home/ferit/Desktop/Projects/DoodleJump/src/GameLogic/Score/Score.h Source File</title>
+<title>DoodleJump: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/DoodleJump/src/GameLogic/Score/Score.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TurboHiker
+   <div id="projectname">DoodleJump
    </div>
   </td>
  </tr>
@@ -80,31 +80,29 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>DoodleJump {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Score.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Score.html">Score</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Observer.html">Observer</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">   17</a></span>&#160;        <a class="code" href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">Score</a>() : player_score(0) {}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ~<a class="code" href="classDoodleJump_1_1Score.html">Score</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Score.html#a0dee146450c2dde9182a0e915808d385">handleEvent</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1ObserverEvent.html">ObserverEvent</a> &amp;event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">int</span> getPlayerScore() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Score.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Score.html">Score</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Observer.html">Observer</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">   18</a></span>&#160;        <a class="code" href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">Score</a>() : player_score(0) {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="classDoodleJump_1_1Score.html">Score</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Score.html#a0dee146450c2dde9182a0e915808d385">handleEvent</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1ObserverEvent.html">ObserverEvent</a>&amp; event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> getPlayerScore() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> player_score;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif //JUMPGAME_SCORE_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace DoodleJump</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // JUMPGAME_SCORE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassDoodleJump_1_1Score_html"><div class="ttname"><a href="classDoodleJump_1_1Score.html">DoodleJump::Score</a></div><div class="ttdef"><b>Definition:</b> Score.h:12</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1ObserverEvent_html"><div class="ttname"><a href="classDoodleJump_1_1ObserverEvent.html">DoodleJump::ObserverEvent</a></div><div class="ttdef"><b>Definition:</b> ObserverEvent.h:12</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1ObserverEvent_html"><div class="ttname"><a href="classDoodleJump_1_1ObserverEvent.html">DoodleJump::ObserverEvent</a></div><div class="ttdef"><b>Definition:</b> ObserverEvent.h:17</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Score_html_a0dee146450c2dde9182a0e915808d385"><div class="ttname"><a href="classDoodleJump_1_1Score.html#a0dee146450c2dde9182a0e915808d385">DoodleJump::Score::handleEvent</a></div><div class="ttdeci">void handleEvent(const ObserverEvent &amp;event) override</div><div class="ttdef"><b>Definition:</b> Score.cpp:9</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Observer_html"><div class="ttname"><a href="classDoodleJump_1_1Observer.html">DoodleJump::Observer</a></div><div class="ttdef"><b>Definition:</b> Observer.h:12</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Score_html_ac8774eac48a40175dcff9cf2b69fcb57"><div class="ttname"><a href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">DoodleJump::Score::Score</a></div><div class="ttdeci">Score()</div><div class="ttdef"><b>Definition:</b> Score.h:17</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Observer_html"><div class="ttname"><a href="classDoodleJump_1_1Observer.html">DoodleJump::Observer</a></div><div class="ttdef"><b>Definition:</b> Observer.h:11</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Score_html_ac8774eac48a40175dcff9cf2b69fcb57"><div class="ttname"><a href="classDoodleJump_1_1Score.html#ac8774eac48a40175dcff9cf2b69fcb57">DoodleJump::Score::Score</a></div><div class="ttdeci">Score()</div><div class="ttdef"><b>Definition:</b> Score.h:18</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TurboHiker: /home/ferit/Desktop/Projects/DoodleJump/src/GameLogic/Entities/Springs.h Source File</title>
+<title>DoodleJump: /mnt/c/Users/ferit/OneDrive/Работен плот/Gevorderd/DoodleJump/src/GameLogic/Entities/Springs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TurboHiker
+   <div id="projectname">DoodleJump
    </div>
   </td>
  </tr>
@@ -80,27 +80,30 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>DoodleJump {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Springs.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Springs.html">Springs</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Bonus.html">Bonus</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3">   22</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3">Springs</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Coordinate.html">Coordinate</a> &amp;c, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;height = 0.5, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;width = 0.5) : <a class="code" href="classDoodleJump_1_1Bonus.html">Bonus</a>(c, height, width) {}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classDoodleJump_1_1Springs.html#a73bcd11214dbfd8d5783c0d470c2b625">~Springs</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Springs.html#a71e42cfacc9ddef991a2e81051ae915f">update</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">event</span> bonustype() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Springs.html#a89b0a09bbd8063bc5f4620361ab9ea10">updateScore</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif //JUMPGAME_SPRINGS_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Springs.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoodleJump_1_1Springs.html">Springs</a> : <span class="keyword">public</span> <a class="code" href="classDoodleJump_1_1Bonus.html">Bonus</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3">   22</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3">Springs</a>(<span class="keyword">const</span> <a class="code" href="classDoodleJump_1_1Coordinate.html">Coordinate</a>&amp; c, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; height = 0.5, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; width = 0.5)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            : <a class="code" href="classDoodleJump_1_1Bonus.html">Bonus</a>(c, height, width)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classDoodleJump_1_1Springs.html#a73bcd11214dbfd8d5783c0d470c2b625">~Springs</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Springs.html#a71e42cfacc9ddef991a2e81051ae915f">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">event</span> bonustype() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDoodleJump_1_1Springs.html#a89b0a09bbd8063bc5f4620361ab9ea10">updateScore</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace DoodleJump</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // JUMPGAME_SPRINGS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassDoodleJump_1_1Springs_html_a73bcd11214dbfd8d5783c0d470c2b625"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a73bcd11214dbfd8d5783c0d470c2b625">DoodleJump::Springs::~Springs</a></div><div class="ttdeci">~Springs() override=default</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Springs_html_a89b0a09bbd8063bc5f4620361ab9ea10"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a89b0a09bbd8063bc5f4620361ab9ea10">DoodleJump::Springs::updateScore</a></div><div class="ttdeci">void updateScore() override</div><div class="ttdef"><b>Definition:</b> Springs.cpp:21</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Springs_html_a89b0a09bbd8063bc5f4620361ab9ea10"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a89b0a09bbd8063bc5f4620361ab9ea10">DoodleJump::Springs::updateScore</a></div><div class="ttdeci">void updateScore() override</div><div class="ttdef"><b>Definition:</b> Springs.cpp:18</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Coordinate_html"><div class="ttname"><a href="classDoodleJump_1_1Coordinate.html">DoodleJump::Coordinate</a></div><div class="ttdef"><b>Definition:</b> Coordinate.h:9</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Springs_html"><div class="ttname"><a href="classDoodleJump_1_1Springs.html">DoodleJump::Springs</a></div><div class="ttdef"><b>Definition:</b> Springs.h:12</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Bonus_html"><div class="ttname"><a href="classDoodleJump_1_1Bonus.html">DoodleJump::Bonus</a></div><div class="ttdef"><b>Definition:</b> Bonus.h:11</div></div>
 <div class="ttc" id="aclassDoodleJump_1_1Springs_html_a4e99f7a97fb2ada639927b0daba47ba3"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a4e99f7a97fb2ada639927b0daba47ba3">DoodleJump::Springs::Springs</a></div><div class="ttdeci">Springs(const Coordinate &amp;c, const double &amp;height=0.5, const double &amp;width=0.5)</div><div class="ttdef"><b>Definition:</b> Springs.h:22</div></div>
-<div class="ttc" id="aclassDoodleJump_1_1Springs_html_a71e42cfacc9ddef991a2e81051ae915f"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a71e42cfacc9ddef991a2e81051ae915f">DoodleJump::Springs::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition:</b> Springs.cpp:10</div></div>
+<div class="ttc" id="aclassDoodleJump_1_1Springs_html_a71e42cfacc9ddef991a2e81051ae915f"><div class="ttname"><a href="classDoodleJump_1_1Springs.html#a71e42cfacc9ddef991a2e81051ae915f">DoodleJump::Springs::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition:</b> Springs.cpp:9</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
