@@ -9,13 +9,14 @@
 
 namespace DoodleJump {
 
-    class Camera {
-    private:
+class Camera
+{
+private:
         int res_x = 700;
         int res_y = 900;
         std::shared_ptr<DoodleJump::World> m_world;
 
-    public:
+public:
         /**
          * Default constructor
          */
@@ -25,7 +26,7 @@ namespace DoodleJump {
          * Simple constructor
          * @param world: World with all its entities
          */
-         explicit Camera(const std::shared_ptr<World> &world) : m_world(world) {}
+        explicit Camera(const std::shared_ptr<World>& world) : m_world(world) {}
 
         /**
          * Transforms coordinates to pixels
@@ -37,9 +38,8 @@ namespace DoodleJump {
          * Makes sure the camera follows the player when the player reaches new height
          */
         void moveForward();
+};
 
-    };
+} // namespace DoodleJump
 
-}
-
-#endif //GAME_TRANSFORMATION_H
+#endif // GAME_TRANSFORMATION_H

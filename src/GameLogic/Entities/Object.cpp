@@ -5,26 +5,15 @@
 #include "Object.h"
 
 namespace DoodleJump {
-    
-    Coordinate Object::getC() const {
-        return m_c;
-    }
 
-    void Object::setC(const Coordinate& m_c) {
-        Object::m_c = m_c;
-    }
+Coordinate Object::getC() const { return m_c; }
 
+void Object::setC(const Coordinate& m_c) { Object::m_c = m_c; }
 
-    double Object::getMWidth() const {
-        return m_width;
-    }
+double Object::getMWidth() const { return m_width; }
 
-    double Object::getMHeigth() const {
-        return m_heigth;
-    }
+double Object::getMHeigth() const { return m_heigth; }
 
-    bool Object::checkValid() {
-        return getC().validCoordinate();
-    }
+bool Object::checkValid() { return getC().validCoordinate(); }
 
-}
+} // namespace DoodleJump

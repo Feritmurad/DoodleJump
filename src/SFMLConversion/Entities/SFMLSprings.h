@@ -6,15 +6,14 @@
 #define JUMPGAME_SFMLSPRINGS_H
 #include "SFMLObject.h"
 
-
 namespace SFMLDoodleJump {
 
-    class SFMLSprings: public SFMLObject {
-    public:
-
+class SFMLSprings : public SFMLObject
+{
+public:
         /**
-        * default destructor
-        */
+         * default destructor
+         */
         ~SFMLSprings() override = default;
 
         /**
@@ -22,16 +21,17 @@ namespace SFMLDoodleJump {
          * @param window: window
          * @param c: coordinate of object
          */
-        explicit SFMLSprings(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
+        explicit SFMLSprings(const std::shared_ptr<sf::RenderWindow>& window, const DoodleJump::Coordinate& c = {0, 0})
+            : SFMLObject(window, c)
+        {
+        }
 
         /**
          * Draws the object on the window
-        */
+         */
         void draw() override;
+};
 
-    };
+} // namespace SFMLDoodleJump
 
-}
-
-
-#endif //JUMPGAME_SFMLSPRINGS_H
+#endif // JUMPGAME_SFMLSPRINGS_H

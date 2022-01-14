@@ -9,9 +9,9 @@
 
 namespace DoodleJump {
 
-    class Springs : public Bonus {
-    public:
-
+class Springs : public Bonus
+{
+public:
         /**
          * Simple constructor
          * @param c: coordinate of the object
@@ -19,7 +19,10 @@ namespace DoodleJump {
          * @param width: Width of the object
          */
 
-        explicit Springs(const Coordinate &c, const double &height = 0.5, const double &width = 0.5) : Bonus(c, height, width) {}
+        explicit Springs(const Coordinate& c, const double& height = 0.5, const double& width = 0.5)
+            : Bonus(c, height, width)
+        {
+        }
         /**
          * Default destructor
          */
@@ -40,6 +43,6 @@ namespace DoodleJump {
          * virtual function that updates score
          */
         void updateScore() override;
-    };
-}
-#endif //JUMPGAME_SPRINGS_H
+};
+} // namespace DoodleJump
+#endif // JUMPGAME_SPRINGS_H

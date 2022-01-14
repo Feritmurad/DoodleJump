@@ -4,22 +4,26 @@
 
 #ifndef JUMPGAME_BG_TILE_H
 #define JUMPGAME_BG_TILE_H
-#include "Object.h"
 #include "Bonus.h"
+#include "Object.h"
 #include "iostream"
 
 namespace DoodleJump {
 
-    class BG_Tile : public Object {
+class BG_Tile : public Object
+{
 
-    public:
+public:
         /**
          * Simple constructor
          * @param c: coordinate of the object
          * @param height: Height of the object
          * @param width: Width of the object
          */
-        explicit BG_Tile(const Coordinate &c, const double &height = 9, const double &width = 7) : Object(c, height, width) {}
+        explicit BG_Tile(const Coordinate& c, const double& height = 9, const double& width = 7)
+            : Object(c, height, width)
+        {
+        }
 
         /**
          * Default destructor
@@ -30,8 +34,7 @@ namespace DoodleJump {
          * Update the object and notify observers
          */
         void update() override;
-    };
-}
+};
+} // namespace DoodleJump
 
-
-#endif //JUMPGAME_BG_TILE_H
+#endif // JUMPGAME_BG_TILE_H

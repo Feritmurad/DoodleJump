@@ -6,28 +6,26 @@
 
 namespace DoodleJump {
 
-    void Observable::addObserver(std::shared_ptr <Observer> observer) {
-        observers.emplace_back(observer);
-    }
+void Observable::addObserver(std::shared_ptr<Observer> observer) { observers.emplace_back(observer); }
 
-    void Observable::removeObserver(std::shared_ptr <Observer> observer) {
+void Observable::removeObserver(std::shared_ptr<Observer> observer)
+{
         std::vector<std::shared_ptr<Observer>>::iterator it;
-        for(it = observers.begin(); it != observers.end(); it++){
-            if(*it == observer){
-                observers.erase(it);
-                return;
-            }
+        for (it = observers.begin(); it != observers.end(); it++) {
+                if (*it == observer) {
+                        observers.erase(it);
+                        return;
+                }
         }
-    }
-
-    void Observable::notifyObservers(const ObserverEvent &event) {
-        for (const auto &i:observers){
-            i->handleEvent(event);
-        }
-    }
-
-    const std::vector<std::shared_ptr<Observer>> &Observable::getObservers() const {
-        return observers;
-    }
-
 }
+
+void Observable::notifyObservers(const ObserverEvent& event)
+{
+        for (const auto& i : observers) {
+                i->handleEvent(event);
+        }
+}
+
+const std::vector<std::shared_ptr<Observer>>& Observable::getObservers() const { return observers; }
+
+} // namespace DoodleJump

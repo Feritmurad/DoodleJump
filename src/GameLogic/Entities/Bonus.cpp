@@ -6,24 +6,17 @@
 
 namespace DoodleJump {
 
-    bool Bonus::isMUsed() const {
-        return m_used;
-    }
+bool Bonus::isMUsed() const { return m_used; }
 
-    void Bonus::setMUsed(bool mUsed) {
-        m_used = mUsed;
-    }
+void Bonus::setMUsed(bool mUsed) { m_used = mUsed; }
 
-    void Bonus::update() {
+void Bonus::update()
+{
         ObserverEvent observerevent(0, getC());
         notifyObservers(observerevent);
-    }
-
-    event Bonus::bonustype() {
-        return NoBonus;
-    }
-
-    void Bonus::updateScore() {
-
-    }
 }
+
+event Bonus::bonustype() { return NoBonus; }
+
+void Bonus::updateScore() {}
+} // namespace DoodleJump

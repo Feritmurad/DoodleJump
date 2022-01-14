@@ -6,20 +6,18 @@
 
 namespace DoodleJump {
 
-
-    void Springs::update() {
-        ObserverEvent observerevent(0,{0,0},Springsbonus);
+void Springs::update()
+{
+        ObserverEvent observerevent(0, {0, 0}, Springsbonus);
         notifyObservers(observerevent);
         Bonus::update();
+}
 
-    }
+event Springs::bonustype() { return Springsbonus; }
 
-    event Springs::bonustype() {
-        return Springsbonus;
-    }
-
-    void Springs::updateScore() {
+void Springs::updateScore()
+{
         ObserverEvent e(150);
         notifyObservers(e);
-    }
 }
+} // namespace DoodleJump

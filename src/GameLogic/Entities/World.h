@@ -4,24 +4,24 @@
 
 #ifndef GAME_WORLD_H
 #define GAME_WORLD_H
-#include "Player.h"
-#include "Platform.h"
-#include "HorizontalPlatform.h"
-#include "VerticalPlatform.h"
-#include "set"
 #include "../Factory/AbstractEntityFactory.h"
-#include "../Utility/Random.h"
-#include "TempPlatform.h"
-#include "jetpack.h"
-#include "Springs.h"
 #include "../Score/Score.h"
+#include "../Utility/Random.h"
 #include "BG_Tile.h"
+#include "HorizontalPlatform.h"
+#include "Platform.h"
+#include "Player.h"
+#include "Springs.h"
+#include "TempPlatform.h"
+#include "VerticalPlatform.h"
+#include "jetpack.h"
+#include "set"
 
-namespace DoodleJump{
+namespace DoodleJump {
 
-    class World{
-    public:
-
+class World
+{
+public:
         /**
          * Constructor
          * @param factory: abstract factory
@@ -93,7 +93,7 @@ namespace DoodleJump{
          * @param obj2 : object 2
          * @return bool
          */
-        bool checkCollision(const std::shared_ptr<Object>& obj1,const std::shared_ptr<Object>& obj2);
+        bool checkCollision(const std::shared_ptr<Object>& obj1, const std::shared_ptr<Object>& obj2);
 
         /**
          * Helper function for checkHVValidPlatforms
@@ -101,7 +101,7 @@ namespace DoodleJump{
          * @param obj2 : object 2
          * @return bool
          */
-        bool checkXCollision(const std::shared_ptr<VerticalPlatform>& obj1,const std::shared_ptr<Object>& obj2);
+        bool checkXCollision(const std::shared_ptr<VerticalPlatform>& obj1, const std::shared_ptr<Object>& obj2);
 
         /**
          * Helper function for checkHVValidPlatforms
@@ -109,7 +109,7 @@ namespace DoodleJump{
          * @param obj2 : object 2
          * @return bool
          */
-        bool checkYCollision(const std::shared_ptr<Object>& obj1,const std::shared_ptr<Object>& obj2);
+        bool checkYCollision(const std::shared_ptr<Object>& obj1, const std::shared_ptr<Object>& obj2);
 
         /**
          * Generates new entities
@@ -133,24 +133,24 @@ namespace DoodleJump{
         std::set<std::shared_ptr<Platform>> allPlatforms();
 
         ////////////////// Getters and Setters //////////////////
-        const shared_ptr<Score> &getMScore() const;
+        const shared_ptr<Score>& getMScore() const;
 
-        void setMScore(const shared_ptr<Score> &mScore);
+        void setMScore(const shared_ptr<Score>& mScore);
 
-        const set<std::shared_ptr<BG_Tile>> &getMBgtile() const;
+        const set<std::shared_ptr<BG_Tile>>& getMBgtile() const;
 
-        void setMBgtile(const set<std::shared_ptr<BG_Tile>> &mBgtile);
+        void setMBgtile(const set<std::shared_ptr<BG_Tile>>& mBgtile);
 
-        const std::shared_ptr<Player> &getMPlayer() const;
+        const std::shared_ptr<Player>& getMPlayer() const;
 
-        const std::set<std::shared_ptr<Platform>> &getMPlatforms() const;
+        const std::set<std::shared_ptr<Platform>>& getMPlatforms() const;
 
-        const std::set<std::shared_ptr<HorizontalPlatform>> &getMHorizontalplatforms() const;
+        const std::set<std::shared_ptr<HorizontalPlatform>>& getMHorizontalplatforms() const;
 
-        const std::set<std::shared_ptr<VerticalPlatform>> &getMVerticalplatforms() const;
+        const std::set<std::shared_ptr<VerticalPlatform>>& getMVerticalplatforms() const;
         /////////////////////////////////////////////////////////
 
-    private:
+private:
         std::shared_ptr<Player> m_player;
 
         std::set<std::shared_ptr<Platform>> m_platforms;
@@ -182,12 +182,8 @@ namespace DoodleJump{
         std::shared_ptr<Observer> m_bgtileview;
 
         std::shared_ptr<Score> m_Score;
+};
 
+} // namespace DoodleJump
 
-
-    };
-
-}
-
-
-#endif //GAME_WORLD_H
+#endif // GAME_WORLD_H

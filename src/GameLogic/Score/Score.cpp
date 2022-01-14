@@ -4,16 +4,15 @@
 
 #include "Score.h"
 
-namespace DoodleJump{
+namespace DoodleJump {
 
-    void Score::handleEvent(const ObserverEvent &event){
-        if(event.getMUpdateAmount() != 0){
-            player_score+= event.getMUpdateAmount();
+void Score::handleEvent(const ObserverEvent& event)
+{
+        if (event.getMUpdateAmount() != 0) {
+                player_score += event.getMUpdateAmount();
         }
-    }
-
-    int Score::getPlayerScore() const {
-        return player_score;
-    }
-
 }
+
+int Score::getPlayerScore() const { return player_score; }
+
+} // namespace DoodleJump

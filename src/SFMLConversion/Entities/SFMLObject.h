@@ -4,14 +4,14 @@
 
 #ifndef JUMPGAME_SFMLOBJECT_H
 #define JUMPGAME_SFMLOBJECT_H
-#include "SFMLEntity.h"
 #include "../../GameLogic/Coordinate/Coordinate.h"
+#include "SFMLEntity.h"
 
-namespace SFMLDoodleJump{
+namespace SFMLDoodleJump {
 
-    class SFMLObject : public SFMLEntity , public DoodleJump::Observer {
-    public:
-
+class SFMLObject : public SFMLEntity, public DoodleJump::Observer
+{
+public:
         /**
          * default destructor
          */
@@ -22,13 +22,13 @@ namespace SFMLDoodleJump{
          * @param window: window
          * @param c: coordinate of object
          */
-        explicit SFMLObject(const std::shared_ptr<sf::RenderWindow> &windowconst,const DoodleJump::Coordinate &c={0,0});
+        explicit SFMLObject(const std::shared_ptr<sf::RenderWindow>& windowconst,
+                            const DoodleJump::Coordinate& c = {0, 0});
 
-    public:
-
+public:
         /**
-        * Getter for c
-        */
+         * Getter for c
+         */
         DoodleJump::Coordinate getC() const;
 
         /**
@@ -40,7 +40,7 @@ namespace SFMLDoodleJump{
          * Handles an ObserverEvent
          * @param event
          */
-        void handleEvent(const DoodleJump::ObserverEvent &event) override;
+        void handleEvent(const DoodleJump::ObserverEvent& event) override;
 
         /**
          * Draws the object on the window
@@ -52,19 +52,12 @@ namespace SFMLDoodleJump{
          * @param color: color of the rectangle
          * @return rectangle
          */
-        virtual sf::RectangleShape makePlatformshape(const sf::Color &color);
+        virtual sf::RectangleShape makePlatformshape(const sf::Color& color);
 
-
-
-
-    private:
+private:
         DoodleJump::Coordinate m_c;
+};
 
+} // namespace SFMLDoodleJump
 
-    };
-
-}
-
-
-
-#endif //JUMPGAME_SFMLOBJECT_H
+#endif // JUMPGAME_SFMLOBJECT_H

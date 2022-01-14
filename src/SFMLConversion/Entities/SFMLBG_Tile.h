@@ -6,15 +6,14 @@
 #define JUMPGAME_SFMLBG_TILE_H
 #include "SFMLObject.h"
 
-
 namespace SFMLDoodleJump {
 
-    class SFMLBG_Tile : public SFMLObject {
-    public:
-
+class SFMLBG_Tile : public SFMLObject
+{
+public:
         /**
-        * Default destructor
-        */
+         * Default destructor
+         */
         ~SFMLBG_Tile() override = default;
 
         /**
@@ -22,14 +21,16 @@ namespace SFMLDoodleJump {
          * @param window: window
          * @param c: coordinate of object
          */
-        explicit SFMLBG_Tile(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c = {0, 0}) : SFMLObject(window,c) {}
+        explicit SFMLBG_Tile(const std::shared_ptr<sf::RenderWindow>& window, const DoodleJump::Coordinate& c = {0, 0})
+            : SFMLObject(window, c)
+        {
+        }
 
         /**
          * Draws the object on the window
          */
         void draw() override;
+};
+} // namespace SFMLDoodleJump
 
-    };
-}
-
-#endif //JUMPGAME_SFMLBG_TILE_H
+#endif // JUMPGAME_SFMLBG_TILE_H

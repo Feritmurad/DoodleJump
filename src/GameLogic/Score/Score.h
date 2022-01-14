@@ -9,8 +9,9 @@
 
 namespace DoodleJump {
 
-    class Score : public Observer {
-    public:
+class Score : public Observer
+{
+public:
         /**
          * Simple constructor where @player_score is 0
          */
@@ -19,18 +20,15 @@ namespace DoodleJump {
         ~Score() = default;
 
         /**
-        * overriden function to handle a event
-        */
-        void handleEvent(const ObserverEvent &event) override;
+         * overriden function to handle a event
+         */
+        void handleEvent(const ObserverEvent& event) override;
 
         int getPlayerScore() const;
 
-
-    private:
+private:
         int player_score;
+};
+} // namespace DoodleJump
 
-
-    };
-}
-
-#endif //JUMPGAME_SCORE_H
+#endif // JUMPGAME_SCORE_H

@@ -9,10 +9,10 @@
 
 namespace DoodleJump {
 
-    class Entity {
+class Entity
+{
 
-    public:
-
+public:
         /**
          * default constructor
          */
@@ -21,15 +21,15 @@ namespace DoodleJump {
         /**
          * default destructor
          */
-        virtual ~Entity() = default;;
+        virtual ~Entity() = default;
+        ;
 
         /**
          * pure virtual function to update entity
          */
         virtual void update() = 0;
-    };
+};
 
-}
+} // namespace DoodleJump
 
-
-#endif //GAME_ENTITY_H
+#endif // GAME_ENTITY_H

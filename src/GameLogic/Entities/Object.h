@@ -5,14 +5,15 @@
 #ifndef GAME_OBJECT_H
 #define GAME_OBJECT_H
 #include "../Coordinate/Coordinate.h"
-#include "Entity.h"
 #include "../Observer/Observable.h"
+#include "Entity.h"
 
 namespace DoodleJump {
 
-    class Object : public Entity, public Observable {
+class Object : public Entity, public Observable
+{
 
-    public:
+public:
         /**
          * default destructor
          */
@@ -24,11 +25,14 @@ namespace DoodleJump {
          * @param height: Height of the object
          * @param width: Width of the object
          */
-         explicit Object(const Coordinate &c,const double &height,const double &width) : m_c(c),m_heigth(height),m_width(width) {}
+        explicit Object(const Coordinate& c, const double& height, const double& width)
+            : m_c(c), m_heigth(height), m_width(width)
+        {
+        }
 
         /**
-        * Getter for c
-        */
+         * Getter for c
+         */
         Coordinate getC() const;
 
         /**
@@ -54,16 +58,12 @@ namespace DoodleJump {
          */
         bool checkValid();
 
-    private:
-
+private:
         Coordinate m_c;
 
         double m_heigth;
 
         double m_width;
-
-
-
-    };
-}
-#endif //GAME_OBJECT_H
+};
+} // namespace DoodleJump
+#endif // GAME_OBJECT_H

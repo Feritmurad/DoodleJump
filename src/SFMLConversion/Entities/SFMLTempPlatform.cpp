@@ -3,22 +3,20 @@
 //
 
 #include "SFMLTempPlatform.h"
-namespace SFMLDoodleJump{
+namespace SFMLDoodleJump {
 
-
-
-
-    void SFMLTempPlatform::draw() {
+void SFMLTempPlatform::draw()
+{
         std::shared_ptr<DoodleJump::Camera> camera = std::make_shared<DoodleJump::Camera>();
         // transform to pixel
         // transform only if it is in geocoordintes
-        if(getC().validCoordinate()){
-            DoodleJump::Coordinate tempc = camera->rescale(getC());
-            sf::RectangleShape rectangle = makePlatformshape(sf::Color::White);
-            rectangle.setPosition(tempc.getX(),tempc.getY());
-            getWindow()->draw(rectangle);
+        if (getC().validCoordinate()) {
+                DoodleJump::Coordinate tempc = camera->rescale(getC());
+                sf::RectangleShape rectangle = makePlatformshape(sf::Color::White);
+                rectangle.setPosition(tempc.getX(), tempc.getY());
+                getWindow()->draw(rectangle);
         }
         DoodleJump::Coordinate tempcoord;
         setC(tempcoord);
-    }
 }
+} // namespace SFMLDoodleJump

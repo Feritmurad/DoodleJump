@@ -9,16 +9,19 @@
 
 namespace DoodleJump {
 
-    class Jetpack : public Bonus {
-    public:
-
+class Jetpack : public Bonus
+{
+public:
         /**
          * Simple constructor
          * @param c: coordinate of the object
          * @param height: Height of the object
          * @param width: Width of the object
          */
-        explicit Jetpack(const Coordinate &c, const double &height = 0.5, const double &width = 0.5) : Bonus(c, height, width) {}
+        explicit Jetpack(const Coordinate& c, const double& height = 0.5, const double& width = 0.5)
+            : Bonus(c, height, width)
+        {
+        }
 
         /**
          * Default destructor
@@ -40,8 +43,7 @@ namespace DoodleJump {
          * virtual function that updates score
          */
         void updateScore() override;
+};
+} // namespace DoodleJump
 
-    };
-}
-
-#endif //JUMPGAME_JETPACK_H
+#endif // JUMPGAME_JETPACK_H

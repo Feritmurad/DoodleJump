@@ -8,9 +8,10 @@
 
 namespace DoodleJump {
 
-    class TempPlatform : public Platform {
+class TempPlatform : public Platform
+{
 
-    public:
+public:
         /**
          * Constructor
          * @param c: coordinate of the object
@@ -18,7 +19,11 @@ namespace DoodleJump {
          * @param width: Width of the object
          * @param jumped: indicates if the player has jumped on this platform before
          */
-        explicit TempPlatform(const Coordinate &c,const double &height=0.4,const double &width=1, const bool &jumped = false) : Platform(c,height,width,jumped) {}
+        explicit TempPlatform(const Coordinate& c, const double& height = 0.4, const double& width = 1,
+                              const bool& jumped = false)
+            : Platform(c, height, width, jumped)
+        {
+        }
 
         /**
          * Default destructor
@@ -34,8 +39,7 @@ namespace DoodleJump {
          * virtual function that updates score
          */
         void updateScore() override;
-    };
-}
+};
+} // namespace DoodleJump
 
-
-#endif //JUMPGAME_TEMPPLATFORM_H
+#endif // JUMPGAME_TEMPPLATFORM_H

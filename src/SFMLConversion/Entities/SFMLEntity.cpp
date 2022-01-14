@@ -4,12 +4,8 @@
 
 #include "SFMLEntity.h"
 
-namespace SFMLDoodleJump{
+namespace SFMLDoodleJump {
 
+const std::shared_ptr<sf::RenderWindow>& SFMLEntity::getWindow() const { return m_window; }
 
-    const std::shared_ptr<sf::RenderWindow> &SFMLEntity::getWindow() const {
-        return m_window;
-    }
-
-
-}
+} // namespace SFMLDoodleJump

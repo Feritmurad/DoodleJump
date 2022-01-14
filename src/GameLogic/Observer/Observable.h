@@ -6,15 +6,15 @@
 #define JUMPGAME_OSERVABLE_H
 
 #include "Observer.h"
-#include "vector"
 #include "memory"
+#include "vector"
 
 namespace DoodleJump {
 
-    class Observable {
+class Observable
+{
 
-
-    public:
+public:
         /**
          * function to add a observer to the list
          * @param observer: the observer that is going to be added to the list
@@ -27,26 +27,21 @@ namespace DoodleJump {
          */
         void removeObserver(std::shared_ptr<Observer> observer);
 
-         /**
+        /**
          * function that notifies all the observers
          */
-        virtual void notifyObservers(const DoodleJump::ObserverEvent &event);
+        virtual void notifyObservers(const DoodleJump::ObserverEvent& event);
 
         /**
          * Getter for observers
          * @return observers
          */
-        const std::vector<std::shared_ptr<Observer>> &getObservers() const;
+        const std::vector<std::shared_ptr<Observer>>& getObservers() const;
 
+private:
+        std::vector<std::shared_ptr<Observer>> observers;
+};
 
-    private:
-        std::vector <std::shared_ptr<Observer>> observers;
+} // namespace DoodleJump
 
-
-
-    };
-
-}
-
-
-#endif //JUMPGAME_OSERVABLE_H
+#endif // JUMPGAME_OSERVABLE_H

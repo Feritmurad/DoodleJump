@@ -5,18 +5,30 @@
 #ifndef GAME_PLAYER_H
 #define GAME_PLAYER_H
 
-#include <string>
+#include "../Utility/Clock.h"
 #include "Object.h"
 #include "iostream"
-#include "../Utility/Clock.h"
+#include <string>
 
 namespace DoodleJump {
-    enum VerticalState{Jumping,Falling,Collision,None};
-    enum Horizontalstate{Static,Left,Right};
+enum VerticalState
+{
+        Jumping,
+        Falling,
+        Collision,
+        None
+};
+enum Horizontalstate
+{
+        Static,
+        Left,
+        Right
+};
 
-    class Player : public Object {
+class Player : public Object
+{
 
-        public:
+public:
         /**
          * Constructior
          * @param c: coordinate of object
@@ -28,7 +40,9 @@ namespace DoodleJump {
          * @param height: Height of the object
          * @param width: Width of the object
          */
-        explicit Player(const Coordinate &c,const double &reachedheight=0.0,const double &Yvelocity=0.0,const double &Xvelocity=0.0, const double &gravity=0.005,VerticalState state = None,const double &height=0.5,const double &width=0.5);
+        explicit Player(const Coordinate& c, const double& reachedheight = 0.0, const double& Yvelocity = 0.0,
+                        const double& Xvelocity = 0.0, const double& gravity = 0.005, VerticalState state = None,
+                        const double& height = 0.5, const double& width = 0.5);
 
         /**
          * Default destructor
@@ -46,8 +60,8 @@ namespace DoodleJump {
         void move();
 
         /**
-        * Update the object and notify observers
-        */
+         * Update the object and notify observers
+         */
         void update() override;
 
         ////////////////// Getters and Setters //////////////////
@@ -74,7 +88,7 @@ namespace DoodleJump {
         void setMBonusstate(event mBonusstate);
         /////////////////////////////////////////////////////////
 
-    private:
+private:
         double m_velocity_X;
         double m_velocity_Y;
         double m_gravity;
@@ -84,10 +98,7 @@ namespace DoodleJump {
         bool reachingnewheight;
         event m_bonusstate;
         double m_jetpackreachheight;
+};
+} // namespace DoodleJump
 
-
-    };
-}
-
-
-#endif //GAME_PLAYER_H
+#endif // GAME_PLAYER_H

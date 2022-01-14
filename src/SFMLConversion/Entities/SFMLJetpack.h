@@ -6,15 +6,14 @@
 #define JUMPGAME_SFMLJETPACK_H
 #include "SFMLObject.h"
 
-
 namespace SFMLDoodleJump {
 
-    class SFMLJetpack : public SFMLObject {
-    public:
-
+class SFMLJetpack : public SFMLObject
+{
+public:
         /**
-        * default destructor
-        */
+         * default destructor
+         */
         ~SFMLJetpack() override = default;
 
         /**
@@ -22,16 +21,17 @@ namespace SFMLDoodleJump {
          * @param window: window
          * @param c: coordinate of object
          */
-        explicit SFMLJetpack(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
+        explicit SFMLJetpack(const std::shared_ptr<sf::RenderWindow>& window, const DoodleJump::Coordinate& c = {0, 0})
+            : SFMLObject(window, c)
+        {
+        }
 
         /**
          * Draws the object on the window
          */
         void draw() override;
+};
 
-    };
+} // namespace SFMLDoodleJump
 
-}
-
-
-#endif //JUMPGAME_SFMLJETPACK_H
+#endif // JUMPGAME_SFMLJETPACK_H

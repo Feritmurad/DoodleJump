@@ -4,36 +4,37 @@
 
 #ifndef JUMPGAME_CLOCK_H
 #define JUMPGAME_CLOCK_H
-#include <iostream>
 #include "chrono"
+#include <iostream>
 
 namespace DoodleJump {
-    class Clock {
-    private:
+class Clock
+{
+private:
         int Tick = 0;
         std::chrono::system_clock::time_point startTime;
-        static Clock *instance;
+        static Clock* instance;
 
         /**
          * Private constructor
          */
         Clock(int tick);
 
-    public:
+public:
         /**
          * Static acces method
          */
-        static Clock *getInstance(int tick);
+        static Clock* getInstance(int tick);
 
         /**
          * Delete copy constructor
          */
-        Clock(const Clock &obj) = delete;
+        Clock(const Clock& obj) = delete;
 
         /**
          * Delete copy assignment
          */
-        Clock &operator=(const Clock &) = delete;
+        Clock& operator=(const Clock&) = delete;
 
         /**
          * Checks if clock has ticked
@@ -51,7 +52,7 @@ namespace DoodleJump {
          * @return current time
          */
         std::chrono::system_clock::time_point currentTime();
-    };
-}
+};
+} // namespace DoodleJump
 
-#endif //JUMPGAME_CLOCK_H
+#endif // JUMPGAME_CLOCK_H

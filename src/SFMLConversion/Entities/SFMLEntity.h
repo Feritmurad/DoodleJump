@@ -4,35 +4,36 @@
 
 #ifndef JUMPGAME_SFMLENTITY_H
 #define JUMPGAME_SFMLENTITY_H
-#include <SFML/Graphics.hpp>
 #include "../../GameLogic/Camera/Camera.h"
 #include "../../GameLogic/Observer/Observer.h"
 #include "iostream"
+#include <SFML/Graphics.hpp>
 
 namespace SFMLDoodleJump {
 
-    class SFMLEntity {
-        public:
-            /**
-             * default constructor
-             */
-            explicit SFMLEntity(const std::shared_ptr<sf::RenderWindow>& window) : m_window(window) {}
+class SFMLEntity
+{
+public:
+        /**
+         * default constructor
+         */
+        explicit SFMLEntity(const std::shared_ptr<sf::RenderWindow>& window) : m_window(window) {}
 
-            /**
-             * default destructor
-             */
-            virtual ~SFMLEntity() = default;;
+        /**
+         * default destructor
+         */
+        virtual ~SFMLEntity() = default;
+        ;
 
-            /**
-            * Getter for m_window
-            */
-            const std::shared_ptr<sf::RenderWindow>& getWindow() const;
+        /**
+         * Getter for m_window
+         */
+        const std::shared_ptr<sf::RenderWindow>& getWindow() const;
 
-        private:
+private:
         std::shared_ptr<sf::RenderWindow> m_window;
-    };
+};
 
-}
+} // namespace SFMLDoodleJump
 
-
-#endif //JUMPGAME_SFMLENTITY_H
+#endif // JUMPGAME_SFMLENTITY_H

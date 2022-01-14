@@ -5,28 +5,27 @@
 #ifndef GAME_ARRAYWORLD_H
 #define GAME_ARRAYWORLD_H
 
-namespace DoodleJump{
-    class Coordinate {
+namespace DoodleJump {
+class Coordinate
+{
 
-    private:
-
+private:
         double x;
 
         double y;
 
-    public:
-
+public:
         /**
          * simple constructor
          */
-        Coordinate() : x(0), y(0){}
+        Coordinate() : x(0), y(0) {}
 
         /**
          * simple constructor
          * @param x = x coordinate
          * @param y = y coordinate
          */
-        Coordinate(double x, double y) : x(x), y(y){}
+        Coordinate(double x, double y) : x(x), y(y) {}
 
         /**
          * Getter for x
@@ -67,7 +66,7 @@ namespace DoodleJump{
         bool validHorizontallyandTop() const;
 
         ///////////////////// Overloaded operators /////////////////////
-        bool operator>= (const Coordinate& c) const;
+        bool operator>=(const Coordinate& c) const;
 
         bool operator>(const Coordinate& c) const;
 
@@ -75,10 +74,7 @@ namespace DoodleJump{
 
         bool operator==(const Coordinate& c) const;
         ////////////////////////////////////////////////////////////////
+};
+} // namespace DoodleJump
 
-
-    };
-}
-
-
-#endif //GAME_ARRAYWORLD_H
+#endif // GAME_ARRAYWORLD_H

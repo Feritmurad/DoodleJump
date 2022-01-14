@@ -6,18 +6,17 @@
 
 namespace DoodleJump {
 
-    void TempPlatform::update() {
-        Platform::update();
-    }
+void TempPlatform::update() { Platform::update(); }
 
-    void TempPlatform::updateScore() {
+void TempPlatform::updateScore()
+{
         if (isMJumpedOn()) {
-            ObserverEvent e(-100);
-            notifyObservers(e);
+                ObserverEvent e(-100);
+                notifyObservers(e);
         } else {
-            ObserverEvent e(50);
-            notifyObservers(e);
+                ObserverEvent e(50);
+                notifyObservers(e);
         }
-    }
-
 }
+
+} // namespace DoodleJump

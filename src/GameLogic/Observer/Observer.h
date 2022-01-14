@@ -8,23 +8,22 @@
 
 namespace DoodleJump {
 
+class Observer
+{
 
-    class Observer {
-
-    public:
+public:
         /**
          * virtual function that handles an event
          */
-        virtual void handleEvent(const ObserverEvent &event) = 0;
+        virtual void handleEvent(const ObserverEvent& event) = 0;
 
         /**
          * virtual default constructor
          */
-        virtual ~Observer() = default;;
+        virtual ~Observer() = default;
+        ;
+};
 
-    };
+} // namespace DoodleJump
 
-}
-
-
-#endif //JUMPGAME_OBSERVER_H
+#endif // JUMPGAME_OBSERVER_H

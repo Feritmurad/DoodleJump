@@ -8,12 +8,12 @@
 
 namespace SFMLDoodleJump {
 
-    class SFMLTempPlatform : public SFMLObject {
-    public:
-
+class SFMLTempPlatform : public SFMLObject
+{
+public:
         /**
-        * default destructor
-        */
+         * default destructor
+         */
         ~SFMLTempPlatform() override = default;
 
         /**
@@ -21,16 +21,18 @@ namespace SFMLDoodleJump {
          * @param window: window
          * @param c: coordinate of object
          */
-        explicit SFMLTempPlatform(const std::shared_ptr<sf::RenderWindow> &window, const DoodleJump::Coordinate &c={0,0}) : SFMLObject(window,c) {}
+        explicit SFMLTempPlatform(const std::shared_ptr<sf::RenderWindow>& window,
+                                  const DoodleJump::Coordinate& c = {0, 0})
+            : SFMLObject(window, c)
+        {
+        }
 
         /**
          * Draws the object on the window
-        */
+         */
         void draw() override;
+};
 
-    };
+} // namespace SFMLDoodleJump
 
-}
-
-
-#endif //JUMPGAME_SFMLTEMPPLATFORM_H
+#endif // JUMPGAME_SFMLTEMPPLATFORM_H

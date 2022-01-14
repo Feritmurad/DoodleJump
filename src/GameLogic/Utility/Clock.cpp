@@ -1,42 +1,39 @@
 //
 // Created by ferit on 05/12/2021.
 //
-#include <iostream>
 #include "Clock.h"
+#include <iostream>
 
 namespace DoodleJump {
 
-    /*Instance = nullptr */
-    Clock *Clock::instance = nullptr;
+/*Instance = nullptr */
+Clock* Clock::instance = nullptr;
 
-    /* Instance initialized on demand */
-    Clock *Clock::getInstance(int tick) {
+/* Instance initialized on demand */
+Clock* Clock::getInstance(int tick)
+{
         if (instance == nullptr) {
-            instance = new Clock(tick);
+                instance = new Clock(tick);
         }
         return instance;
-    }
+}
 
-    void Clock::reset() {
-        startTime = std::chrono::system_clock::now();
+void Clock::reset() { startTime = std::chrono::system_clock::now(); }
 
-    }
-
-    Clock::Clock(int tick) {
+Clock::Clock(int tick)
+{
         Tick = tick;
         reset();
-    }
+}
 
-    std::chrono::system_clock::time_point Clock::currentTime() {
-        return std::chrono::system_clock::now();
-    }
+std::chrono::system_clock::time_point Clock::currentTime() { return std::chrono::system_clock::now(); }
 
-    bool Clock::tick() {
+bool Clock::tick()
+{
         if (std::chrono::duration_cast<std::chrono::milliseconds>(currentTime() - startTime).count() >= Tick) {
-            reset();
-            return true;
+                reset();
+                return true;
         }
         return false;
-
-    }
 }
+} // namespace DoodleJump

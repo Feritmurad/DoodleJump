@@ -7,13 +7,12 @@
 #include "Platform.h"
 #include "iostream"
 
-
 namespace DoodleJump {
 
-    class VerticalPlatform : public Platform {
+class VerticalPlatform : public Platform
+{
 
-    public:
-
+public:
         /**
          * Simple constructor
          * @param c: coordinate of the object
@@ -22,8 +21,8 @@ namespace DoodleJump {
          * @param width: Width of the object
          * @param jumped: indicates if the player has jumped on this platform before
          */
-        explicit VerticalPlatform(const Coordinate &c,const double &Yvelocity = -0.075, const double &height = 0.4, const double &width = 1,
-                                    const bool &jumped = false);
+        explicit VerticalPlatform(const Coordinate& c, const double& Yvelocity = -0.075, const double& height = 0.4,
+                                  const double& width = 1, const bool& jumped = false);
         /**
          * Default destructor
          */
@@ -54,16 +53,14 @@ namespace DoodleJump {
         void updateMMaxH(double mMaxH);
         /////////////////////////////////////////////////////////
 
-    private:
-
+private:
         double m_velocity_Y;
 
         double m_minH;
 
         double m_maxH;
-    };
+};
 
-}
+} // namespace DoodleJump
 
-
-#endif //JUMPGAME_VERTICALPLATFORM_H
+#endif // JUMPGAME_VERTICALPLATFORM_H

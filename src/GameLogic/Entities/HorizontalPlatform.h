@@ -8,9 +8,10 @@
 
 namespace DoodleJump {
 
-    class HorizontalPlatform : public Platform {
+class HorizontalPlatform : public Platform
+{
 
-    public:
+public:
         /**
          * Constructor
          * @param c: coordinate of the object
@@ -19,8 +20,11 @@ namespace DoodleJump {
          * @param width: Width of the object
          * @param jumped: indicates if the player has jumped on this platform before
          */
-        explicit HorizontalPlatform(const Coordinate &c,const double &Xvelocity = 0.05, const double &height = 0.4, const double &width = 1,
-                              const bool &jumped = false) : Platform(c, height, width, jumped) , m_velocity_X(Xvelocity) {}
+        explicit HorizontalPlatform(const Coordinate& c, const double& Xvelocity = 0.05, const double& height = 0.4,
+                                    const double& width = 1, const bool& jumped = false)
+            : Platform(c, height, width, jumped), m_velocity_X(Xvelocity)
+        {
+        }
 
         /**
          * Default destructor
@@ -42,11 +46,10 @@ namespace DoodleJump {
          */
         void updateScore() override;
 
-    private:
+private:
         double m_velocity_X;
-    };
+};
 
-}
+} // namespace DoodleJump
 
-
-#endif //JUMPGAME_HORIZONTALPLATFORM_H
+#endif // JUMPGAME_HORIZONTALPLATFORM_H

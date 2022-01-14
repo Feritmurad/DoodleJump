@@ -8,19 +8,23 @@
 
 namespace DoodleJump {
 
-    class Bonus : public Object {
+class Bonus : public Object
+{
 
-    private:
+private:
         bool m_used;
 
-    public:
+public:
         /**
          * Simple constructor
          * @param c: coordinate of the object
          * @param height: Height of the object
          * @param width: Width of the object
          */
-        explicit Bonus(const Coordinate &c, const double &height=0.5, const double &width=0.5) : Object(c, height, width),m_used(false) {}
+        explicit Bonus(const Coordinate& c, const double& height = 0.5, const double& width = 0.5)
+            : Object(c, height, width), m_used(false)
+        {
+        }
         /**
          * Default destructor
          */
@@ -49,8 +53,7 @@ namespace DoodleJump {
          * virtual function that updates score
          */
         virtual void updateScore();
-    };
-}
+};
+} // namespace DoodleJump
 
-
-#endif //JUMPGAME_BONUS_H
+#endif // JUMPGAME_BONUS_H
