@@ -24,6 +24,7 @@ Reach a high score by jumping on platforms and getting bonuses.
 ##### Score
 - -100 points for jumping on a platform more than once
 - +5 points for reaching a new height
+- +25 points for jumping on a green platform
 - +50 points for jumping on a white platform
 - +50 points for jumping on a blue platform
 - +75 points for jumping on a yellow platform
